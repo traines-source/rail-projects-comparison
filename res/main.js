@@ -1,5 +1,5 @@
-var width = 900;
-var height = 500;
+var width = 700;
+var height = 700;
 var svg = d3.select("#plot");
 svg
     .attr("width", width+100)
@@ -57,7 +57,7 @@ svg.append("text")
     .attr("class", "unit")
     .attr("text-anchor", "end")
     .attr("x", width)
-    .attr("y", height - 6);
+    .attr("y", height - 10);
 
 svg.append("text")
     .attr("id", "y-unit")
@@ -85,7 +85,7 @@ function minMax(values) {
     var max = values[0];
     for (var i=1; i<values.length; i++) {
         if (values[i] < min) min = values[i];
-        if (values[i] > max) max = values[i];
+        if (values[i] > max && isFinite(values[i])) max = values[i];
     }
     return [min, max];
 }
@@ -105,8 +105,13 @@ function gradient(from, to, ratio) {
 }
 
 function updatePlot(x, y, z, animDuration) {
-    xScale.domain(pad(minMax(x.col)));
-    yScale.domain(pad(minMax(y.col)));
+    var xDomain = pad(minMax(x.col));
+    var yDomain = pad(minMax(y.col));
+    if (x.unit == y.unit) {
+        xDomain = yDomain = [Math.min(xDomain[0], yDomain[0]), Math.max(xDomain[1], yDomain[1])];
+    }
+    xScale.domain(xDomain);
+    yScale.domain(yDomain);
     var zMinMax = minMax(z.col);
     zScale.domain(zMinMax);
     format = zScale.tickFormat();
@@ -158,7 +163,8 @@ function getUnit(id) {
 function divideColumns(mainCol, perCol) {
     var calculatedCol = [];
     for (var i=0; i<mainCol.length; i++) {
-        calculatedCol.push(mainCol[i]/perCol[i]);
+        var v = mainCol[i]/perCol[i];
+        calculatedCol.push(v);
     }
     return calculatedCol;
 }

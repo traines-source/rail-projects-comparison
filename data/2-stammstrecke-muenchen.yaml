@@ -2,6 +2,8 @@ name:
   lbl: 2. Stammstrecke München
 type:
   lbl: suburban
+wikidata:
+  lbl: Q1739470
 longitude:
   val: 11.557723
 latitude:
@@ -57,3 +59,10 @@ modal_shift_low:
 modal_shift_high:
   val: 20
   src: estimate
+paths: |
+  <path data-from="1 0" data-line="M2St" data-stops="Laim MünchenHbf Marienhof MünchenOstbhf Leuchtenbergring" />
+  <rect data-station="Marienhof" data-dir="nw" data-lon-lat="11.576321 48.138737" />            
+  <rect data-station="Laim" data-lon-lat="11.503333 48.144444" />            
+  <rect data-station="MünchenHbf" data-lon-lat="11.557723 48.140442" />            
+  <rect data-station="MünchenOstbhf" data-lon-lat="11.604722 48.126944" />            
+  <rect data-station="Leuchtenbergring" data-dir="nw" data-lon-lat="11.61599 48.134180" />

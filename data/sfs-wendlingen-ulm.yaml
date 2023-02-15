@@ -2,6 +2,8 @@ name:
   lbl: SFS Wendlingen-Ulm
 type:
   lbl: long-distance
+wikidata:
+  lbl: Q830539
 longitude:
   val: 9.7421
 latitude:
@@ -51,4 +53,9 @@ modal_shift_low:
 modal_shift_high:
   val: 25
   src: estimate
+paths: |
+  <path data-from="1 0" data-line="SFSWU" data-stops="Wendlingen Merklingen Ulm" />
+  <rect data-station="Wendlingen" data-dir="n" data-lon-lat="9.365003 48.666294" />
+  <rect data-station="Merklingen" data-dir="nw" data-lon-lat="9.7421 48.5206" /> 
+  <rect data-station="Ulm" data-dir="n" data-lon-lat="9.983333 48.4" />   
   

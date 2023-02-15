@@ -2,6 +2,8 @@ name:
   lbl: Grand Paris Express
 type:
   lbl: suburban
+wikidata:
+  lbl: Q867203
 longitude:
   val: 2.34284196
 latitude:

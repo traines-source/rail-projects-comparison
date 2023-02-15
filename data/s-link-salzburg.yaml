@@ -2,6 +2,8 @@ name:
   lbl: S-LINK Salzburg
 type:
   lbl: suburban
+wikidata:
+  lbl: Q107586064
 longitude:
   val: 13.0618782
 latitude:

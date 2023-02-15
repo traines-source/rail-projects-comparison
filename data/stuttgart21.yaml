@@ -2,6 +2,8 @@ name:
   lbl: Stuttgart 21
 type:
   lbl: suburban
+wikidata:
+  lbl: Q700996
 longitude:
   val: 9.182098511
 latitude:

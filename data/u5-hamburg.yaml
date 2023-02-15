@@ -2,6 +2,8 @@ name:
   lbl: U5 Hamburg
 type:
   lbl: metro
+wikidata:
+  lbl: Q16321051
 longitude:
   val: 10.00642626
 latitude:

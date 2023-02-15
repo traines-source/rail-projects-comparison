@@ -2,6 +2,8 @@ name:
   lbl: LGV Rhin-Rhône
 type:
   lbl: long-distance
+wikidata:
+  lbl: Q1087561
 longitude:
   val: 5.957673
 latitude:
@@ -51,4 +53,9 @@ modal_shift_low:
 modal_shift_high:
   val: 25
   src: estimate
-  
+paths: |
+  <path data-from="1 0" data-line="RhinRhone" data-stops="Dijon Besancon BelfortMontbeliard Mulhouse" />
+  <rect data-station="Dijon" data-dir="nw" data-lon-lat="5.027222 47.323333" />
+  <rect data-station="Besancon" data-lon-lat="5.957673 47.30881" />
+  <rect data-station="BelfortMontbeliard" data-dir="nw" data-lon-lat="6.897901 47.586042" />
+  <rect data-station="Mulhouse" data-dir="nw" data-lon-lat="7.34273 47.742238" />

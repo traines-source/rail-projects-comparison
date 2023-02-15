@@ -7,7 +7,7 @@ svg
     .attr("viewBox", "-50 -50 "+(width+100)+" "+(height+100)+"")
     .append("g");
 
-TNA.Config.default.mapProjectionScale = 3000;
+TNA.Config.default.mapProjectionScale = 4000;
 TNA.Config.default.animSpeed = 10000;
 
 var data = [];
@@ -274,7 +274,7 @@ function initialize() {
     .append("g")
     .attr("transform", function (d, i) {
         var c = TNA.Projection.default.project(new TNA.Vector(d.longitude.val, d.latitude.val));
-        return "scale("+(1/50)+") translate(" + -c.x + "," + -c.y + ")";
+        return "scale("+(1/150)+") translate(" + -c.x + "," + -c.y + ")";
     })
     .html(function (d, i) { return d.paths });   
     projectElements

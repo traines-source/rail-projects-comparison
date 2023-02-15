@@ -227,15 +227,16 @@ function getDimensionIds() {
 }
 
 function getDimensionLabels(lang) {
-    return Object.values(data.dimensions).map(v => v.lbl[lang]);   
+    return Object.values(data.dimensions).map(v => v.hidden ? null : v.lbl[lang]);   
 }
 
 function populateSelect(id, ids, labels, per, preselected) {
     var select = d3.select('#'+id);
     select
-        .on('change', triggerUpdatePlot);
+        .on('change', per ? triggerUpdatePlot : function(e) { document.getElementById(id+'-per').value = -1; triggerUpdatePlot(e); });
     for (var i=-1; i<ids.length; i++) {
         if (!per && i == -1) continue;
+        if (i != -1 && !labels[i]) continue;
         select
             .append('option')
             .attr('value', i == -1 ? -1 : ids[i])

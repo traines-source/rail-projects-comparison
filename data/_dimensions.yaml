@@ -3,11 +3,13 @@ name:
     en: Project Name
     de: Projektname
     fr: Nom du projet
+  hidden: true
 type:
   lbl:
     en: Type
     de: Typ
     fr: Type
+  hidden: true
 longitude:
   lbl:
     en: Longitude
@@ -122,7 +124,7 @@ commercial_speed:
     de: 
     fr: 
   unit:
-    en: Commercial speed
+    en: kmh
     de: 
     fr: 
 emissions_construction_reference:
@@ -188,6 +190,7 @@ modal_shift_low:
     en: percent
     de: 
     fr: 
+  hidden: true
 modal_shift_high:
   lbl:
     en: Modal shift (high)
@@ -197,4 +200,5 @@ modal_shift_high:
     en: percent
     de: 
     fr: 
+  hidden: true
   

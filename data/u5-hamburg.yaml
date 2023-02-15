@@ -1,0 +1,75 @@
+name:
+  lbl: U5 Hamburg
+type:
+  lbl: metro
+longitude:
+  val: 10.00642626
+latitude:
+  val: 53.55324553
+length_double_track:
+  val: 24
+  src: https://www.hochbahn.de/de/projekte/u-bahn-ausbau/die-u5-fuer-hamburg
+length_tunnel_tube:
+  val: 24
+  src: https://www.hochbahn.de/de/projekte/u-bahn-ausbau/die-u5-fuer-hamburg
+length_bridge:
+  val: 0
+  src:
+number_stations:
+  val: 23
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)
+passengers_per_day:
+  val: 270000
+  src: https://www.hochbahn.de/de/projekte/u-bahn-ausbau/die-u5-fuer-hamburg
+pkm_per_day:
+  val: 270000*10
+  src: estimate based on passengers. Also compare saved veh.km for U5 Ost according to p. 12 https://www.buergerschaft-hh.de/parldok/dokument/68038/haushaltsplan_2019_2020_einzelplan_7_behoerde_fuer_wirtschaft_verkehr_und_innovation_nachbewilligung_nach_35_landeshaushaltsordnung_neubau_der_u_bah.pdf
+trains_per_hour_direction:
+  val: 30
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)
+average_passengers_per_train:
+  val: 200
+  src: estimate https://www.mopo.de/hamburg/ohne-fahrerkabine-so-sehen-hamburgs-neue-u-bahnen-aus/
+estimated_construction_cost:
+  val: 7000000000
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)#Kosten_und_Finanzierung
+maximum_speed:
+  val: 80
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)
+commercial_speed:
+  val: 30
+  src: estimate
+emissions_construction_reference:
+  val: 2732935
+  src: p. 43 https://www.hochbahn.de/resource/blob/33768/067e583a2d2751ec94412caaf785b070/u5-d-klima-summary-data.pdf
+emissions_savings_per_year_reference:
+  val: 18059
+  src: p. 41 https://www.abendblatt.de/bin/incoming/article233469503/U5-U-Bahn-Hamburg-Studie-Eine-umweltfreundliche-U-Bahn-f%C3%BCr-Hamburg_15092021_HA.pdf
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+paths:
+  <path data-from="1 0" data-line="H1" class="helper" data-stops="NiendorfNord HagenbecksTierpark Schlump Jungfernstieg HauptbahnhofNord LübeckerStraße WandsbekerChaussee" />
+  <path data-from="1 0" data-line="H5" data-stops="ArenenVolkspark HagenbecksTierpark Universitätsklinikum Hoheluftbrücke Stephansplatz Jungfernstieg HauptbahnhofNord h_HauptbahnhofNord_LübeckerStraße Uhlenhorst Borgweg CityNord Sengelmannstraße Bramfeld" />
+  
+  <rect data-station="Schlump" data-dir="n" data-lon-lat="9.9700757 53.5675879" />            
+  <rect data-station="WandsbekerChaussee" data-dir="nw" data-lon-lat="10.0576225 53.56982" />
+  <rect data-station="HagenbecksTierpark" data-dir="nw" data-label-dir="s" data-lon-lat="9.9440359 53.5925874" />
+  <rect data-station="NiendorfNord" data-lon-lat="9.9501122 53.6408535" />
+  <rect data-station="LübeckerStraße" data-lon-lat="10.0286959 53.5598267" />
+  <rect data-station="Hoheluftbrücke" data-lon-lat="9.976099 53.5774925" />
+  <rect data-station="Jungfernstieg" data-label-dir="s" data-lon-lat="9.9940377 53.5534288" />
+  <rect data-station="HauptbahnhofNord" data-lon-lat="10.008 53.5534288" />
+  <rect data-station="Borgweg" data-lon-lat="10.0147719 53.5907696" />
+  <rect data-station="Stephansplatz" data-lon-lat="9.9893053 53.5587463" />
+  <rect data-station="Sengelmannstraße" data-dir="nw" data-lon-lat="10.0220004 53.6093953" />
+  <rect data-station="HagenbecksTierpark" data-dir="nw" data-label-dir="s" data-lon-lat="9.9440359 53.5925874" />
+  <rect data-station="ArenenVolkspark" data-lon-lat="9.89775 53.59296" />
+  <rect data-station="Universitätsklinikum" data-lon-lat="9.97376 53.59293" />
+  <rect data-station="Uhlenhorst" data-dir="n" data-label-dir="w" data-lon-lat="10.02124 53.56653" />
+  <rect data-station="Bramfeld" data-lon-lat="10.0776 53.6137" />
+  <rect data-station="CityNord" data-dir="n" data-lon-lat="10.0173 53.6015" />
+  

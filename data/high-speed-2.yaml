@@ -1,0 +1,54 @@
+name:
+  lbl: High Speed 2
+type:
+  lbl: long-distance
+longitude:
+  val: -1.70709
+latitude:
+  val: 52.45243
+length_double_track:
+  val: 250*1.609
+  src: https://www.hs2.org.uk/what-is-hs2/
+length_tunnel_tube:
+  val: 103+12.5*2
+  src: https://www.hs2.org.uk/building-hs2/tunnels/, https://en.wikipedia.org/wiki/High_Speed_2_Phase_Two
+length_bridge:
+  val: 15
+  src: https://www.hs2.org.uk/building-hs2/viaducts-and-bridges/
+number_stations:
+  val: 7
+  src: https://www.hs2.org.uk/the-route/high-speed-network-map/
+passengers_per_day:
+  val: 300000
+  src: https://www.hs2.org.uk/why/capacity/
+pkm_per_day:
+  val: 300000*150*1.609
+  src: estimate based on https://www.hs2.org.uk/why/capacity/ and https://www.hs2.org.uk/what-is-hs2/
+trains_per_hour_direction:
+  val: 18
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)
+average_passengers_per_train:
+  val: 600
+  src: estimate based on 60% average load factor https://en.wikipedia.org/wiki/HS2_rolling_stock
+estimated_construction_cost:
+  val: 52668000000
+  src: https://www.hs2.org.uk/what-is-hs2/hs2-funding/
+maximum_speed:
+  val: 330
+  src: https://en.wikipedia.org/wiki/High_Speed_2
+commercial_speed:
+  val: 270
+  src: based on 350 km distance London-Manchester in 1h11m https://www.hs2.org.uk/why/connectivity/
+emissions_construction_reference:
+  val: 11000000
+  src: https://assets.hs2.org.uk/wp-content/uploads/2022/01/25357_HS2_NetZeroCarbonPlan_CS1656_Final_InteractiveWeb_Accessible.pdf, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/960807/E27_Carbon_v1.3.pdf, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/400836/hs2ml-carbon_assessment_and_narrative-_25thoct13_wed_tagged_version__-_updated_0.pdf, https://www.transport-network.co.uk/HS2s-contribution-to-net-zero-isup-in-the-air/16484, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/870092/oakervee-review.pdf, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/568547/D25_WEB_C331_Sustainability_Statement_Including_Post_Consultation_Update_Volume_1_Main_Report_WEB_VERSION.pdf
+emissions_savings_per_year_reference:
+  val: (12900000-5960000)/60
+  src: S. 118, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/568547/D25_WEB_C331_Sustainability_Statement_Including_Post_Consultation_Update_Volume_1_Main_Report_WEB_VERSION.pdf
+modal_shift_low:
+  val: 5
+  src: https://www.theguardian.com/uk-news/2020/feb/02/will-hs2-really-help-cut-the-uks-carbon-footprint, p 16 f. https://www.rail-leaders.com/wp-content/uploads/Modal-shift-matters-portrait-version.pdf
+modal_shift_high:
+  val: 20
+  src: estimate
+  

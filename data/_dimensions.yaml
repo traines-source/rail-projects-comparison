@@ -1,0 +1,164 @@
+name:
+  lbl:
+    en: Project Name
+    de: Projektname
+    fr: Nom du projet
+type:
+  lbl:
+    en: Type
+    de: Typ
+    fr: Type
+longitude:
+  lbl:
+    en: Longitude
+    de: Längengrad
+    fr: Longitude
+  unit:
+    en: degree
+    de: Grad
+    fr: degré
+latitude:
+  lbl:
+    en: Latitude
+    de: Breitengrad
+    fr: Longitude
+  unit:
+    en: degree
+    de: Grad
+    fr: degré
+length_double_track:
+  lbl:
+    en: Length double track
+    de: 
+    fr: 
+  unit:
+    en: km
+    de: 
+    fr: 
+length_tunnel_tube:
+  lbl:
+    en: Tunnel length (tube)
+    de: 
+    fr: 
+  unit:
+    en: km
+    de: 
+    fr: 
+length_bridge:
+  lbl:
+    en: Bridge length
+    de: 
+    fr: 
+  unit:
+    en: km
+    de: 
+    fr: 
+number_stations:
+  lbl:
+    en: Number of stations
+    de: 
+    fr: 
+  unit:
+    en: station
+    de: 
+    fr: 
+passengers_per_day:
+  lbl:
+    en: Passengers/day
+    de: 
+    fr: 
+  unit:
+    en: passenger
+    de: 
+    fr: 
+pkm_per_day:
+  lbl:
+    en: Pkm/day
+    de: 
+    fr: 
+  unit:
+    en: Pkm/day
+    de: 
+    fr: 
+trains_per_hour_direction:
+  lbl:
+    en: train/hour and direction
+    de: 
+    fr: 
+  unit:
+    en: train
+    de: 
+    fr: 
+average_passengers_per_train:
+  lbl:
+    en: Average passengers/train
+    de: 
+    fr: 
+  unit:
+    en: passenger
+    de: 
+    fr: 
+estimated_construction_cost:
+  lbl:
+    en: Estimated construction cost
+    de: 
+    fr: 
+  unit:
+    en: €
+    de: 
+    fr: 
+maximum_speed:
+  lbl:
+    en: Maximum speed
+    de: 
+    fr: 
+  unit:
+    en: kmh
+    de: 
+    fr: 
+commercial_speed:
+  lbl:
+    en: Commercial speed
+    de: 
+    fr: 
+  unit:
+    en: Commercial speed
+    de: 
+    fr: 
+emissions_construction_reference:
+  lbl:
+    en: Construction emissions (reference)
+    de: 
+    fr: 
+  unit:
+    en: tCO2
+    de: 
+    fr: 
+emissions_savings_per_year_reference:
+  lbl:
+    en: Emission savings p.a. (reference)
+    de: 
+    fr: 
+  unit:
+    en: tCO2/year
+    de: 
+    fr: 
+modal_shift_low:
+  lbl:
+    en: Modal shift (low)
+    de: 
+    fr: 
+  unit:
+    en: percent
+    de: 
+    fr: 
+modal_shift_high:
+  lbl:
+    en: Modal shift (high)
+    de: 
+    fr: 
+  unit:
+    en: percent
+    de: 
+    fr: 
+  

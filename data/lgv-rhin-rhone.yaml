@@ -1,0 +1,54 @@
+name:
+  lbl: LGV Rhin-Rhône
+type:
+  lbl: long-distance
+longitude:
+  val: 5.957673
+latitude:
+  val: 47.30881
+length_double_track:
+  val: 140
+  src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+length_tunnel_tube:
+  val: 2
+  src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+length_bridge:
+  val: 7
+  src: estimate based on https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
+number_stations:
+  val: 2
+  src: https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
+passengers_per_day:
+  val: 12000000/365
+  src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+pkm_per_day:
+  val: 12000000/365*300
+  src: estimate based on https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf (most people travel beyond the LGV)
+trains_per_hour_direction:
+  val: 4
+  src: https://www.transeuropetgv.net/offredeservicesdutgvrhinrhone/
+average_passengers_per_train:
+  val: 600
+  src: estimate
+estimated_construction_cost:
+  val: 2400000000
+  src: https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
+maximum_speed:
+  val: 320
+  src: https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
+commercial_speed:
+  val: 200
+  src: based on 170 km distance Belfort-Montbéliard - Dijon in 50m https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
+emissions_construction_reference:
+  val: 1166000
+  src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+emissions_savings_per_year_reference:
+  val: (3895000-685000)/30
+  src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+  

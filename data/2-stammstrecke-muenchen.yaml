@@ -1,0 +1,59 @@
+name:
+  lbl: 2. Stammstrecke München
+type:
+  lbl: suburban
+longitude:
+  val: 11.557723
+latitude:
+  val: 48.140442
+completion_year:
+  val: 2035
+  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+construction_years:
+  val: 2035
+  src:
+length_double_track:
+  val: 10
+  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+length_tunnel_tube:
+  val: 7*2
+  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+length_bridge:
+  val: 0
+  src:
+number_stations:
+  val: 5
+  src: https://www.2.stammstrecke-muenchen.de/
+passengers_per_day:
+  val: 500000
+  src: estimate based on modal shift new passengers https://www.2.stammstrecke-muenchen.de/themendienste.html?file=files/downloads/Medienpakete/2SBSS_170405_Themendienst_Vorteile.pdf&cid=4749 and p. 51 https://www.2.stammstrecke-muenchen.de/files/downloads/finanzen/Nutzen-Kosten-Untersuchung_2_Stammstrecke_Muenchen_2025.pdf
+pkm_per_day:
+  val: 300000000/365*10
+  src: estimate based on saved veh.km https://www.2.stammstrecke-muenchen.de/themendienste.html?file=files/downloads/Medienpakete/2SBSS_170405_Themendienst_Vorteile.pdf&cid=4749
+trains_per_hour_direction:
+  val: 20
+  src: https://www.merkur.de/lokales/muenchen/zentrum/zweite-stammstrecke-in-muenchen-startkonzept-steht-fest-6911346.html
+average_passengers_per_train:
+  val: 600
+  src: estimate 
+estimated_construction_cost:
+  val: 7000000000
+  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+maximum_speed:
+  val: 120
+  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+commercial_speed:
+  val: 60
+  src: based on 9 km Laim-Ostbahnhof in 9 min
+emissions_construction_reference:
+  val: 7*2*50000
+  src: own estimate
+emissions_savings_per_year_reference:
+  val: 51800
+  src: https://www.2.stammstrecke-muenchen.de/faq.html, cf. p. 61 https://www.2.stammstrecke-muenchen.de/files/downloads/finanzen/Nutzen-Kosten-Untersuchung_2_Stammstrecke_Muenchen_2025.pdf, https://www.stmb.bayern.de/assets/stmi/vum/schiene/s-bahn-stammstrecke_nku_bahnknoten_kurzbericht_endfassung_250112.pdf
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate

@@ -1,0 +1,54 @@
+name:
+  lbl: U5 West Berlin
+type:
+  lbl: metro
+longitude:
+  val: 13.388895
+latitude:
+  val: 52.516967
+length_double_track:
+  val: 2.2
+  src: https://wilo.com/de/de/News-Blog/Rund-um-die-Wilo-Welt/Blog/Gro%C3%9Fprojekt-U5-L%C3%BCckenschluss-Wilo-in-den-Adern-Berlins_17984.html
+length_tunnel_tube:
+  val: 1.6*2+0.6
+  src: https://web.archive.org/web/20221006104447/https://projekt-u5.de/de/der-tunnel/
+length_bridge:
+  val: 0
+  src: 
+number_stations:
+  val: 3
+  src: https://wilo.com/de/de/News-Blog/Rund-um-die-Wilo-Welt/Blog/Gro%C3%9Fprojekt-U5-L%C3%BCckenschluss-Wilo-in-den-Adern-Berlins_17984.html
+passengers_per_day:
+  val: 155000
+  src: https://web.archive.org/web/20221006093203/https://projekt-u5.de/de/die-neue-u5/
+pkm_per_day:
+  val: 155000*10
+  src: estimate based on passengers https://web.archive.org/web/20221006093203/https://projekt-u5.de/de/die-neue-u5/
+trains_per_hour_direction:
+  val: 12
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_U5_(Berlin)
+average_passengers_per_train:
+  val: 150
+  src: estimate https://de.wikipedia.org/wiki/BVG-Baureihe_H
+estimated_construction_cost:
+  val: 525000000
+  src: https://wilo.com/de/de/News-Blog/Rund-um-die-Wilo-Welt/Blog/Gro%C3%9Fprojekt-U5-L%C3%BCckenschluss-Wilo-in-den-Adern-Berlins_17984.html
+maximum_speed:
+  val: 70
+  src: https://de.wikipedia.org/wiki/BVG-Baureihe_H
+commercial_speed:
+  val: 25
+  src: based on 2.2 km in 5m 
+emissions_construction_reference:
+  val: 50000*2.2
+  src: own estimate, https://github.com/traines-source/traines-videos/tree/master/008-u-bahn-klimabilanz/research
+emissions_savings_per_year_reference:
+  val: 155000*365*10*0.1*0.2/1000
+  src: own estimate, https://github.com/traines-source/traines-videos/tree/master/008-u-bahn-klimabilanz/research
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate, c.f. https://web.archive.org/web/20221006093203/https://projekt-u5.de/de/die-neue-u5/
+  

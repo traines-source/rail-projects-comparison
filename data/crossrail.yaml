@@ -1,0 +1,54 @@
+name:
+  lbl: Crossrail
+type:
+  lbl: suburban
+longitude:
+  val: -0.1309
+latitude:
+  val: 51.5162
+length_double_track:
+  val: 50/2
+  src: (newly created core section) https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
+length_tunnel_tube:
+  val: 42
+  src: https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
+length_bridge:
+  val: 0
+  src: 
+number_stations:
+  val: 10
+  src: (new stations) https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
+passengers_per_day:
+  val: 600000
+  src: https://tfl.gov.uk/info-for/media/press-releases/2023/february/the-transformational-elizabeth-line-clocks-more-than-one-hundred-million-passenger-journeys
+pkm_per_day:
+  val: 600000*25
+  src: estimate based on passengers
+trains_per_hour_direction:
+  val: 24
+  src: https://en.wikipedia.org/wiki/Crossrail
+average_passengers_per_train:
+  val: 500
+  src: https://en.wikipedia.org/wiki/British_Rail_Class_345
+estimated_construction_cost:
+  val: 18800000000*1.15
+  src: https://en.wikipedia.org/wiki/Crossrail
+maximum_speed:
+  val: 95
+  src: https://en.wikipedia.org/wiki/Crossrail
+commercial_speed:
+  val: 50
+  src: based on 25 km Abbey Wood - Paddington in 29m https://www.ianvisits.co.uk/articles/crossrails-predicted-elizabeth-line-journey-times-53736/
+emissions_construction_reference:
+  val: 1700000
+  src: https://learninglegacy.crossrail.co.uk/learning-legacy-themes/environment/energy-efficiency-and-carbon/
+emissions_savings_per_year_reference:
+  val: 150000
+  src: https://learninglegacy.crossrail.co.uk/learning-legacy-themes/environment/energy-efficiency-and-carbon/
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+  

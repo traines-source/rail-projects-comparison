@@ -1,0 +1,54 @@
+name:
+  lbl: SFS Wendlingen-Ulm
+type:
+  lbl: long-distance
+longitude:
+  val: 9.7421
+latitude:
+  val: 48.5206
+length_double_track:
+  val: 60
+  src: https://web.archive.org/web/20131022201917/http://www.deutschebahn.com/site/shared/de/dateianhaenge/praesentationen/nbs__stuttgart__ulm.pdf
+length_tunnel_tube:
+  val: 30*2
+  src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+length_bridge:
+  val: 1
+  src: estimate https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+number_stations:
+  val: 2
+  src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+passengers_per_day:
+  val: 10000000/365
+  src: estimate based on https://assets.ctfassets.net/scbs508bajse/6nSeSiD5udWlqbBnaFZCte/46e3beea7f7bbd32fd1f9f4fb40f7df9/Deutschlandtakt_Gutachterbericht_zur_Verdoppelung_der_Nachfrage_im_SPV.PDF, https://www.swr.de/-/id=13925186/property=download/nid=1622/585o2/index.pdf
+pkm_per_day:
+  val: 10000000/365*200
+  src: estimate based daily passengers (most people travel beyond the NBS)
+trains_per_hour_direction:
+  val: 4.5
+  src: https://assets.ctfassets.net/scbs508bajse/1ssn0EHt8g8050FF5VbO27/2eae782f035704938a49617b82294726/Netzgrafik_3._Entwurf_Baden-Wu__rttemberg.pdf
+average_passengers_per_train:
+  val: 600
+  src: estimate
+estimated_construction_cost:
+  val: 3990000000
+  src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+maximum_speed:
+  val: 250
+  src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+commercial_speed:
+  val: 230
+  src: based on non-stop journey
+emissions_construction_reference:
+  val: 212900/8.7*30+60*2000
+  src: estimate based on Boßlertunnel (8.7km) https://mediatum.ub.tum.de/doc/1295092/document.pdf
+emissions_savings_per_year_reference:
+  val: 100000
+  src: estimate https://www.swr.de/-/id=13925186/property=download/nid=1622/585o2/index.pdf
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+  

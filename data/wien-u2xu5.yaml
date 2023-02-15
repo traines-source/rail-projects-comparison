@@ -1,0 +1,53 @@
+name:
+  lbl: Wien U2xU5
+type:
+  lbl: metro
+longitude:
+  val: 16.355278
+latitude:
+  val: 48.210278
+length_double_track:
+  val: 11
+  src: https://www.wien.gv.at/verkehr/oeffentlich/grossprojekte/finanzierung-u2-u5-ausbau.html
+length_tunnel_tube:
+  val: 11*2
+  src: https://de.wikipedia.org/wiki/Linienkreuz_U2/U5, https://www.wienerlinien.at/so-bauen-wir
+length_bridge:
+  val: 0
+  src:
+number_stations:
+  val: 12
+  src: https://www.wien.gv.at/verkehr/oeffentlich/grossprojekte/finanzierung-u2-u5-ausbau.html
+passengers_per_day:
+  val: 300000000/365
+  src: https://www.wienerlinien.at/u2xu5
+pkm_per_day:
+  val: 300000000/365*10
+  src: estimate based on passengers traveling about 10km or about 10x saved veh.km according to https://www.wienerlinien.at/u2xu5
+trains_per_hour_direction:
+  val: 15
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_U2_(Wien)#Betriebszeiten_und_Takt
+average_passengers_per_train:
+  val: 200
+  src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X
+estimated_construction_cost:
+  val: 6000000000
+  src: https://www.wien.gv.at/verkehr/oeffentlich/grossprojekte/finanzierung-u2-u5-ausbau.html
+maximum_speed:
+  val: 80
+  src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X
+commercial_speed:
+  val: 30
+  src: estimate
+emissions_construction_reference:
+  val: 2700000/40*0.5*2*11*2
+  src: own estimate based on 2.7 million m3 concrete so far (https://www.diepresse.com/518957/40-jahre-u-bahn-bau-das-rueckgrat-in-wien), for 40km of tunnel (https://de.wikipedia.org/wiki/U-Bahn_Wien) and the assumption that 1m3=0.5tCO2 but concrete is about 50% of total construction emissions (cf. https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf) 
+emissions_savings_per_year_reference:
+  val: 75000
+  src: https://www.wienerlinien.at/u2xu5
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate

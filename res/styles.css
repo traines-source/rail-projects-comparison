@@ -1,0 +1,104 @@
+/* roboto-condensed-regular - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('./fonts/roboto-condensed-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/roboto-condensed-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-condensed-700 - latin */
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('./fonts/roboto-condensed-v25-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/roboto-condensed-v25-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body, svg {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+#tooltip {
+    opacity: 0;
+}
+
+rect.station {
+    stroke: #263238;
+    fill: white;
+    rx: 5;
+    stroke-width: 2;
+}
+
+rect.station, rect.helper, path.line.helper {
+    stroke: none;
+    fill: none;
+}
+
+path.line {
+    stroke: inherit;
+    fill: none;
+    stroke-width: 40;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.unit {
+    dominant-baseline: middle;
+}
+.label {
+    dominant-baseline: middle;
+    stroke: none;
+    fill: black;
+    transform: translate(15px, 0px);
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+.project:hover .label {
+    opacity: 1;
+    transition: opacity 0ms;
+}
+
+/*
+path.line.H5 {
+    stroke: #C68E17;
+}
+
+path.line.P14 {
+    stroke: #65318F;
+}
+path.line.P15 {
+    stroke: #B6134C;
+}
+path.line.P16 {
+    stroke: #F49FB3;
+}
+path.line.P17 {
+    stroke: #CEC73D;
+}
+path.line.P18 {
+    stroke: #00B297;
+}
+
+path.line.S1 {
+    stroke: #B71C1C;
+}
+
+path.line.Sb1 {
+    stroke: #1C96CE;
+}
+*/
+
+circle {
+    fill: #eeeeee;
+    stroke: none;
+}

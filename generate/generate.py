@@ -2,11 +2,7 @@ import yaml
 import os
 import json
 
-datafiles = os.scandir('./data/')
-
-data = {'projects':{}, 'dimensions':{}}
-
-def load_yaml(s):
+def load_yaml(file):
     with open(file, 'r') as stream:
         try:
             properties = yaml.safe_load(stream)
@@ -16,13 +12,37 @@ def load_yaml(s):
             return properties
         except yaml.YAMLError as exc:
             print(exc)
+
+
+data = {'projects':{}, 'dimensions':{}}
+supplements = load_yaml('./data/_supplements.yaml')
+
+
+def estimate_emissions_construction(low_or_high, data):
+    return {'val': data['length_double_track']['val']*supplements['construction_emission_per_km_double_track'][low_or_high]*(data['maximum_speed']['val']/160)**2
+    + data['length_tunnel_tube']['val']*supplements['construction_emission_per_km_tunnel'][low_or_high]
+    + data['length_bridge']['val']*supplements['construction_emission_per_km_bridge'][low_or_high]
+    + data['number_stations']['val']*supplements['construction_emission_per_station'][low_or_high]}
  
+def estimate_emissions_savings(low_or_high, data):
+    return {'val': data['pkm_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100/supplements['avg_people_per_car'][low_or_high]*supplements['car_emission_per_km'][low_or_high]}
+
+
+datafiles = os.scandir('./data/')
+
 for file in datafiles:
-    if file.is_file():       
+    if file.is_file():
+        id = file.name.split('.')[0]
         if file.name == '_dimensions.yaml':
             data['dimensions'] = load_yaml(file)
+        elif file.name == '_supplements.yaml':
+            continue
         else:
-            data['projects'][file.name.split('.')[0]] = load_yaml(file)
+            data['projects'][id] = load_yaml(file)
+            data['projects'][id]['emissions_construction_low'] = estimate_emissions_construction('low', data['projects'][id])
+            data['projects'][id]['emissions_construction_high'] = estimate_emissions_construction('high', data['projects'][id])
+            data['projects'][id]['emissions_savings_per_year_low'] = estimate_emissions_savings('low', data['projects'][id])
+            data['projects'][id]['emissions_savings_per_year_high'] = estimate_emissions_savings('high', data['projects'][id])
 
 
 json_object = json.dumps(data)

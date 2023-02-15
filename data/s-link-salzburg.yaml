@@ -16,7 +16,7 @@ length_bridge:
   val: 0
   src:
 number_stations:
-  val: 15
+  val: 14
   src: estimate https://www.s-link.at/streckenverlauf/
 passengers_per_day:
   val: 670000/10
@@ -44,13 +44,13 @@ emissions_construction_reference:
   src: https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
 emissions_savings_per_year_reference:
   val: 40000
-  src: https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
+  src: apparently supposes 100% modal shift (very unlikely) https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
 modal_shift_low:
   val: 10
   src: estimate
 modal_shift_high:
-  val: 100
-  src: (wrong) estimate to get to alleged 40000 tCO2/a savings from https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
+  val: 25
+  src: estimate
 paths: |
   <path data-from="1 0" data-line="Sb1" data-stops="SalzburgHbf Akademiestraße SalzburgSüd Hallein" />
   <rect data-station="SalzburgHbf" data-dir="n"  data-lon-lat="13.0456 47.8124" />            

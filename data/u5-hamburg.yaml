@@ -7,11 +7,11 @@ longitude:
 latitude:
   val: 53.55324553
 length_double_track:
-  val: 24
-  src: https://www.hochbahn.de/de/projekte/u-bahn-ausbau/die-u5-fuer-hamburg
+  val: 25
+  src: https://www.hochbahn.de/resource/blob/33768/067e583a2d2751ec94412caaf785b070/u5-d-klima-summary-data.pdf
 length_tunnel_tube:
-  val: 24
-  src: https://www.hochbahn.de/de/projekte/u-bahn-ausbau/die-u5-fuer-hamburg
+  val: 25
+  src: https://www.hochbahn.de/resource/blob/33768/067e583a2d2751ec94412caaf785b070/u5-d-klima-summary-data.pdf
 length_bridge:
   val: 0
   src:

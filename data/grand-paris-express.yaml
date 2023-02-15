@@ -22,8 +22,8 @@ passengers_per_day:
   val: 2000000
   src: https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
 pkm_per_day:
-  val: 2000000*25
-  src: estimate based on passengers travling about 25km or about 10x saved veh.km according to p. 6 https://media-mediatheque.societedugrandparis.fr/permalinks/domain1/2019/10/29/1360-Methodologie_Carboptimum_-_version_francaise_-_resume.pdf
+  val: 2000000*20
+  src: estimate based on passengers travling about 20km or about 10x saved veh.km according to p. 6 https://media-mediatheque.societedugrandparis.fr/permalinks/domain1/2019/10/29/1360-Methodologie_Carboptimum_-_version_francaise_-_resume.pdf
 trains_per_hour_direction:
   val: 40
   src: https://media-mediatheque.societedugrandparis.fr/medias/domain1/media499/75220-1ja4i42cxr.pdf

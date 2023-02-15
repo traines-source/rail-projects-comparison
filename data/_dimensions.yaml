@@ -134,6 +134,24 @@ emissions_construction_reference:
     en: tCO2
     de: 
     fr: 
+emissions_construction_low:
+  lbl:
+    en: Construction emissions (low estimate)
+    de: 
+    fr: 
+  unit:
+    en: tCO2
+    de: 
+    fr: 
+emissions_construction_high:
+  lbl:
+    en: Construction emissions (high estimate)
+    de: 
+    fr: 
+  unit:
+    en: tCO2
+    de: 
+    fr: 
 emissions_savings_per_year_reference:
   lbl:
     en: Emission savings p.a. (reference)
@@ -143,6 +161,24 @@ emissions_savings_per_year_reference:
     en: tCO2/year
     de: 
     fr: 
+emissions_savings_per_year_low:
+  lbl:
+    en: Emission savings p.a. (low estimate)
+    de: 
+    fr: 
+  unit:
+    en: tCO2/year
+    de: 
+    fr:
+emissions_savings_per_year_high:
+  lbl:
+    en: Emission savings p.a. (high estimate)
+    de: 
+    fr: 
+  unit:
+    en: tCO2/year
+    de: 
+    fr:
 modal_shift_low:
   lbl:
     en: Modal shift (low)

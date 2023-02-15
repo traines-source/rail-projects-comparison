@@ -22,7 +22,7 @@ passengers_per_day:
   val: 10000000/365
   src: estimate based on https://assets.ctfassets.net/scbs508bajse/6nSeSiD5udWlqbBnaFZCte/46e3beea7f7bbd32fd1f9f4fb40f7df9/Deutschlandtakt_Gutachterbericht_zur_Verdoppelung_der_Nachfrage_im_SPV.PDF, https://www.swr.de/-/id=13925186/property=download/nid=1622/585o2/index.pdf
 pkm_per_day:
-  val: 10000000/365*200
+  val: 10000000/365*250
   src: estimate based daily passengers (most people travel beyond the NBS)
 trains_per_hour_direction:
   val: 4.5
@@ -40,15 +40,15 @@ commercial_speed:
   val: 230
   src: based on non-stop journey
 emissions_construction_reference:
-  val: 212900/8.7*30+60*2000
+  val: 212900/8.7*30+60*4000
   src: estimate based on Boßlertunnel (8.7km) https://mediatum.ub.tum.de/doc/1295092/document.pdf
 emissions_savings_per_year_reference:
-  val: 100000
-  src: estimate https://www.swr.de/-/id=13925186/property=download/nid=1622/585o2/index.pdf
+  val: 90000
+  src: estimate p. 98 f https://www.swr.de/-/id=13925186/property=download/nid=1622/585o2/index.pdf
 modal_shift_low:
   val: 5
   src: estimate
 modal_shift_high:
-  val: 20
+  val: 25
   src: estimate
   

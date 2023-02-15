@@ -131,6 +131,18 @@ function updatePlot(x, y, z, animDuration) {
     .duration(animDuration)
     .attr("transform", function (d, i) { return "translate(" + xScale(x.col[i]) + "," + yScale(y.col[i]) + ")" })
     .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i])) + ")" })
+
+   
+    var rows = d3.select('#datatable').selectAll("tr").data(Object.values(data.projects));
+    rows.enter().append("tr").selectAll("td")
+    .data(function (d, i) {return [d.name.lbl, x.col[i], y.col[i], z.col[i]];})
+    .enter()
+    .append("td")
+    .text(function (d, i) {return i == 0 ? d : format(d);});
+
+    rows.selectAll('td')
+    .data(function (d, i) {return [d.name.lbl, x.col[i], y.col[i], z.col[i]];})
+    .text(function (d, i) {return i == 0 ? d : format(d);});
 }
 
 function getSelectedDimension(id) {
@@ -185,19 +197,18 @@ function getSelectedColumnWithUnit(axis) {
     if (per) {
         var calculatedCol = divideColumns(mainCol, getColumn(per, true));
         var calculatedUnit = divideUnits(mainUnit, getUnit(per));
-    console.log(calculatedCol, calculatedUnit, per);
 
-        return {col: calculatedCol, unit: calculatedUnit};
+        return {col: calculatedCol, main: main, per: per, unit: calculatedUnit};
     }
-    console.log(mainCol, calculatedUnit, per);
 
-    return {col: mainCol, unit: mainUnit};
+    return {col: mainCol, main: main, per: null, unit: mainUnit};
 }
 
 function triggerUpdatePlot(e) {
     var x = getSelectedColumnWithUnit('x');
     var y = getSelectedColumnWithUnit('y');
     var z = getSelectedColumnWithUnit('z');
+    location.hash = '#'+x.main+'-'+x.per+'-'+y.main+'-'+y.per+'-'+z.main+'-'+z.per;
     updatePlot(x, y, z, 2000);
 }
 
@@ -248,11 +259,6 @@ function zip(obj) {
 
 function initialize() {
     var names = getColumn('name', false);
-    var x = 'longitude';
-    var y = 'latitude';
-    var z = 'length_double_track';
-    var lon = getColumn(x, true);
-    var lat = getColumn(y, true);
     console.log(names);
     const projectElements = svg.select("#projects").selectAll("g")
     .data(Object.values(data.projects))
@@ -275,21 +281,22 @@ function initialize() {
     .attr("class", "label")
     .html(function (d, i) { return d.name.lbl });
 
-    updatePlot(
-        {col: lon, unit: getUnit(x)},
-        {col: lat, unit: getUnit(y)},
-        {col: getColumn(z, true), unit: getUnit(z)},
-        0
-    );
-
     var ids = getDimensionIds();
     var labels = getDimensionLabels(lang);
+
+    var presets = location.hash.replace('#', '').split('-');
+    var x = presets.length == 6 ? presets[0] : 'longitude';
+    var y = presets.length == 6 ? presets[2] : 'latitude';
+    var z = presets.length == 6 ? presets[4] : 'length_double_track';
+
     populateSelect('select-x', ids, labels, false, x);
-    populateSelect('select-x-per', ids, labels, true, null);
+    populateSelect('select-x-per', ids, labels, true, presets.length == 6 ? presets[1] : null);
     populateSelect('select-y', ids, labels, false, y);
-    populateSelect('select-y-per', ids, labels, true, null);
+    populateSelect('select-y-per', ids, labels, true, presets.length == 6 ? presets[3] : null);
     populateSelect('select-z', ids, labels, false, z);
-    populateSelect('select-z-per', ids, labels, true, null);
+    populateSelect('select-z-per', ids, labels, true, presets.length == 6 ? presets[5] : null);
+
+    triggerUpdatePlot();
     document.dispatchEvent(new Event('startTransportNetworkAnimator'));
 }
 

@@ -22,7 +22,7 @@ passengers_per_day:
   val: 300000
   src: https://www.hs2.org.uk/why/capacity/
 pkm_per_day:
-  val: 300000*150*1.609
+  val: 300000*220
   src: estimate based on https://www.hs2.org.uk/why/capacity/ and https://www.hs2.org.uk/what-is-hs2/
 trains_per_hour_direction:
   val: 18
@@ -46,8 +46,8 @@ emissions_savings_per_year_reference:
   val: (12900000-5960000)/60
   src: S. 118, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/568547/D25_WEB_C331_Sustainability_Statement_Including_Post_Consultation_Update_Volume_1_Main_Report_WEB_VERSION.pdf
 modal_shift_low:
-  val: 5
-  src: https://www.theguardian.com/uk-news/2020/feb/02/will-hs2-really-help-cut-the-uks-carbon-footprint, p 16 f. https://www.rail-leaders.com/wp-content/uploads/Modal-shift-matters-portrait-version.pdf
+  val: 5-2
+  src: deduction due to high energy usage, https://www.theguardian.com/uk-news/2020/feb/02/will-hs2-really-help-cut-the-uks-carbon-footprint, p 16 f. https://www.rail-leaders.com/wp-content/uploads/Modal-shift-matters-portrait-version.pdf
 modal_shift_high:
   val: 20
   src: estimate

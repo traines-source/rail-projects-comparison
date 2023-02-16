@@ -55,8 +55,8 @@ modal_shift_high:
   src: estimate
 paths: |
   <path data-from="1 0" data-line="Crossrail" data-stops="Reading HayesHarlington Paddington BondStreet TottenhamCourtRoad Farringdon LiverpoolStreet Whitechapel Stratford Shenfield" />
-  <path data-from="1 0" data-line="CrossrailH" data-stops="HayesHarlington Heathrow" />
-  <path data-from="1 0" data-line="CrossrailA" data-stops="Whitechapel AbbeyWood" />
+  <path data-from="1 0" data-line="Crossrail" data-stops="HayesHarlington Heathrow" />
+  <path data-from="1 0" data-line="Crossrail" data-stops="Whitechapel AbbeyWood" />
   <rect data-station="Paddington" data-lon-lat="-0.17758 51.5163" />            
   <rect data-station="BondStreet" data-lon-lat="-0.1494 51.51435" />            
   <rect data-station="TottenhamCourtRoad" data-dir="nw" data-lon-lat="-0.130556 51.516389" />            

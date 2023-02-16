@@ -30,7 +30,7 @@ trains_per_hour_direction:
   val: 4.5
   src: https://assets.ctfassets.net/scbs508bajse/1ssn0EHt8g8050FF5VbO27/2eae782f035704938a49617b82294726/Netzgrafik_3._Entwurf_Baden-Wu__rttemberg.pdf
 average_passengers_per_train:
-  val: 600
+  val: 500
   src: estimate
 estimated_construction_cost:
   val: 3990000000

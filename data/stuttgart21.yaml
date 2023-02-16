@@ -30,7 +30,7 @@ trains_per_hour_direction:
   val: 36.5/2
   src: https://www.matthias-gastel.de/wp-content/uploads/2021/04/tiefbahnhof-dtakt.png
 average_passengers_per_train:
-  val: 600
+  val: 500
   src: estimate
 estimated_construction_cost:
   val: 9000000000

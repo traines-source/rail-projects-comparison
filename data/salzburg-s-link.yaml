@@ -12,8 +12,8 @@ length_double_track:
   val: 17.1
   src: https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
 length_tunnel_tube:
-  val: 5.8
-  src: https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
+  val: 2.9
+  src: (minimal tunnel variant to Akademiestraße) https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
 length_bridge:
   val: 0
   src:
@@ -43,7 +43,7 @@ commercial_speed:
   src: estimate https://www.s-link.at/streckenverlauf/
 emissions_construction_reference:
   val: 250000
-  src: https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
+  src: (minimal tunnel variant to Akademiestraße) https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
 emissions_savings_per_year_reference:
   val: 40000
   src: apparently supposes 100% modal shift (very unlikely) https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf

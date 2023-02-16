@@ -1,0 +1,64 @@
+name:
+  lbl: Bruxelles M3
+type:
+  lbl: metro
+wikidata:
+  lbl: Q18432864
+longitude:
+  val: 4.3494166
+latitude:
+  val: 50.8480338
+length_double_track:
+  val: 10.3
+  src: https://metro3.be/fr
+length_tunnel_tube:
+  val: 4.5
+  src: https://metro3.be/fr, https://metro3.be/sites/default/files/2022-02/Atlas%20cartographique%20FR.pdf
+length_bridge:
+  val: 0
+  src:
+number_stations:
+  val: 18
+  src: (only ~7 new stations) https://metro3.be/fr
+passengers_per_day:
+  val: (8000+2800)*20/2
+  src: estimate based on https://www.ieb.be/IMG/pdf/metro3pourquoi_12-18.pdf
+pkm_per_day:
+  val: 3084413000*0.006/365*10 
+  src: estimate based on passengers traveling about 5km https://www.ieb.be/IMG/pdf/metro3pourquoi_12-18.pdf or about 10x the saved veh.km according to p. 152 https://metro3.be/sites/default/files/2022-02/RF_Livre%20VI_Bilan%20Carbone.pdf and 0.6% modal shift https://www.ieb.be/Metro-3-un-bilan-carbone-reevalue-et-encore-plus-desastreux
+trains_per_hour_direction:
+  val: 20
+  src: https://metro3.be/fr/faq
+average_passengers_per_train:
+  val: 200
+  src: https://metro3.be/fr/faq
+estimated_construction_cost:
+  val: 2300000000
+  src: https://www.lecho.be/economie-politique/belgique/bruxelles/le-cout-de-la-ligne-de-metro-nord-reevalue-a-2-3-milliards-d-euros/10367327.html
+maximum_speed:
+  val: 72
+  src: https://metro3.be/fr/faq
+commercial_speed:
+  val: 30
+  src: https://metro3.be/fr/faq
+emissions_construction_reference:
+  val: 245000
+  src: p. 71 https://metro3.be/sites/default/files/2022-02/RF_Livre%20VI_Bilan%20Carbone.pdf, cf. https://www.ieb.be/IMG/pdf/the_shifters_-_reponse_a_l_enquete_publique_du_metro_3_-_vf.pdf
+emissions_savings_per_year_reference:
+  val: 0
+  src: estimate. 5342 tCO2/y for running the line. modal shift savings probably lower. p. 152 https://metro3.be/sites/default/files/2022-02/RF_Livre%20VI_Bilan%20Carbone.pdf
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+paths: |
+  <path data-from="1 0" data-line="Bruxelles" data-stops="Albert GareduMidi Bourse GareduNord Bordet" />
+
+  <rect data-station="Albert" data-dir="ne" data-lon-lat="4.34194 50.82139" />            
+  <rect data-station="GareduMidi" data-lon-lat="4.337228 50.836747" />            
+  <rect data-station="Bourse" data-dir="ne" data-lon-lat="4.3494166 50.8480338" />            
+  <rect data-station="GareduNord" data-lon-lat="4.360278 50.860278" />            
+  <rect data-station="Bordet" data-dir="ne" data-lon-lat="4.409835 50.878683" />
+

@@ -21,13 +21,35 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body, svg {
     font-size: 16px;
-    line-height: 18px;
+}
+
+body {
+    background-color: rgba(227, 242, 253, 1);
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    max-width: 400px;
 }
 
 #container {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+#container > div {
     width: 800px;
+    height: 800px;
     margin: 0 auto;
     display: block;
     position: relative;
@@ -95,14 +117,11 @@ path.line {
 }
 
 #bgmap path {
-    stroke: #69b3a2;
-    fill: #69b3a2;
+    stroke: white;
+    fill: white;
 }
 
-#bgmap {
-    opacity: 0;
-    transition: opacity 200ms;
-}
+
 
 /*
 path.line.H5 {
@@ -135,6 +154,12 @@ path.line.Sb1 {
 */
 
 circle {
-    fill: #eeeeee;
+    fill: #dddddd;
     stroke: none;
+}
+
+@media only screen and (max-width : 1900px) {
+    h1 {
+        position: static;
+    }
 }

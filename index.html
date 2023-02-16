@@ -5,21 +5,22 @@
 
     <meta name="viewport" content="initial-scale=1,maximum-scale=3,user-scalable=yes">
     <script src="https://d3js.org/d3.v6.js"></script>
-    <link rel="stylesheet" href="/res/styles.css" />
+    <link rel="stylesheet" href="/res/styles.css?1" />
    
 </head>
 <body>
-    <div id="container">
-        <svg id="plot" data-auto-start="false" data-speed="10000">
-            <defs>
-                <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="0">
-                <stop offset="0%" stop-color="rgb(1, 87, 155)"/>
-                <stop offset="100%" stop-color="rgb(183, 28, 28)"/>
-                </linearGradient>
-            </defs>
-            <g id="bgmap"></g>
-            <g id="projects"></g>      
-        </svg>
+    <h1>Comparison of Recent Rail Projects in Europe</h1>
+    <svg id="plot" data-auto-start="false">
+        <defs>
+            <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stop-color="rgb(1, 87, 155)"/>
+            <stop offset="100%" stop-color="rgb(183, 28, 28)"/>
+            </linearGradient>
+        </defs>
+        <g id="bgmap"></g>
+        <g id="projects"></g>      
+    </svg>
+    <div id="container"><div>
         <div class="axis-select" id="br">
             <select class="select" id="select-x"></select><br />
             <select class="select" id="select-x-per"></select>
@@ -32,7 +33,7 @@
             <select class="select" id="select-z"></select><br />
             <select class="select" id="select-z-per"></select>
         </div>
-    </div>
+    </div></div>
     
     <table id="datatable"></table>
    

@@ -2,10 +2,9 @@ var width = 700;
 var height = 700;
 var svg = d3.select("#plot");
 svg
-    .attr("width", width+100)
-    .attr("height", height+100)
-    .attr("viewBox", "-50 -50 "+(width+100)+" "+(height+100)+"")
-    .append("g");
+        .attr("width", "100%")
+        .attr("height", height+200)
+        .attr("viewBox", (-50)+" "+(-100)+" "+(width+100)+" "+(height+200)+"")
 
 TNA.Config.default.mapProjectionScale = 100;
 TNA.Config.default.animSpeed = 10000;
@@ -35,6 +34,7 @@ var yScale = d3.scaleLinear()
 var zScale = d3.scaleLinear()
     .domain([0, 0])
     .range([0, 1]);
+
 
 svg.append("g")
     .attr("id", "x-axis") 
@@ -107,10 +107,12 @@ function gradient(from, to, ratio) {
 function updatePlot(x, y, z, animDuration) {
     var xDomain = pad(minMax(x.col));
     var yDomain = pad(minMax(y.col));
-    svg.select('#bgmap').style("opacity", "0");
+    svg.select('#bgmap').transition()
+    .duration(animDuration).style("opacity", "0");
     if (x.unit == y.unit) {
         if (x.unit == 'degree') {
-            svg.select('#bgmap').style("opacity", "1");
+            svg.select('#bgmap').transition()
+            .duration(animDuration).style("opacity", "1");
         } else {
             xDomain = yDomain = [Math.min(xDomain[0], yDomain[0]), Math.max(xDomain[1], yDomain[1])];
         }
@@ -290,12 +292,10 @@ function loadBgMap() {
             .selectAll("path")
             .data(data.features)
             .enter().append("path")
-                .attr("class", d => d.properties.name)
-                .attr("d", d => {
-                    d.geometry.coordinates = d.geometry.coordinates.map(cs => cs.map(c => Array.isArray(c[0]) ? c.map(xyScale) : xyScale(c)));
-                    console.log(d.properties.name, d.geometry.coordinates);
-                    return d3.geoPath().projection(null)(d);
-                })
+            .attr("d", d => {
+                d.geometry.coordinates = d.geometry.coordinates.map(cs => cs.map(c => Array.isArray(c[0]) ? c.map(xyScale) : xyScale(c)));
+                return d3.geoPath().projection(null)(d);
+            })
     });
 }
 

@@ -11,8 +11,8 @@ construction_emission_per_km_bridge:
   high: 25000
   src: S. 98, http://www.enquetepubliquelignerouge15sud.fr/assets/files/DEP21.pdf
 construction_emission_per_station:
-  low: 10000
-  high: 70000
+  low: 5000
+  high: 40000
   src: https://klimabilanz-ubahn-tram.de/download/klimabilanz-ubahn-tram-2023-01.pdf, https://www.hochbahn.de/resource/blob/33768/067e583a2d2751ec94412caaf785b070/u5-d-klima-summary-data.pdf, https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
 avg_people_per_car:
   low: 1.3

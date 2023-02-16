@@ -1,0 +1,67 @@
+name:
+  lbl: Toulouse Ligne C
+type:
+  lbl: metro
+wikidata:
+  lbl: Q110876443
+longitude:
+  val: 1.444865
+latitude:
+  val: 43.605127
+length_double_track:
+  val: 27
+  src: https://www.toulousemetro3.fr/le-projet/3eme-ligne.html
+length_tunnel_tube:
+  val: 22.1
+  src: https://faiseursdeville.org/wp-content/uploads/2022/01/Faiseurs-de-Ville-Impact-3e%CC%80me-ligne.pdf
+length_bridge:
+  val: 0
+  src:
+number_stations:
+  val: 21
+  src: https://www.toulousemetro3.fr/le-projet/3eme-ligne.html
+passengers_per_day:
+  val: 200000
+  src: https://www.toulousemetro3.fr/le-projet/3eme-ligne.html
+pkm_per_day:
+  val: 250000*10
+  src: estimate based on passengers traveling about 13km or about 10x saved veh.km according to https://faiseursdeville.org/2022/01/24/contribution-a-lenquete-environnementale-de-la-3eme-ligne/
+trains_per_hour_direction:
+  val: 40
+  src: estimate based on existing lines https://www.tisseo.fr/sites/default/files/fh/Tisseo_hivMETROweb.pdf
+average_passengers_per_train:
+  val: 100
+  src: https://fr.wikipedia.org/wiki/Ligne_C_du_m%C3%A9tro_de_Toulouse
+estimated_construction_cost:
+  val: 3500000000
+  src: https://www.lejournaltoulousain.fr/occitanie/haute-garonne/toulouse/35-milliard-euros-cout-3e-ligne-metro-toulouse-grimpe-encore-183002/
+maximum_speed:
+  val: 90
+  src: https://www.railway-technology.com/projects/alstom-metropolis-trains/
+commercial_speed:
+  val: 40
+  src: https://www.metrobordeaux.fr/post/non-le-bilan-carbone-d-un-m%C3%A9tro-n-est-pas-n%C3%A9gatif#viewer-mmov
+emissions_construction_reference:
+  val: 210000
+  src: https://www.metrobordeaux.fr/post/non-le-bilan-carbone-d-un-m%C3%A9tro-n-est-pas-n%C3%A9gatif#viewer-mmov, https://faiseursdeville.org/2022/01/24/contribution-a-lenquete-environnementale-de-la-3eme-ligne/
+emissions_savings_per_year_reference:
+  val: 46300
+  src: https://www.metrobordeaux.fr/post/non-le-bilan-carbone-d-un-m%C3%A9tro-n-est-pas-n%C3%A9gatif#viewer-mmov
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+paths: |
+  <path data-from="1 0" data-line="Toulouse" data-stops="ColomiersGare Blagnac LaVache MarengoMatabiau François-Verdier MontaudranGare INPT LabègeLaCadène" />
+
+  <rect data-station="ColomiersGare" data-dir="ne" data-lon-lat="1.33540833 43.6044111" />            
+  <rect data-station="Blagnac" data-lon-lat="1.39593889 43.6215028" />            
+  <rect data-station="LaVache" data-dir="ne" data-lon-lat="1.435608333 43.63363333" />            
+  <rect data-station="MarengoMatabiau" data-lon-lat="1.45505 43.610925" />            
+  <rect data-station="François-Verdier" data-dir="ne" data-lon-lat="1.452013889 43.60059167" />            
+  <rect data-station="MontaudranGare" data-dir="ne" data-lon-lat="1.479953 43.57314" />            
+  <rect data-station="INPT" data-dir="ne" data-lon-lat="1.504065 43.551039" />            
+  <rect data-station="LabègeLaCadène" data-lon-lat="1.52038889 43.5387111" />
+

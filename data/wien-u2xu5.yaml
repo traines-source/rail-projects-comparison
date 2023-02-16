@@ -1,5 +1,5 @@
 name:
-  lbl: U2xU5 Wien
+  lbl: Wien U2xU5
 type:
   lbl: metro
 wikidata:
@@ -25,7 +25,7 @@ passengers_per_day:
   src: https://www.wienerlinien.at/u2xu5
 pkm_per_day:
   val: 300000000/365*10
-  src: estimate based on passengers traveling about 10km or about 10x saved veh.km according to https://www.wienerlinien.at/u2xu5
+  src: estimate based on passengers traveling about 10km or about 5x saved veh.km according to https://www.wienerlinien.at/u2xu5
 trains_per_hour_direction:
   val: 15
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_U2_(Wien)#Betriebszeiten_und_Takt

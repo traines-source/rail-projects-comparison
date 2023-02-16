@@ -94,6 +94,16 @@ path.line {
     transition: opacity 0ms;
 }
 
+#bgmap path {
+    stroke: white;
+    fill: #69b3a2;
+}
+
+#bgmap {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
 /*
 path.line.H5 {
     stroke: #C68E17;

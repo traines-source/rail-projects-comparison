@@ -107,8 +107,13 @@ function gradient(from, to, ratio) {
 function updatePlot(x, y, z, animDuration) {
     var xDomain = pad(minMax(x.col));
     var yDomain = pad(minMax(y.col));
+    svg.select('#bgmap').style("opacity", "0");
     if (x.unit == y.unit) {
-        xDomain = yDomain = [Math.min(xDomain[0], yDomain[0]), Math.max(xDomain[1], yDomain[1])];
+        if (x.unit == 'degree') {
+            svg.select('#bgmap').style("opacity", "1");
+        } else {
+            xDomain = yDomain = [Math.min(xDomain[0], yDomain[0]), Math.max(xDomain[1], yDomain[1])];
+        }
     }
     xScale.domain(xDomain);
     yScale.domain(yDomain);
@@ -219,7 +224,7 @@ function triggerUpdatePlot(e) {
 }
 
 function loadJson(json) {
-    data = JSON.parse(json);
+    data = json;
     initialize();
 }
 
@@ -264,6 +269,30 @@ function zip(obj) {
     return arr;
 }
 
+function loadBgMap() {
+    var lonScale = d3.scaleLinear()
+        .domain(pad(minMax(getColumn('longitude', true))))
+        .range([0, width]);
+    var latScale = d3.scaleLinear()
+        .domain(pad(minMax(getColumn('latitude', true))))
+        .range([height, 0]);
+    var xyScale = function(c) {        
+        return [lonScale(c[0]), latScale(c[1])];
+    }
+    d3.json("/res/europe.geojson").then(function(data) {
+        svg.select("#bgmap")
+            .selectAll("path")
+            .data(data.features)
+            .enter().append("path")
+                .attr("class", d => d.properties.name)
+                .attr("d", d => {
+                    d.geometry.coordinates = d.geometry.coordinates.map(cs => cs.map(c => Array.isArray(c[0]) ? c.map(xyScale) : xyScale(c)));
+                    console.log(d.properties.name, d.geometry.coordinates);
+                    return d3.geoPath().projection(null)(d);
+                })
+    });
+}
+
 function initialize() {
     var names = getColumn('name', false);
     console.log(names);
@@ -303,9 +332,10 @@ function initialize() {
     populateSelect('select-z', ids, labels, false, z);
     populateSelect('select-z-per', ids, labels, true, presets.length == 6 ? presets[5] : null);
 
+
+    loadBgMap();
     triggerUpdatePlot();
     document.dispatchEvent(new Event('startTransportNetworkAnimator'));
 }
 
-fetch("/dist/data.json").then(response => response.text())
-.then(json => loadJson(json));
+d3.json("/dist/data.json").then(loadJson);

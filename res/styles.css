@@ -71,7 +71,7 @@ rect.station, rect.helper, path.line.helper {
 path.line {
     stroke: inherit;
     fill: none;
-    stroke-width: 40;
+    stroke-width: 100;
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -95,7 +95,7 @@ path.line {
 }
 
 #bgmap path {
-    stroke: white;
+    stroke: #69b3a2;
     fill: #69b3a2;
 }
 

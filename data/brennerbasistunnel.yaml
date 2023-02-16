@@ -1,0 +1,64 @@
+name:
+  lbl: Brennerbasistunnel
+type:
+  lbl: long-distance
+wikidata:
+  lbl: Q697347
+longitude:
+  val: 11.4289
+latitude:
+  val: 47.2193
+length_double_track:
+  val: 64
+  src: https://de.wikipedia.org/wiki/Brennerbasistunnel
+length_tunnel_tube:
+  val: 64*2
+  src: https://de.wikipedia.org/wiki/Brennerbasistunnel
+length_bridge:
+  val: 0
+  src:
+number_stations:
+  val: 3
+  src: https://de.wikipedia.org/wiki/Brennerbasistunnel
+passengers_per_day:
+  val: 6000000/365
+  src: p. 160 http://www.z-f-v.de/fileadmin/archiv/hefte---2006_1_2_3/2006-2/ZfV_2006_Heft_2_03_Kummer%20Nagl%20Schlaak%20-%20Zur%20Effizienz%20von%20Schieneninfrastrukturbauvorhaben%20am%20Beispiel%20des%20Brenner-Basistunnels.pdf
+pkm_per_day:
+  val: 6000000/365*400
+  src: estimate based on passengers traveling about 400km 
+trains_per_hour_direction:
+  val: 400/24
+  src: including freight trains https://magazin.ihk-muenchen.de/artikel/brenner-basistunnel-gueterverkehr-wie-viel-laesst-sich-auf-die-schiene-verlagern
+average_passengers_per_train:
+  val: 600
+  src: estimate
+estimated_construction_cost:
+  val: 9500000000
+  src: https://orf.at/stories/3228915/
+maximum_speed:
+  val: 250
+  src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X
+commercial_speed:
+  val: 180
+  src: 25m for 70km Innsbruck-Franzensfeste
+emissions_construction_reference:
+  val: 3167000
+  src: https://www.bbtinfo.eu/co2-haushalt-des-brenner-basistunnels/
+emissions_savings_per_year_reference:
+  val: 3000000/20
+  src: https://www.bbtinfo.eu/co2-haushalt-des-brenner-basistunnels/
+modal_shift_low:
+  val: 10
+  src: high estimate to account for freight trains
+modal_shift_high:
+  val: 50
+  src: high estimate to account for freight trains
+paths: |
+  <path data-from="1 0" data-line="WU5" data-stops="BrennerSüdportal BrennerAbzweig BrennerInnsbruck" />
+  <path data-from="1 0" data-line="WU2" data-stops="BrennerAbzweig InnsbruckOstportal" />
+  
+  <rect data-station="InnsbruckOstportal" data-dir="ne" data-lon-lat="11.5420 47.2827" />
+  <rect data-station="BrennerAbzweig" data-lon-lat="11.4289 47.2193" />
+  <rect data-station="BrennerInnsbruck" data-dir="ne" data-lon-lat="11.4024 47.2516" />
+  <rect data-station="BrennerSüdportal" data-lon-lat="11.6065 46.7914" />
+

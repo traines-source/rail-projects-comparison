@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 9500000000
   src: https://orf.at/stories/3228915/
+construction_duration:
+  val: 22
+  src: https://de.wikipedia.org/wiki/Brennerbasistunnel
+tunnel_diameter:
+  val: 10.7
+  src: single-track https://de.wikipedia.org/wiki/Brennerbasistunnel#Chronologie
 maximum_speed:
   val: 250
   src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X

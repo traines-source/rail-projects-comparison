@@ -10,19 +10,19 @@ latitude:
   val: 48.85684319
 length_double_track:
   val: 200
-  src: https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
+  src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
 length_tunnel_tube:
   val: 180
-  src: https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
+  src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
 length_bridge:
   val: 14
   src: https://www.ville-palaiseau.fr/attractive/grands-projets/ligne-18-du-metro-grand-paris-express
 number_stations:
   val: 68
-  src: https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
+  src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
 passengers_per_day:
   val: 2000000
-  src: https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
+  src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
 pkm_per_day:
   val: 2000000*20
   src: estimate based on passengers travling about 20km or about 10x saved veh.km according to p. 6 https://media-mediatheque.societedugrandparis.fr/permalinks/domain1/2019/10/29/1360-Methodologie_Carboptimum_-_version_francaise_-_resume.pdf
@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 42000000000
   src: https://transitcosts.com/paris-grand-paris-express/
+construction_duration:
+  val: 15
+  src: https://www.societedugrandparis.fr/gpe-avance
+tunnel_diameter:
+  val: 10
+  src: double-track, https://www.leparisien.fr/info-paris-ile-de-france-oise/transports/grand-paris-express-vingt-tunneliers-pour-le-chantier-du-siecle-20-01-2019-7992483.php
 maximum_speed:
   val: 110
   src: https://www.leparisien.fr/info-paris-ile-de-france-oise/transports/grand-paris-express-en-2030-des-trains-qui-fileront-a-110-km-h-23-11-2018-7950810.php

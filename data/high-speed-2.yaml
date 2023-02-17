@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 52668000000
   src: https://www.hs2.org.uk/what-is-hs2/hs2-funding/
+construction_duration:
+  val: 20
+  src: https://en.wikipedia.org/wiki/High_Speed_2
+tunnel_diameter:
+  val: 10.26
+  src: single-track https://www.hs2.org.uk/building-hs2/tunnels/meet-our-giant-tunnel-boring-machines/
 maximum_speed:
   val: 330
   src: https://en.wikipedia.org/wiki/High_Speed_2

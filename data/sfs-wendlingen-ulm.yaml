@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 3990000000
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+construction_duration:
+  val: 11
+  src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+tunnel_diameter:
+  val: 11.39
+  src: single-track, https://www.tunnel-online.info/de/artikel/tunnel_Bosslertunnel_TVM_hat_mit_Bau_der_zweiten_Tunnelroehre_begonnen_2849183.html
 maximum_speed:
   val: 250
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm

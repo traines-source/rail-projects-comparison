@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 18800000000*1.15
   src: https://en.wikipedia.org/wiki/Crossrail
+construction_duration:
+  val: 13
+  src: https://en.wikipedia.org/wiki/Crossrail
+tunnel_diameter:
+  val: 7.1
+  src: single-track https://en.wikipedia.org/wiki/Crossrail
 maximum_speed:
   val: 95
   src: https://en.wikipedia.org/wiki/Crossrail

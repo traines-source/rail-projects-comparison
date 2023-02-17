@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 14300000000
   src: https://batinfo.com/en/actuality/lgv-bordeaux-toulouse-premiere-reunion-du-conseil-de-surveillance_21524
+construction_duration:
+  val: 10
+  src: https://www.lgv2030.fr/le-projet/
+tunnel_diameter:
+  val: 13
+  src: double-track, estimate based on similar projects
 maximum_speed:
   val: 320
   src: https://fr.wikipedia.org/wiki/LGV_Bordeaux_-_Toulouse

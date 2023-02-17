@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 525000000
   src: https://wilo.com/de/de/News-Blog/Rund-um-die-Wilo-Welt/Blog/Gro%C3%9Fprojekt-U5-L%C3%BCckenschluss-Wilo-in-den-Adern-Berlins_17984.html
+construction_duration:
+  val: 11
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_U5_(Berlin)#Verl%C3%A4ngerung_vom_Alexanderplatz_zum_Hauptbahnhof
+tunnel_diameter:
+  val: 6.7
+  src: single-track, https://de.wikipedia.org/wiki/U-Bahn-Linie_U5_(Berlin)#Verl%C3%A4ngerung_vom_Alexanderplatz_zum_Hauptbahnhof
 maximum_speed:
   val: 70
   src: https://de.wikipedia.org/wiki/BVG-Baureihe_H

@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 2000000000
   src: https://www.salzburg24.at/news/salzburg/s-link-von-salzburg-bis-hallein-kostet-bis-zu-2-8-milliarden-euro-133123243
+construction_duration:
+  val: 5
+  src: 2024-<2030 https://www.s-link.at/buergerservice/faq/, https://de.wikipedia.org/wiki/Regionalstadtbahn_Salzburg
+tunnel_diameter:
+  val: 10
+  src: double-track, estimate
 maximum_speed:
   val: 70
   src: estimate

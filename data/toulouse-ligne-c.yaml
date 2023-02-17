@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 3500000000
   src: https://www.lejournaltoulousain.fr/occitanie/haute-garonne/toulouse/35-milliard-euros-cout-3e-ligne-metro-toulouse-grimpe-encore-183002/
+construction_duration:
+  val: 6
+  src: https://fr.wikipedia.org/wiki/Ligne_C_du_m%C3%A9tro_de_Toulouse
+tunnel_diameter:
+  val: 10
+  src: double-track, https://actu.fr/occitanie/toulouse_31555/toulouse-le-chantier-du-projet-du-siecle-demarre-cette-semaine-on-vous-dit-ou-et-comment_55812612.html
 maximum_speed:
   val: 90
   src: https://www.railway-technology.com/projects/alstom-metropolis-trains/

@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 7000000000
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)#Kosten_und_Finanzierung
+construction_duration:
+  val: 10
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)
+tunnel_diameter:
+  val: 6
+  src: single-track, estimate https://www.horstbu.de/fundgrube/tunnel.htm
 maximum_speed:
   val: 80
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)

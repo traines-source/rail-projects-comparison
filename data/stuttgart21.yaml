@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 9000000000
   src:
+construction_duration:
+  val: 15
+  src: https://de.wikipedia.org/wiki/Stuttgart_21
+tunnel_diameter:
+  val: 10.82
+  src: single-track, https://www.herrenknecht.com/de/services/projektdesign-und-tbm-fertigung/fildertunnel/
 maximum_speed:
   val: 250
   src:

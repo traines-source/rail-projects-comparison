@@ -8,12 +8,6 @@ longitude:
   val: 11.557723
 latitude:
   val: 48.140442
-completion_year:
-  val: 2035
-  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
-construction_years:
-  val: 2035
-  src:
 length_double_track:
   val: 10
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
@@ -41,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 7000000000
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+construction_duration:
+  val: 18
+  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+tunnel_diameter:
+  val: 8.4
+  src: single-track, https://www.2.stammstrecke-muenchen.de/tunnelbau.html
 maximum_speed:
   val: 120
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke

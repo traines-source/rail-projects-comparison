@@ -35,6 +35,12 @@ average_passengers_per_train:
 estimated_construction_cost:
   val: 6000000000
   src: https://www.wien.gv.at/verkehr/oeffentlich/grossprojekte/finanzierung-u2-u5-ausbau.html
+construction_duration:
+  val: 14
+  src: https://de.wikipedia.org/wiki/Linienkreuz_U2/U5
+tunnel_diameter:
+  val: 7
+  src: single-track, https://www.heute.at/s/maulwuerfe-gruben-bereits-400-meter-tunnel-fuer-u2-100249995
 maximum_speed:
   val: 80
   src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X

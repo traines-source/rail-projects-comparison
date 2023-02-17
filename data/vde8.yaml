@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 230+270
   src: including upgrades https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
-length_tunnel_tube:
+length_tunnel:
   val: 63.810
-  src: most of the tunnels seem to be double-track https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
+  src: https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
+ratio_single_track_tube:
+  val: (6.970+6.466+2.082)/63.810
+  src: only VDE 8.2 tunnels seem to be single track https://www.vde8.de/de/baufortschritt/vde-82-neubau/tunnel, https://www.vde8.de/de/baufortschritt/vde-81-neubau/tunnel (3756+1331+931+824+1113+1072+1043+2975+745+1317+8314+1163+602+1051+1490+7391+1493+688+500+1320+463+1404+(6970+6466+2082)*2)
+tunnel_diameter:
+  val: 13
+  src: double-track, based on 130m2 profile https://www.vde8.de/Tunnel-Blessberg------_site.site..ls_dir._siteid.132_function.set__lang_lang.de_likecms.html
 length_bridge:
   val: 50
   src: estimate based on https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 26
   src: https://de.wikipedia.org/wiki/Verkehrsprojekt_Deutsche_Einheit_Nr._8#Bau
-tunnel_diameter:
-  val: 13
-  src: double-track, based on 130m2 profile https://www.vde8.de/Tunnel-Blessberg------_site.site..ls_dir._siteid.132_function.set__lang_lang.de_likecms.html
 maximum_speed:
   val: 300
   src: https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf

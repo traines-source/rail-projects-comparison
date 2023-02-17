@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 327
   src: https://www.sepanso33.org/spip.php?article67
-length_tunnel_tube:
+length_tunnel:
   val: 5
   src: estimate https://experience.arcgis.com/experience/41fb2de691c34112ae63f823255ac82d/
+ratio_single_track_tube:
+  val: 0
+  src: estimate
+tunnel_diameter:
+  val: 13
+  src: double-track, estimate based on similar projects
 length_bridge:
   val: 50
   src: estimate https://experience.arcgis.com/experience/41fb2de691c34112ae63f823255ac82d/
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 10
   src: https://www.lgv2030.fr/le-projet/
-tunnel_diameter:
-  val: 13
-  src: double-track, estimate based on similar projects
 maximum_speed:
   val: 320
   src: https://fr.wikipedia.org/wiki/LGV_Bordeaux_-_Toulouse

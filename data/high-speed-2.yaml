@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 250*1.609
   src: https://www.hs2.org.uk/what-is-hs2/
-length_tunnel_tube:
-  val: 103+12.5*2
+length_tunnel:
+  val: 103/2+12.5
   src: https://www.hs2.org.uk/building-hs2/tunnels/, https://en.wikipedia.org/wiki/High_Speed_2_Phase_Two
+ratio_single_track_tube:
+  val: 1
+  src: https://www.hs2.org.uk/building-hs2/tunnels/, https://en.wikipedia.org/wiki/High_Speed_2_Phase_Two
+tunnel_diameter:
+  val: 10.26
+  src: single-track https://www.hs2.org.uk/building-hs2/tunnels/meet-our-giant-tunnel-boring-machines/
 length_bridge:
   val: 15
   src: https://www.hs2.org.uk/building-hs2/viaducts-and-bridges/
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 20
   src: https://en.wikipedia.org/wiki/High_Speed_2
-tunnel_diameter:
-  val: 10.26
-  src: single-track https://www.hs2.org.uk/building-hs2/tunnels/meet-our-giant-tunnel-boring-machines/
 maximum_speed:
   val: 330
   src: https://en.wikipedia.org/wiki/High_Speed_2

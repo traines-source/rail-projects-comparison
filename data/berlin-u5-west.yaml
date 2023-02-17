@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 2.2
   src: https://wilo.com/de/de/News-Blog/Rund-um-die-Wilo-Welt/Blog/Gro%C3%9Fprojekt-U5-L%C3%BCckenschluss-Wilo-in-den-Adern-Berlins_17984.html
-length_tunnel_tube:
-  val: 1.6*2+0.6
+length_tunnel:
+  val: 2.2
   src: https://web.archive.org/web/20221006104447/https://projekt-u5.de/de/der-tunnel/
+ratio_single_track_tube:
+  val: 1.6/2.2
+  src: https://web.archive.org/web/20221006104447/https://projekt-u5.de/de/der-tunnel/
+tunnel_diameter:
+  val: 6.7
+  src: single-track, https://de.wikipedia.org/wiki/U-Bahn-Linie_U5_(Berlin)#Verl%C3%A4ngerung_vom_Alexanderplatz_zum_Hauptbahnhof
 length_bridge:
   val: 0
   src: 
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 11
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_U5_(Berlin)#Verl%C3%A4ngerung_vom_Alexanderplatz_zum_Hauptbahnhof
-tunnel_diameter:
-  val: 6.7
-  src: single-track, https://de.wikipedia.org/wiki/U-Bahn-Linie_U5_(Berlin)#Verl%C3%A4ngerung_vom_Alexanderplatz_zum_Hauptbahnhof
 maximum_speed:
   val: 70
   src: https://de.wikipedia.org/wiki/BVG-Baureihe_H

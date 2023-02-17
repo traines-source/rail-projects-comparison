@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 200
   src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
-length_tunnel_tube:
+length_tunnel:
   val: 180
   src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
+ratio_single_track_tube:
+  val: 0.1
+  src: estimate (most of it is double track) cf. https://web.archive.org/web/20220120210307/http://www.enquetepubliquelignerouge15sud.fr/assets/files/DEP21.pdf
+tunnel_diameter:
+  val: 10
+  src: double-track, https://www.leparisien.fr/info-paris-ile-de-france-oise/transports/grand-paris-express-vingt-tunneliers-pour-le-chantier-du-siecle-20-01-2019-7992483.php
 length_bridge:
   val: 14
   src: https://www.ville-palaiseau.fr/attractive/grands-projets/ligne-18-du-metro-grand-paris-express
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 15
   src: https://www.societedugrandparis.fr/gpe-avance
-tunnel_diameter:
-  val: 10
-  src: double-track, https://www.leparisien.fr/info-paris-ile-de-france-oise/transports/grand-paris-express-vingt-tunneliers-pour-le-chantier-du-siecle-20-01-2019-7992483.php
 maximum_speed:
   val: 110
   src: https://www.leparisien.fr/info-paris-ile-de-france-oise/transports/grand-paris-express-en-2030-des-trains-qui-fileront-a-110-km-h-23-11-2018-7950810.php

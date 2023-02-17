@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 60
   src: https://web.archive.org/web/20131022201917/http://www.deutschebahn.com/site/shared/de/dateianhaenge/praesentationen/nbs__stuttgart__ulm.pdf
-length_tunnel_tube:
-  val: 30*2
+length_tunnel:
+  val: 30
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+ratio_single_track_tube:
+  val: 1
+  src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+tunnel_diameter:
+  val: 11.39
+  src: single-track, https://www.tunnel-online.info/de/artikel/tunnel_Bosslertunnel_TVM_hat_mit_Bau_der_zweiten_Tunnelroehre_begonnen_2849183.html
 length_bridge:
   val: 1
   src: estimate https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 11
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
-tunnel_diameter:
-  val: 11.39
-  src: single-track, https://www.tunnel-online.info/de/artikel/tunnel_Bosslertunnel_TVM_hat_mit_Bau_der_zweiten_Tunnelroehre_begonnen_2849183.html
 maximum_speed:
   val: 250
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm

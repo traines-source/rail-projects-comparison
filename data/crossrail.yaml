@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 50/2
   src: (newly created core section) https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
-length_tunnel_tube:
-  val: 42
+length_tunnel:
+  val: 42/2
   src: https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
+ratio_single_track_tube:
+  val: 1
+  src: https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
+tunnel_diameter:
+  val: 7.1
+  src: single-track https://en.wikipedia.org/wiki/Crossrail
 length_bridge:
   val: 0
   src: 
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 13
   src: https://en.wikipedia.org/wiki/Crossrail
-tunnel_diameter:
-  val: 7.1
-  src: single-track https://en.wikipedia.org/wiki/Crossrail
 maximum_speed:
   val: 95
   src: https://en.wikipedia.org/wiki/Crossrail

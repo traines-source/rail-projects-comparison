@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 17.1
   src: https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
-length_tunnel_tube:
+length_tunnel:
   val: 2.9
   src: (minimal tunnel variant to Akademiestraße) https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
+ratio_single_track_tube:
+  val: 0
+  src: probably double-track
+tunnel_diameter:
+  val: 10
+  src: double-track, estimate
 length_bridge:
   val: 0
   src:
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 5
   src: 2024-<2030 https://www.s-link.at/buergerservice/faq/, https://de.wikipedia.org/wiki/Regionalstadtbahn_Salzburg
-tunnel_diameter:
-  val: 10
-  src: double-track, estimate
 maximum_speed:
   val: 70
   src: estimate

@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 11
   src: https://www.wien.gv.at/verkehr/oeffentlich/grossprojekte/finanzierung-u2-u5-ausbau.html
-length_tunnel_tube:
-  val: 11*2
+length_tunnel:
+  val: 11
   src: https://de.wikipedia.org/wiki/Linienkreuz_U2/U5, https://www.wienerlinien.at/so-bauen-wir
+ratio_single_track_tube:
+  val: 1
+  src: https://www.wienerlinien.at/so-bauen-wir
+tunnel_diameter:
+  val: 7
+  src: single-track, https://www.heute.at/s/maulwuerfe-gruben-bereits-400-meter-tunnel-fuer-u2-100249995
 length_bridge:
   val: 0
   src:
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 14
   src: https://de.wikipedia.org/wiki/Linienkreuz_U2/U5
-tunnel_diameter:
-  val: 7
-  src: single-track, https://www.heute.at/s/maulwuerfe-gruben-bereits-400-meter-tunnel-fuer-u2-100249995
 maximum_speed:
   val: 80
   src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X
@@ -48,7 +51,7 @@ commercial_speed:
   val: 30
   src: estimate
 emissions_construction_reference:
-  val: 2700000/40*0.5*2*11*2
+  val: 2700000/40*0.5*2*11
   src: own estimate based on 2.7 million m3 concrete so far (https://www.diepresse.com/518957/40-jahre-u-bahn-bau-das-rueckgrat-in-wien), for 40km of tunnel (https://de.wikipedia.org/wiki/U-Bahn_Wien) and the assumption that 1m3=0.5tCO2 but concrete is about 50% of total construction emissions (cf. https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf) 
 emissions_savings_per_year_reference:
   val: 75000

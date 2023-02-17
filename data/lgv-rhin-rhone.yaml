@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 140
   src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
-length_tunnel_tube:
+length_tunnel:
   val: 2
   src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+ratio_single_track_tube:
+  val: 0
+  src: https://fr.wikipedia.org/wiki/Tunnel_de_Chavanne
+tunnel_diameter:
+  val: 12.6
+  src: double-track, estimate based on 245000m3 excavation https://fr.wikipedia.org/wiki/Tunnel_de_Chavanne
 length_bridge:
   val: 7
   src: estimate based on https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 5
   src: https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
-tunnel_diameter:
-  val: 12.6
-  src: double-track, estimate based on 245000m3 excavation https://fr.wikipedia.org/wiki/Tunnel_de_Chavanne
 maximum_speed:
   val: 320
   src: https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne

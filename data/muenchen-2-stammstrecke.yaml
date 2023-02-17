@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 10
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
-length_tunnel_tube:
-  val: 7*2
+length_tunnel:
+  val: 7
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+ratio_single_track_tube:
+  val: 1
+  src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
+tunnel_diameter:
+  val: 8.4
+  src: single-track, https://www.2.stammstrecke-muenchen.de/tunnelbau.html
 length_bridge:
   val: 0
   src:
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 18
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
-tunnel_diameter:
-  val: 8.4
-  src: single-track, https://www.2.stammstrecke-muenchen.de/tunnelbau.html
 maximum_speed:
   val: 120
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke

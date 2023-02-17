@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 25
   src: https://www.hochbahn.de/resource/blob/33768/067e583a2d2751ec94412caaf785b070/u5-d-klima-summary-data.pdf
-length_tunnel_tube:
-  val: 5.4+19*2
+length_tunnel:
+  val: 5.4+19
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)#Lichtraumprofil_und_Spurweite
+ratio_single_track_tube:
+  val: 19/(5.4+19)
+  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)#Lichtraumprofil_und_Spurweite
+tunnel_diameter:
+  val: 6.5
+  src: single-track, estimate https://www.horstbu.de/fundgrube/tunnel.htm
 length_bridge:
   val: 0
   src:
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 10
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)
-tunnel_diameter:
-  val: 6
-  src: single-track, estimate https://www.horstbu.de/fundgrube/tunnel.htm
 maximum_speed:
   val: 80
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)

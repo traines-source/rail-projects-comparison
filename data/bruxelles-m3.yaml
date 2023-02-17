@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 10.3
   src: https://metro3.be/fr
-length_tunnel_tube:
+length_tunnel:
   val: 4.5
   src: https://metro3.be/fr, https://metro3.be/sites/default/files/2022-02/Atlas%20cartographique%20FR.pdf
+ratio_single_track_tube:
+  val: 0
+  src: https://metro3.be/sites/default/files/2022-02/Atlas%20cartographique%20FR.pdf
+tunnel_diameter:
+  val: 10
+  src: double-track https://metro3.be/sites/default/files/2022-02/Atlas%20cartographique%20FR.pdf
 length_bridge:
   val: 0
   src:
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 10
   src: https://metro3.be/fr/faq, https://fr.wikipedia.org/wiki/Ligne_3_du_m%C3%A9tro_de_Bruxelles
-tunnel_diameter:
-  val: 10
-  src: double-track https://metro3.be/sites/default/files/2022-02/Atlas%20cartographique%20FR.pdf
 maximum_speed:
   val: 72
   src: https://metro3.be/fr/faq

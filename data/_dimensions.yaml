@@ -37,13 +37,31 @@ length_double_track:
     en: km
     de: 
     fr: 
-length_tunnel_tube:
+length_tunnel:
   lbl:
-    en: Tunnel length (tube)
+    en: Tunnel length
     de: 
     fr: 
   unit:
     en: km
+    de: 
+    fr:
+ratio_single_track_tube:
+  lbl:
+    en: Portion of twin-tube tunnel
+    de: 
+    fr: 
+  unit:
+    en: m
+    de: 
+    fr: 
+tunnel_diameter:
+  lbl:
+    en: Outer tunnel diameter
+    de: 
+    fr: 
+  unit:
+    en: m
     de: 
     fr: 
 length_bridge:
@@ -107,6 +125,15 @@ estimated_construction_cost:
     fr: 
   unit:
     en: €
+    de: 
+    fr: 
+construction_duration:
+  lbl:
+    en: Construction duration
+    de: 
+    fr: 
+  unit:
+    en: year
     de: 
     fr: 
 maximum_speed:
@@ -190,7 +217,7 @@ modal_shift_low:
     en: percent
     de: 
     fr: 
-  hidden: true
+  hidden: false
 modal_shift_high:
   lbl:
     en: Modal shift (high)
@@ -200,5 +227,5 @@ modal_shift_high:
     en: percent
     de: 
     fr: 
-  hidden: true
+  hidden: false
   

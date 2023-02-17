@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 64
   src: https://de.wikipedia.org/wiki/Brennerbasistunnel
-length_tunnel_tube:
-  val: 64*2
+length_tunnel:
+  val: 64
   src: https://de.wikipedia.org/wiki/Brennerbasistunnel
+ratio_single_track_tube:
+  val: 1
+  src: https://de.wikipedia.org/wiki/Brennerbasistunnel
+tunnel_diameter:
+  val: 10.7
+  src: single-track https://de.wikipedia.org/wiki/Brennerbasistunnel#Chronologie
 length_bridge:
   val: 0
   src:
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 22
   src: https://de.wikipedia.org/wiki/Brennerbasistunnel
-tunnel_diameter:
-  val: 10.7
-  src: single-track https://de.wikipedia.org/wiki/Brennerbasistunnel#Chronologie
 maximum_speed:
   val: 250
   src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X

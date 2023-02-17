@@ -11,9 +11,15 @@ latitude:
 length_double_track:
   val: 27
   src: https://www.toulousemetro3.fr/le-projet/3eme-ligne.html
-length_tunnel_tube:
+length_tunnel:
   val: 22.1
   src: https://faiseursdeville.org/wp-content/uploads/2022/01/Faiseurs-de-Ville-Impact-3e%CC%80me-ligne.pdf
+ratio_single_track_tube:
+  val: 0
+  src: https://actu.fr/occitanie/toulouse_31555/toulouse-le-chantier-du-projet-du-siecle-demarre-cette-semaine-on-vous-dit-ou-et-comment_55812612.html
+tunnel_diameter:
+  val: 10
+  src: double-track, https://actu.fr/occitanie/toulouse_31555/toulouse-le-chantier-du-projet-du-siecle-demarre-cette-semaine-on-vous-dit-ou-et-comment_55812612.html
 length_bridge:
   val: 0
   src:
@@ -38,9 +44,6 @@ estimated_construction_cost:
 construction_duration:
   val: 6
   src: https://fr.wikipedia.org/wiki/Ligne_C_du_m%C3%A9tro_de_Toulouse
-tunnel_diameter:
-  val: 10
-  src: double-track, https://actu.fr/occitanie/toulouse_31555/toulouse-le-chantier-du-projet-du-siecle-demarre-cette-semaine-on-vous-dit-ou-et-comment_55812612.html
 maximum_speed:
   val: 90
   src: https://www.railway-technology.com/projects/alstom-metropolis-trains/

@@ -11,15 +11,21 @@ latitude:
 length_double_track:
   val: 57
   src: https://web.archive.org/web/20131022201917/http://www.deutschebahn.com/site/shared/de/dateianhaenge/praesentationen/nbs__stuttgart__ulm.pdf
-length_tunnel_tube:
-  val: 55
+length_tunnel:
+  val: 30
   src: https://web.archive.org/web/20131022201917/http://www.deutschebahn.com/site/shared/de/dateianhaenge/praesentationen/nbs__stuttgart__ulm.pdf
+ratio_single_track_tube:
+  val: (55-30)/30
+  src: https://de.wikipedia.org/wiki/Stuttgart_21 https://web.archive.org/web/20191026215948/http://www.bahnprojekt-stuttgart-ulm.de/baustelle/vortrieb-und-aushub-fuer-tunnelbau/s21-vortrieb-und-aushub/downloadmedium/stuttgart-21-vortrieb-und-aushub-tunnelbau/downloadParameter/download/Medium/ (19104+5312+5231+2460+2647+349+279+2545+2559+4352+1026+1037+772+738)/2+764+1550+621+375+490+173+1417+768+496+427
+tunnel_diameter:
+  val: 10.82
+  src: single-track, https://www.herrenknecht.com/de/services/projektdesign-und-tbm-fertigung/fildertunnel/
 length_bridge:
-  val: 0
-  src:
+  val: 1
+  src: estimate https://de.wikipedia.org/wiki/Stuttgart_21
 number_stations:
-  val: 2
-  src:
+  val: 3
+  src: https://de.wikipedia.org/wiki/Stuttgart_21
 passengers_per_day:
   val: 240000
   src: https://web.archive.org/web/20100608034633/http://www.deutschebahn.com/site/bahnhoefe/de/sued/stuttgart__hbf/daten__und__fakten/daten__und__fakten__.html
@@ -34,13 +40,10 @@ average_passengers_per_train:
   src: estimate
 estimated_construction_cost:
   val: 9000000000
-  src:
+  src: https://de.wikipedia.org/wiki/Stuttgart_21
 construction_duration:
   val: 15
   src: https://de.wikipedia.org/wiki/Stuttgart_21
-tunnel_diameter:
-  val: 10.82
-  src: single-track, https://www.herrenknecht.com/de/services/projektdesign-und-tbm-fertigung/fildertunnel/
 maximum_speed:
   val: 250
   src:

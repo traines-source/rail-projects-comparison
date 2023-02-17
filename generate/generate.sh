@@ -1,1 +1,8 @@
-docker run --rm -it -v $(pwd):/app --workdir /app $(docker build -q ./generate/) python ./generate/generate.py
+#!/bin/sh
+set -e
+
+pybabel compile --directory=locale
+#pybabel init -l fr -i locale/messages.pot -d locale 
+#pybabel extract --mapping babel.cfg --output-file=locale/messages.pot .
+pybabel update --input-file=locale/messages.pot --output-dir=locale
+python3 ./generate/generate.py

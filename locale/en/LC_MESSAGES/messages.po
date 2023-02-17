@@ -1,0 +1,32 @@
+# English translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-03-22 21:27+0000\n"
+"PO-Revision-Date: 2022-03-22 21:03+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+msgid "title"
+msgstr "Comparail"
+
+msgid "title_long"
+msgstr "Comparison of Recent Rail Projects in Europe"
+
+msgid "walkthrough"
+msgstr "Video walkthrough"
+
+msgid "imprint"
+msgstr "Imprint/Privacy"
+

@@ -1,15 +1,26 @@
 <!DOCTYPE html>
+<html lang="{{ locale }}">
 <head>
     <meta charset="utf-8">
-    <title>CompaRail</title>
+    <link rel="alternate" href="https://comparail.traines.eu/en/" hreflang="en" />
+    <link rel="alternate" href="https://comparail.traines.eu/de/" hreflang="de" />
+    <link rel="alternate" href="https://comparail.traines.eu/fr/" hreflang="fr" />
+
+    <title>{{ gettext('title') }}</title>
 
     <meta name="viewport" content="initial-scale=1,maximum-scale=3,user-scalable=yes">
-    <script src="https://d3js.org/d3.v6.js"></script>
-    <link rel="stylesheet" href="/res/styles.css?1" />
+
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/res/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/res/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/res/icon/favicon-16x16.png">
+   
+    <link rel="stylesheet" href="/res/styles.css" />
+    <script src="/vendor/d3.v7.min.js"></script>
    
 </head>
 <body>
-    <h1>Comparison of Recent Rail Projects in Europe</h1>
+    <h1>{{ gettext('title_long') }}</h1>
     <svg id="plot" data-auto-start="false">
         <defs>
             <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="0">
@@ -36,6 +47,10 @@
     </div></div>
     
     <table id="datatable"></table>
+
+    <div id="footer">
+        <a href="/en/" hreflang="en">EN</a> | <a href="/de/" hreflang="de">DE</a> | <a href="/fr/" hreflang="fr">FR</a> | <a href="https://traines.eu/impressum.html">{{ gettext('imprint') }}</a>
+    </div>
    
     <script src="/res/network-animator.js"></script>
     <script src="/res/main.js"></script>

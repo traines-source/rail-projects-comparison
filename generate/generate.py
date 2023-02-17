@@ -1,6 +1,14 @@
 import yaml
 import os
 import json
+import jinja2
+import gettext
+from pathlib import Path
+
+env = jinja2.Environment(
+    extensions=['jinja2.ext.i18n'],
+    loader=jinja2.FileSystemLoader('./')
+)
 
 def load_yaml(file):
     with open(file, 'r') as stream:
@@ -13,11 +21,6 @@ def load_yaml(file):
         except yaml.YAMLError as exc:
             print(exc)
 
-
-data = {'projects':{}, 'dimensions':{}}
-supplements = load_yaml('./data/_supplements.yaml')
-
-
 def estimate_emissions_construction(low_or_high, data):
     return {'val': data['length_double_track']['val']*supplements['construction_emission_per_km_double_track'][low_or_high]*(data['maximum_speed']['val']/160)**2
     + data['length_tunnel']['val']*(1+data['ratio_single_track_tube']['val'])*supplements['construction_emission_per_km_tunnel_tube'][low_or_high]
@@ -27,6 +30,9 @@ def estimate_emissions_construction(low_or_high, data):
 def estimate_emissions_savings(low_or_high, data):
     return {'val': data['pkm_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100/supplements['avg_people_per_car'][low_or_high]*supplements['car_emission_per_km'][low_or_high]}
 
+
+data = {'projects':{}, 'dimensions':{}}
+supplements = load_yaml('./data/_supplements.yaml')
 
 datafiles = os.scandir('./data/')
 
@@ -48,3 +54,17 @@ for file in datafiles:
 json_object = json.dumps(data)
 with open('./dist/data.json', 'w') as outfile:
     outfile.write(json_object)
+
+locales = ["en", "de", "fr"]
+for locale in locales:
+    print(locale)
+    tr = gettext.translation(domain='messages', localedir='locale/', languages=[locale])
+    tr.install()
+    env.install_gettext_translations(tr, newstyle=True)
+
+    tm = env.get_template('index.tmpl.html')
+    html = tm.render(locale=locale)
+   
+    Path("dist/www/"+locale).mkdir(parents=True, exist_ok=True)
+    with open("dist/www/"+locale+"/index.html", "w") as outf:
+        outf.write(html)

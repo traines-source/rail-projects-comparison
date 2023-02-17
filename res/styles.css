@@ -128,6 +128,14 @@ circle {
     stroke: none;
 }
 
+#footer {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+#footer, #footer a {
+    color: #757575;
+}
+
 @media only screen and (max-width : 1900px) {
     h1 {
         position: static;

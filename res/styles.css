@@ -46,6 +46,7 @@ h1 {
     top: 50px;
     left: 0;
     width: 100%;
+    pointer-events: none;
 }
 #container > div {
     width: 800px;
@@ -61,6 +62,7 @@ h1 {
 
 .select {
     min-width: 250px;
+    pointer-events: all;
 }
 
 #tl {
@@ -93,7 +95,7 @@ rect.station, rect.helper, path.line.helper {
 path.line {
     stroke: inherit;
     fill: none;
-    stroke-width: 100;
+    stroke-width: 200;
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -120,38 +122,6 @@ path.line {
     stroke: white;
     fill: white;
 }
-
-
-
-/*
-path.line.H5 {
-    stroke: #C68E17;
-}
-
-path.line.P14 {
-    stroke: #65318F;
-}
-path.line.P15 {
-    stroke: #B6134C;
-}
-path.line.P16 {
-    stroke: #F49FB3;
-}
-path.line.P17 {
-    stroke: #CEC73D;
-}
-path.line.P18 {
-    stroke: #00B297;
-}
-
-path.line.S1 {
-    stroke: #B71C1C;
-}
-
-path.line.Sb1 {
-    stroke: #1C96CE;
-}
-*/
 
 circle {
     fill: #dddddd;

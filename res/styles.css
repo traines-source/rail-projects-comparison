@@ -128,6 +128,29 @@ circle {
     stroke: none;
 }
 
+#datatable {
+    border-collapse: collapse;
+}
+
+#datatable .val {
+    text-align: right;
+    font-family: monospace;
+    padding: 5px 10px 5px 20px;
+}
+
+#datatable th {
+    padding: 5px 20px;
+}
+
+#datatable .src {
+    max-width: 200px;
+    font-size: 12px;
+}
+
+#datatable tr:nth-child(even) {
+    background-color: white;
+}
+
 #footer {
     text-align: center;
     margin: 20px 0 20px 0;

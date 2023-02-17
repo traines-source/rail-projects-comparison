@@ -52,7 +52,7 @@ commercial_speed:
   src: based on 600km distance Berlin-Munich in 4h https://www.vde8.de/---_site.project..ls_dir._likecms.html
 emissions_construction_reference:
   val: 4000000*0.5*2
-  src: based on 4mt concrete https://www.vde8.de/---_site.project..ls_dir._likecms.html and the assumption that 1m3=0.5tCO2 but concrete is about 50% of total construction emissions (cf. https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf) 
+  src: based on 4mt concrete https://www.vde8.de/---_site.project..ls_dir._likecms.html and the assumption that 1m3=0.5tCO2 but concrete is about 50% of total construction emissions, cf. https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf 
 emissions_savings_per_year_reference:
   val: 188000
   src: only Berlin-Munich https://www.vde8.de/---_site.news..ls_dir._type.press_cat.2_id.961_likecms.html

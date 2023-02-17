@@ -51,6 +51,8 @@ for file in datafiles:
             project['emissions_savings_per_year_high'] = estimate_emissions_savings('high', project)
             data['projects'].append(project)
 
+data['projects'].sort(key=lambda d: d['id']['lbl'])
+
 for key, value in dimensions.items():
     if 'hidden' in value and value['hidden']:
         continue
@@ -69,7 +71,7 @@ for locale in locales:
     env.install_gettext_translations(tr, newstyle=True)
 
     tm = env.get_template('index.tmpl.html')
-    html = tm.render(dimensions=display_dimensions_ids, locale=locale)
+    html = tm.render(dimensions=display_dimensions_ids, projects=data['projects'], locale=locale)
    
     Path("dist/www/"+locale).mkdir(parents=True, exist_ok=True)
     with open("dist/www/"+locale+"/index.html", "w") as outf:

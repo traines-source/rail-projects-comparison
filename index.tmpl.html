@@ -49,7 +49,16 @@
         {% endfor %}
     </div></div>
     
-    <table id="datatable"></table>
+    <table id="datatable">
+        <tr>
+            <th></th><th colspan="2"></th><th colspan="2"></th><th colspan="2"></th><th>
+        </tr>
+        {% for project in projects %}
+            <tr class="row">
+                <td>{{ project.name.lbl }}</td><td class="val"></td><td class="src"></td><td class="val"></td><td class="src"></td><td class="val"></td><td class="src"></td>
+            </tr>
+        {%- endfor %}
+    </table>
 
     <div id="footer">
         <a href="/en/" hreflang="en">EN</a> | <a href="/de/" hreflang="de">DE</a> | <a href="/fr/" hreflang="fr">FR</a> | <a href="https://traines.eu/impressum.html">{{ gettext('imprint') }}</a>

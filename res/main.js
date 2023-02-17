@@ -80,12 +80,15 @@ svg.append("text")
     .attr("y", 6);
 
 
+var urlRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi;
+
 function minMax(values) {
-    var min = values[0];
-    var max = values[0];
+    var min = values[0].val;
+    var max = values[0].val;
     for (var i=1; i<values.length; i++) {
-        if (values[i] < min) min = values[i];
-        if (values[i] > max && isFinite(values[i])) max = values[i];
+        var val = values[i].val;
+        if (val < min) min = val;
+        if (val > max && isFinite(val)) max = val;
     }
     return [min, max];
 }
@@ -102,6 +105,25 @@ function gradient(from, to, ratio) {
     var g = Math.ceil(from[1] * (1-ratio) + to[1] * ratio);
     var b = Math.ceil(from[2] * (1-ratio) + to[2] * ratio);
     return [r, g, b];
+}
+
+function tableHeader(axisInfo) {
+    var lbl = axisInfo.main.lbl;
+    if (axisInfo.per.lbl) {
+        lbl += ' ' + axisInfo.per.lbl;
+    }
+    lbl += ' ['+axisInfo.unit+']';
+    return lbl;
+}
+
+function tableSource(src, linkMemory) {
+    if (!src) return "";
+    return src.replaceAll(urlRegex, function(match) {
+        if (!linkMemory[match]) {
+            linkMemory[match] = Object.keys(linkMemory).length+1;
+        }
+        return '<a href="'+match+'" target="_blank">['+linkMemory[match]+']</a>';
+    });
 }
 
 function updatePlot(x, y, z, animDuration) {
@@ -141,20 +163,27 @@ function updatePlot(x, y, z, animDuration) {
     svg.selectAll(".project")
     .transition()
     .duration(animDuration)
-    .attr("transform", function (d, i) { return "translate(" + xScale(x.col[i]) + "," + yScale(y.col[i]) + ")" })
-    .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i])) + ")" })
+    .attr("transform", function (d, i) { return "translate(" + xScale(x.col[i].val) + "," + yScale(y.col[i].val) + ")" })
+    .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i].val)) + ")" })
 
    
-    var rows = d3.select('#datatable').selectAll("tr").data(data.projects);
-    rows.enter().append("tr").selectAll("td")
-    .data(function (d, i) {return [d.name.lbl, x.col[i], y.col[i], z.col[i]];})
-    .enter()
-    .append("td")
-    .text(function (d, i) {return i == 0 ? d : format(d);});
+   
+    var linkMemory = {};
+    d3.select('#datatable').selectAll("th")
+    .data(['', tableHeader(x), tableHeader(y), tableHeader(z)])
+    .text(function (d, i) {return d;});
 
-    rows.selectAll('td')
-    .data(function (d, i) {return [d.name.lbl, x.col[i], y.col[i], z.col[i]];})
-    .text(function (d, i) {return i == 0 ? d : format(d);});
+    d3.select('#datatable').selectAll("tr.row")
+    .data(data.projects)
+    .selectAll('td')
+    .data(function (d, i) {
+        return [d.name.lbl,
+            x.col[i].val, tableSource(x.col[i].src, linkMemory),
+            y.col[i].val, tableSource(y.col[i].src, linkMemory),
+            z.col[i].val, tableSource(z.col[i].src, linkMemory)
+        ];
+    })
+    .html(function (d, i) {return i%2 == 0 ? d : format(d);});
 }
 
 function getSelectedDimension(id) {
@@ -164,15 +193,16 @@ function getSelectedDimension(id) {
         return null;
     return {
         id: node.value,
-        unit: node.options[node.selectedIndex].dataset.unit
+        unit: node.options[node.selectedIndex].dataset.unit,
+        lbl: node.options[node.selectedIndex].innerHTML
     };
 }
 
 function divideColumns(mainCol, perCol) {
     var calculatedCol = [];
     for (var i=0; i<mainCol.length; i++) {
-        var v = mainCol[i]/perCol[i];
-        calculatedCol.push(v);
+        var v = mainCol[i].val/perCol[i].val;
+        calculatedCol.push({val: v, src: mainCol[i].src + '; ' + perCol[i].src});
     }
     return calculatedCol;
 }
@@ -202,31 +232,30 @@ function divideUnits(mainUnit, perUnit) {
     return fractionPartToStr(numerator, denominator, '', '1') + fractionPartToStr(denominator, numerator, '/', '');
 }
 
-function getColumn(id, asFloat) {
-    console.log('f', id);
-    return data.projects.map(p => p[id][asFloat ? 'val' : 'lbl']);
+function getColumn(id) {
+    return data.projects.map(p => p[id]);
 }
 
 function getSelectedColumnWithUnit(axis) {
     var main = getSelectedDimension('select-'+axis);
     var per = getSelectedDimension('select-'+axis+'-per');
     console.log(main, per);
-    var mainCol = getColumn(main.id, true);
+    var mainCol = getColumn(main.id);
     if (per) {
-        var calculatedCol = divideColumns(mainCol, getColumn(per.id, true));
+        var calculatedCol = divideColumns(mainCol, getColumn(per.id));
         var calculatedUnit = divideUnits(main.unit, per.unit);
 
-        return {col: calculatedCol, main: main.id, per: per.id, unit: calculatedUnit};
+        return {col: calculatedCol, main: main, per: per, unit: calculatedUnit};
     }
 
-    return {col: mainCol, main: main.id, per: null, unit: main.unit};
+    return {col: mainCol, main: main, per: {}, unit: main.unit};
 }
 
 function triggerUpdatePlot(e) {
     var x = getSelectedColumnWithUnit('x');
     var y = getSelectedColumnWithUnit('y');
     var z = getSelectedColumnWithUnit('z');
-    location.hash = '#'+x.main+'-'+x.per+'-'+y.main+'-'+y.per+'-'+z.main+'-'+z.per;
+    location.hash = '#'+x.main.id+'-'+x.per.id+'-'+y.main.id+'-'+y.per.id+'-'+z.main.id+'-'+z.per.id;
     updatePlot(x, y, z, 2000);
 }
 
@@ -237,10 +266,10 @@ function loadJson(json) {
 
 function loadBgMap() {
     var lonScale = d3.scaleLinear()
-        .domain(pad(minMax(getColumn('longitude', true))))
+        .domain(pad(minMax(getColumn('longitude'))))
         .range([0, width]);
     var latScale = d3.scaleLinear()
-        .domain(pad(minMax(getColumn('latitude', true))))
+        .domain(pad(minMax(getColumn('latitude'))))
         .range([height, 0]);
     var xyScale = function(c) {        
         return [lonScale(c[0]), latScale(c[1])];
@@ -275,8 +304,6 @@ function preset(presets, idx, fallback) {
 
 function initialize() {
     loadBgMap();
-    var names = getColumn('name', false);
-    console.log(names);
     const projectElements = svg.select("#projects").selectAll("g")
     .data(data.projects)
     .enter()

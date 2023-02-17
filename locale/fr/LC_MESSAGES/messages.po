@@ -30,3 +30,161 @@ msgstr "Présentation en video"
 msgid "imprint"
 msgstr "Mentions légales/Protection des données"
 
+msgid "name"
+msgstr ""
+
+msgid "type"
+msgstr ""
+
+msgid "longitude"
+msgstr ""
+
+msgid "longitude_unit"
+msgstr ""
+
+#, fuzzy
+msgid "latitude"
+msgstr "Comparail"
+
+#, fuzzy
+msgid "latitude_unit"
+msgstr "Comparail"
+
+msgid "length_double_track"
+msgstr ""
+
+msgid "length_double_track_unit"
+msgstr ""
+
+msgid "length_tunnel"
+msgstr ""
+
+msgid "length_tunnel_unit"
+msgstr ""
+
+msgid "ratio_single_track_tube"
+msgstr ""
+
+msgid "ratio_single_track_tube_unit"
+msgstr ""
+
+msgid "tunnel_diameter"
+msgstr ""
+
+msgid "tunnel_diameter_unit"
+msgstr ""
+
+msgid "length_bridge"
+msgstr ""
+
+msgid "length_bridge_unit"
+msgstr ""
+
+msgid "number_stations"
+msgstr ""
+
+msgid "number_stations_unit"
+msgstr ""
+
+msgid "passengers_per_day"
+msgstr ""
+
+msgid "passengers_per_day_unit"
+msgstr ""
+
+msgid "pkm_per_day"
+msgstr ""
+
+msgid "pkm_per_day_unit"
+msgstr ""
+
+msgid "trains_per_hour_direction"
+msgstr ""
+
+msgid "trains_per_hour_direction_unit"
+msgstr ""
+
+msgid "average_passengers_per_train"
+msgstr ""
+
+msgid "average_passengers_per_train_unit"
+msgstr ""
+
+msgid "estimated_construction_cost"
+msgstr ""
+
+msgid "estimated_construction_cost_unit"
+msgstr ""
+
+msgid "construction_duration"
+msgstr ""
+
+msgid "construction_duration_unit"
+msgstr ""
+
+msgid "maximum_speed"
+msgstr ""
+
+msgid "maximum_speed_unit"
+msgstr ""
+
+msgid "commercial_speed"
+msgstr ""
+
+msgid "commercial_speed_unit"
+msgstr ""
+
+msgid "emissions_construction_reference"
+msgstr ""
+
+msgid "emissions_construction_reference_unit"
+msgstr ""
+
+msgid "emissions_construction_low"
+msgstr ""
+
+msgid "emissions_construction_low_unit"
+msgstr ""
+
+msgid "emissions_construction_high"
+msgstr ""
+
+msgid "emissions_construction_high_unit"
+msgstr ""
+
+msgid "emissions_savings_per_year_reference"
+msgstr ""
+
+msgid "emissions_savings_per_year_reference_unit"
+msgstr ""
+
+msgid "emissions_savings_per_year_low"
+msgstr ""
+
+msgid "emissions_savings_per_year_low_unit"
+msgstr ""
+
+msgid "emissions_savings_per_year_high"
+msgstr ""
+
+msgid "emissions_savings_per_year_high_unit"
+msgstr ""
+
+msgid "modal_shift_low"
+msgstr ""
+
+msgid "modal_shift_low_unit"
+msgstr ""
+
+msgid "modal_shift_high"
+msgstr ""
+
+msgid "modal_shift_high_unit"
+msgstr ""
+
+#~ msgid "name_unit"
+#~ msgstr ""
+
+#~ msgid "type_unit"
+#~ msgstr ""
+

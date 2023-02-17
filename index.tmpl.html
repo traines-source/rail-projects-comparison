@@ -32,18 +32,21 @@
         <g id="projects"></g>      
     </svg>
     <div id="container"><div>
-        <div class="axis-select" id="br">
-            <select class="select" id="select-x"></select><br />
-            <select class="select" id="select-x-per"></select>
-        </div>
-        <div class="axis-select" id="tl">
-            <select class="select" id="select-y"></select><br />
-            <select class="select" id="select-y-per"></select>
-        </div>
-        <div class="axis-select" id="tr">
-            <select class="select" id="select-z"></select><br />
-            <select class="select" id="select-z-per"></select>
-        </div>
+        {% for select in [{'pos':'br', 'axis': 'x'}, {'pos':'tl', 'axis': 'y'}, {'pos':'tr', 'axis': 'z'}] %}
+            <div class="axis-select" id="{{ select.pos }}">
+                <select class="select" id="select-{{ select.axis }}">
+                    {% for id in dimensions %}
+                        <option value="{{ id }}" data-unit="{{ gettext(id+'_unit') }}">{{ gettext(id) }}</option>
+                    {%- endfor %}
+                </select><br />
+                <select class="select" id="select-{{ select.axis }}-per">
+                    <option value="-1"></option>
+                    {% for id in dimensions %}
+                        <option value="{{ id }}" data-unit="{{ gettext(id+'_unit') }}">{{ gettext('per') }} {{ gettext(id) }}</option>
+                    {%- endfor %}
+                </select>
+            </div>
+        {% endfor %}
     </div></div>
     
     <table id="datatable"></table>

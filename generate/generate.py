@@ -31,24 +31,30 @@ def estimate_emissions_savings(low_or_high, data):
     return {'val': data['pkm_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100/supplements['avg_people_per_car'][low_or_high]*supplements['car_emission_per_km'][low_or_high]}
 
 
-data = {'projects':{}, 'dimensions':{}}
+data = {'projects':[]}
+display_dimensions_ids = []
 supplements = load_yaml('./data/_supplements.yaml')
-
+dimensions = load_yaml('./data/_dimensions.yaml')
 datafiles = os.scandir('./data/')
 
 for file in datafiles:
     if file.is_file():
         id = file.name.split('.')[0]
-        if file.name == '_dimensions.yaml':
-            data['dimensions'] = load_yaml(file)
-        elif file.name == '_supplements.yaml':
+        if file.name[0] == '_':
             continue
         else:
-            data['projects'][id] = load_yaml(file)
-            data['projects'][id]['emissions_construction_low'] = estimate_emissions_construction('low', data['projects'][id])
-            data['projects'][id]['emissions_construction_high'] = estimate_emissions_construction('high', data['projects'][id])
-            data['projects'][id]['emissions_savings_per_year_low'] = estimate_emissions_savings('low', data['projects'][id])
-            data['projects'][id]['emissions_savings_per_year_high'] = estimate_emissions_savings('high', data['projects'][id])
+            project = load_yaml(file)
+            project['id'] = {'lbl': id}
+            project['emissions_construction_low'] = estimate_emissions_construction('low', project)
+            project['emissions_construction_high'] = estimate_emissions_construction('high', project)
+            project['emissions_savings_per_year_low'] = estimate_emissions_savings('low', project)
+            project['emissions_savings_per_year_high'] = estimate_emissions_savings('high', project)
+            data['projects'].append(project)
+
+for key, value in dimensions.items():
+    if 'hidden' in value and value['hidden']:
+        continue
+    display_dimensions_ids.append(key)
 
 
 json_object = json.dumps(data)
@@ -63,7 +69,7 @@ for locale in locales:
     env.install_gettext_translations(tr, newstyle=True)
 
     tm = env.get_template('index.tmpl.html')
-    html = tm.render(locale=locale)
+    html = tm.render(dimensions=display_dimensions_ids, locale=locale)
    
     Path("dist/www/"+locale).mkdir(parents=True, exist_ok=True)
     with open("dist/www/"+locale+"/index.html", "w") as outf:

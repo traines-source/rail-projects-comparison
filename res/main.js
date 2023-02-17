@@ -145,7 +145,7 @@ function updatePlot(x, y, z, animDuration) {
     .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i])) + ")" })
 
    
-    var rows = d3.select('#datatable').selectAll("tr").data(Object.values(data.projects));
+    var rows = d3.select('#datatable').selectAll("tr").data(data.projects);
     rows.enter().append("tr").selectAll("td")
     .data(function (d, i) {return [d.name.lbl, x.col[i], y.col[i], z.col[i]];})
     .enter()
@@ -158,13 +158,14 @@ function updatePlot(x, y, z, animDuration) {
 }
 
 function getSelectedDimension(id) {
-    var idx = d3.select('#'+id).node().value;
-    if (idx == -1) return null;
-    return idx;
-}
-
-function getUnit(id) {
-    return data.dimensions[id].unit[lang];
+    var node = d3.select('#'+id).node();
+    console.log(node.options, node.selectedIndex);
+    if (node.value == -1 || node.selectedIndex == -1)
+        return null;
+    return {
+        id: node.value,
+        unit: node.options[node.selectedIndex].dataset.unit
+    };
 }
 
 function divideColumns(mainCol, perCol) {
@@ -201,20 +202,24 @@ function divideUnits(mainUnit, perUnit) {
     return fractionPartToStr(numerator, denominator, '', '1') + fractionPartToStr(denominator, numerator, '/', '');
 }
 
+function getColumn(id, asFloat) {
+    console.log('f', id);
+    return data.projects.map(p => p[id][asFloat ? 'val' : 'lbl']);
+}
+
 function getSelectedColumnWithUnit(axis) {
     var main = getSelectedDimension('select-'+axis);
     var per = getSelectedDimension('select-'+axis+'-per');
-    
-    var mainCol = getColumn(main, true);
-    var mainUnit = getUnit(main);
+    console.log(main, per);
+    var mainCol = getColumn(main.id, true);
     if (per) {
-        var calculatedCol = divideColumns(mainCol, getColumn(per, true));
-        var calculatedUnit = divideUnits(mainUnit, getUnit(per));
+        var calculatedCol = divideColumns(mainCol, getColumn(per.id, true));
+        var calculatedUnit = divideUnits(main.unit, per.unit);
 
-        return {col: calculatedCol, main: main, per: per, unit: calculatedUnit};
+        return {col: calculatedCol, main: main.id, per: per.id, unit: calculatedUnit};
     }
 
-    return {col: mainCol, main: main, per: null, unit: mainUnit};
+    return {col: mainCol, main: main.id, per: null, unit: main.unit};
 }
 
 function triggerUpdatePlot(e) {
@@ -228,47 +233,6 @@ function triggerUpdatePlot(e) {
 function loadJson(json) {
     data = json;
     initialize();
-}
-
-function getColumn(id, asFloat) {
-    console.log(id);
-    return Object.values(data.projects).map(p => p[id][asFloat ? 'val' : 'lbl']);
-}
-
-function getDimensionIds() {
-    return Object.keys(data.dimensions);
-}
-
-function getDimensionLabels(lang) {
-    return Object.values(data.dimensions).map(v => v.hidden ? null : v.lbl[lang]);   
-}
-
-function populateSelect(id, ids, labels, per, preselected) {
-    var select = d3.select('#'+id);
-    select
-        .on('change', per ? triggerUpdatePlot : function(e) { document.getElementById(id+'-per').value = -1; triggerUpdatePlot(e); });
-    for (var i=-1; i<ids.length; i++) {
-        if (!per && i == -1) continue;
-        if (i != -1 && !labels[i]) continue;
-        select
-            .append('option')
-            .attr('value', i == -1 ? -1 : ids[i])
-            .attr('selected', ids[i]==preselected ? true : undefined)
-            .html(i == -1 ? '' : (per ? langs[lang].per+' ' : '')+labels[i]);
-    }
-}
-
-function zip(obj) {
-    var arr = [];
-    var numberElements = obj[obj.keys()[0]].length;
-    for(var i=0;i<numberElements;i++) {
-        var entry = {};
-        for(var j=0;j<obj.keys();j++) {
-            entry[obj.keys()[j]] = obj.values()[j][i];
-        }
-        arr.push(entry);
-    }
-    return arr;
 }
 
 function loadBgMap() {
@@ -299,12 +263,22 @@ function loadBgMap() {
     });
 }
 
+function presetSelect(id, per, preselected) {
+    var select = d3.select('#'+id);
+    select.on('change', per ? triggerUpdatePlot : function(e) { d3.select('#'+id+'-per').node().value = -1; triggerUpdatePlot(e); });
+    select.node().value = preselected;
+}
+
+function preset(presets, idx, fallback) {
+    return presets.length == 6 ? presets[idx] : fallback
+}
+
 function initialize() {
     loadBgMap();
     var names = getColumn('name', false);
     console.log(names);
     const projectElements = svg.select("#projects").selectAll("g")
-    .data(Object.values(data.projects))
+    .data(data.projects)
     .enter()
     .append("g")
     .attr("class", "project");
@@ -324,21 +298,13 @@ function initialize() {
     .attr("class", "label")
     .html(function (d, i) { return d.name.lbl });
 
-    var ids = getDimensionIds();
-    var labels = getDimensionLabels(lang);
-
     var presets = location.hash.replace('#', '').split('-');
-    var x = presets.length == 6 ? presets[0] : 'longitude';
-    var y = presets.length == 6 ? presets[2] : 'latitude';
-    var z = presets.length == 6 ? presets[4] : 'length_double_track';
-
-    populateSelect('select-x', ids, labels, false, x);
-    populateSelect('select-x-per', ids, labels, true, presets.length == 6 ? presets[1] : null);
-    populateSelect('select-y', ids, labels, false, y);
-    populateSelect('select-y-per', ids, labels, true, presets.length == 6 ? presets[3] : null);
-    populateSelect('select-z', ids, labels, false, z);
-    populateSelect('select-z-per', ids, labels, true, presets.length == 6 ? presets[5] : null);
-
+    presetSelect('select-x', false, preset(presets, 0, 'longitude'));
+    presetSelect('select-x-per', true, preset(presets, 1, null));
+    presetSelect('select-y', false, preset(presets, 2, 'latitude'));
+    presetSelect('select-y-per', true, preset(presets, 3, null));
+    presetSelect('select-z', false, preset(presets, 4, 'length_double_track'));
+    presetSelect('select-z-per', true, preset(presets, 5, null));
 
     triggerUpdatePlot();
     document.dispatchEvent(new Event('startTransportNetworkAnimator'));

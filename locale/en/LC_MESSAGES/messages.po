@@ -30,3 +30,153 @@ msgstr "Video walkthrough"
 msgid "imprint"
 msgstr "Imprint/Privacy"
 
+msgid "name"
+msgstr "Project Name"
+
+msgid "type"
+msgstr "Type"
+
+msgid "longitude"
+msgstr "Longitude"
+
+msgid "longitude_unit"
+msgstr "degree"
+
+msgid "latitude"
+msgstr "Latitude"
+
+msgid "latitude_unit"
+msgstr "degree"
+
+msgid "length_double_track"
+msgstr "Length double track"
+
+msgid "length_double_track_unit"
+msgstr "km"
+
+msgid "length_tunnel"
+msgstr "Tunnel length"
+
+msgid "length_tunnel_unit"
+msgstr "km"
+
+msgid "ratio_single_track_tube"
+msgstr "Portion of twin-tube tunnel"
+
+msgid "ratio_single_track_tube_unit"
+msgstr "1"
+
+msgid "tunnel_diameter"
+msgstr "Outer tunnel diameter"
+
+msgid "tunnel_diameter_unit"
+msgstr "m"
+
+msgid "length_bridge"
+msgstr "Bridge length"
+
+msgid "length_bridge_unit"
+msgstr "km"
+
+msgid "number_stations"
+msgstr "Number of stations"
+
+msgid "number_stations_unit"
+msgstr "station"
+
+msgid "passengers_per_day"
+msgstr "Passengers/day"
+
+msgid "passengers_per_day_unit"
+msgstr "passenger"
+
+msgid "pkm_per_day"
+msgstr "Passenger-km/day"
+
+msgid "pkm_per_day_unit"
+msgstr "Pkm/day"
+
+msgid "trains_per_hour_direction"
+msgstr "Trains per hour and direction"
+
+msgid "trains_per_hour_direction_unit"
+msgstr "train"
+
+msgid "average_passengers_per_train"
+msgstr "Average passengers/train"
+
+msgid "average_passengers_per_train_unit"
+msgstr "passenger"
+
+msgid "estimated_construction_cost"
+msgstr "Construction cost"
+
+msgid "estimated_construction_cost_unit"
+msgstr "€"
+
+msgid "construction_duration"
+msgstr "Construction duration"
+
+msgid "construction_duration_unit"
+msgstr "year"
+
+msgid "maximum_speed"
+msgstr "Maximum speed"
+
+msgid "maximum_speed_unit"
+msgstr "km/h"
+
+msgid "commercial_speed"
+msgstr "Commercial speed"
+
+msgid "commercial_speed_unit"
+msgstr "km/h"
+
+msgid "emissions_construction_reference"
+msgstr "Construction emissions (reference)"
+
+msgid "emissions_construction_reference_unit"
+msgstr "tCO2"
+
+msgid "emissions_construction_low"
+msgstr "Construction emissions (low estimate)"
+
+msgid "emissions_construction_low_unit"
+msgstr "tCO2"
+
+msgid "emissions_construction_high"
+msgstr "Construction emissions (high estimate)"
+
+msgid "emissions_construction_high_unit"
+msgstr "tCO2"
+
+msgid "emissions_savings_per_year_reference"
+msgstr "Emission savings/year (reference)"
+
+msgid "emissions_savings_per_year_reference_unit"
+msgstr "tCO2/year"
+
+msgid "emissions_savings_per_year_low"
+msgstr "Emission savings/year (low estimate)"
+
+msgid "emissions_savings_per_year_low_unit"
+msgstr "tCO2/year"
+
+msgid "emissions_savings_per_year_high"
+msgstr "Emission savings/year (high estimate)"
+
+msgid "emissions_savings_per_year_high_unit"
+msgstr "tCO2/year"
+
+msgid "modal_shift_low"
+msgstr "Modal shift (low)"
+
+msgid "modal_shift_low_unit"
+msgstr "percent"
+
+msgid "modal_shift_high"
+msgstr "Modal shift (high)"
+
+msgid "modal_shift_high_unit"
+msgstr "percent"
+

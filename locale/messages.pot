@@ -59,10 +59,10 @@ msgstr ""
 msgid "length_tunnel_unit"
 msgstr ""
 
-msgid "ratio_single_track_tube"
+msgid "length_tunnel_tube"
 msgstr ""
 
-msgid "ratio_single_track_tube_unit"
+msgid "length_tunnel_tube_unit"
 msgstr ""
 
 msgid "tunnel_diameter"
@@ -179,4 +179,5 @@ msgstr ""
 msgid "modal_shift_high_unit"
 msgstr ""
 
-
+msgid "introduction"
+msgstr ""

@@ -14,9 +14,9 @@ length_double_track:
 length_tunnel:
   val: 2.9
   src: (minimal tunnel variant to Akademiestraße) https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
-ratio_single_track_tube:
-  val: 0
-  src: probably double-track
+length_tunnel_tube:
+  val: 2.9
+  src: probably double-track https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
 tunnel_diameter:
   val: 10
   src: double-track, estimate

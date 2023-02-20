@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 22.1
   src: https://faiseursdeville.org/wp-content/uploads/2022/01/Faiseurs-de-Ville-Impact-3e%CC%80me-ligne.pdf
-ratio_single_track_tube:
-  val: 0
+length_tunnel_tube:
+  val: 22.1
   src: https://actu.fr/occitanie/toulouse_31555/toulouse-le-chantier-du-projet-du-siecle-demarre-cette-semaine-on-vous-dit-ou-et-comment_55812612.html
 tunnel_diameter:
   val: 10

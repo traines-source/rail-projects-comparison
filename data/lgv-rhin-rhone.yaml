@@ -14,9 +14,9 @@ length_double_track:
 length_tunnel:
   val: 2
   src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
-ratio_single_track_tube:
-  val: 0
-  src: https://fr.wikipedia.org/wiki/Tunnel_de_Chavanne
+length_tunnel_tube:
+  val: 2
+  src: https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf, https://fr.wikipedia.org/wiki/Tunnel_de_Chavanne
 tunnel_diameter:
   val: 12.6
   src: double-track, estimate based on 245000m3 excavation https://fr.wikipedia.org/wiki/Tunnel_de_Chavanne

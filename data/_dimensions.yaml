@@ -46,9 +46,9 @@ length_tunnel:
     en: km
     de: 
     fr:
-ratio_single_track_tube:
+length_tunnel_tube:
   lbl:
-    en: Portion of twin-tube tunnel
+    en: Tunnel length (tubes)
     de: 
     fr: 
   unit:

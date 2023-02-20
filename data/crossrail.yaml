@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 42/2
   src: https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
-ratio_single_track_tube:
-  val: 1
+length_tunnel_tube:
+  val: 42
   src: https://web.archive.org/web/20221228162705/https://www.crossrail.co.uk/route/
 tunnel_diameter:
   val: 7.1

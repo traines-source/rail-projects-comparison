@@ -60,11 +60,11 @@ msgstr "Tunnel length"
 msgid "length_tunnel_unit"
 msgstr "km"
 
-msgid "ratio_single_track_tube"
-msgstr "Portion of twin-tube tunnel"
+msgid "length_tunnel_tube"
+msgstr "Tunnel length (tubes)"
 
-msgid "ratio_single_track_tube_unit"
-msgstr "1"
+msgid "length_tunnel_tube_unit"
+msgstr "km"
 
 msgid "tunnel_diameter"
 msgstr "Outer tunnel diameter"
@@ -179,4 +179,18 @@ msgstr "Modal shift (high)"
 
 msgid "modal_shift_high_unit"
 msgstr "percent"
+
+msgid "introduction"
+msgstr ""
+"This is a scatter plot of some recent rail projects in Europe. You can "
+"visualize three metrics at the same time by selecting them from the "
+"dropdowns: On the x-axis (bottom right), on the y-axis (top left) and by "
+"coloring (top right). For each dimension, you can also choose a ratio of "
+"two metrics, e.g. \"Tunnel length per Length double track\""
+
+#~ msgid "ratio_single_track_tube"
+#~ msgstr "Portion of twin-tube tunnel"
+
+#~ msgid "ratio_single_track_tube_unit"
+#~ msgstr "1"
 

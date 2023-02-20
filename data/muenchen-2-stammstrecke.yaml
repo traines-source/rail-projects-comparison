@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 7
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
-ratio_single_track_tube:
-  val: 1
+length_tunnel_tube:
+  val: 7*2
   src: https://de.wikipedia.org/wiki/Zweite_Stammstrecke
 tunnel_diameter:
   val: 8.4

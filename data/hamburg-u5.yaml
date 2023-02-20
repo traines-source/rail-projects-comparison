@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 5.4+19
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)#Lichtraumprofil_und_Spurweite
-ratio_single_track_tube:
-  val: 19/(5.4+19)
+length_tunnel_tube:
+  val: 5.4+19*2
   src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)#Lichtraumprofil_und_Spurweite
 tunnel_diameter:
   val: 6.5

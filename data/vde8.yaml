@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 63.810
   src: https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
-ratio_single_track_tube:
-  val: (6.970+6.466+2.082)/63.810
+length_tunnel_tube:
+  val: 6.970+6.466+2.082+63.810
   src: only VDE 8.2 tunnels seem to be single track https://www.vde8.de/de/baufortschritt/vde-82-neubau/tunnel, https://www.vde8.de/de/baufortschritt/vde-81-neubau/tunnel (3756+1331+931+824+1113+1072+1043+2975+745+1317+8314+1163+602+1051+1490+7391+1493+688+500+1320+463+1404+(6970+6466+2082)*2)
 tunnel_diameter:
   val: 13

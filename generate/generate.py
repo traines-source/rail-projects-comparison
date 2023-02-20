@@ -23,7 +23,7 @@ def load_yaml(file):
 
 def estimate_emissions_construction(low_or_high, data):
     return {'val': data['length_double_track']['val']*supplements['construction_emission_per_km_double_track'][low_or_high]*(data['maximum_speed']['val']/160)**2
-    + data['length_tunnel']['val']*(1+data['ratio_single_track_tube']['val'])*supplements['construction_emission_per_km_tunnel_tube'][low_or_high]
+    + data['length_tunnel_tube']['val']*supplements['construction_emission_per_km_tunnel_tube'][low_or_high]
     + data['length_bridge']['val']*supplements['construction_emission_per_km_bridge'][low_or_high]
     + data['number_stations']['val']*supplements['construction_emission_per_station'][low_or_high]}
  

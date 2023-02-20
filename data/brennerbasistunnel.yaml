@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 64
   src: https://de.wikipedia.org/wiki/Brennerbasistunnel
-ratio_single_track_tube:
-  val: 1
+length_tunnel_tube:
+  val: 64*2
   src: https://de.wikipedia.org/wiki/Brennerbasistunnel
 tunnel_diameter:
   val: 10.7

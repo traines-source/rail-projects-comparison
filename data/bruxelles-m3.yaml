@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 4.5
   src: https://metro3.be/fr, https://metro3.be/sites/default/files/2022-02/Atlas%20cartographique%20FR.pdf
-ratio_single_track_tube:
-  val: 0
+length_tunnel_tube:
+  val: 4.5
   src: https://metro3.be/sites/default/files/2022-02/Atlas%20cartographique%20FR.pdf
 tunnel_diameter:
   val: 10

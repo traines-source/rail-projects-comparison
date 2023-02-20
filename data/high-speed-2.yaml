@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 103/2+12.5
   src: https://www.hs2.org.uk/building-hs2/tunnels/, https://en.wikipedia.org/wiki/High_Speed_2_Phase_Two
-ratio_single_track_tube:
-  val: 1
+length_tunnel_tube:
+  val: 103+12.5*2
   src: https://www.hs2.org.uk/building-hs2/tunnels/, https://en.wikipedia.org/wiki/High_Speed_2_Phase_Two
 tunnel_diameter:
   val: 10.26

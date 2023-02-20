@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 30
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
-ratio_single_track_tube:
-  val: 1
+length_tunnel_tube:
+  val: 30*2
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
 tunnel_diameter:
   val: 11.39

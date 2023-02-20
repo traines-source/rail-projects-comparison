@@ -14,9 +14,9 @@ length_double_track:
 length_tunnel:
   val: 5
   src: estimate https://experience.arcgis.com/experience/41fb2de691c34112ae63f823255ac82d/
-ratio_single_track_tube:
-  val: 0
-  src: estimate
+length_tunnel_tube:
+  val: 5
+  src: estimate https://experience.arcgis.com/experience/41fb2de691c34112ae63f823255ac82d/
 tunnel_diameter:
   val: 13
   src: double-track, estimate based on similar projects

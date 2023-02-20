@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 11
   src: https://de.wikipedia.org/wiki/Linienkreuz_U2/U5, https://www.wienerlinien.at/so-bauen-wir
-ratio_single_track_tube:
-  val: 1
+length_tunnel_tube:
+  val: 11*2
   src: https://www.wienerlinien.at/so-bauen-wir
 tunnel_diameter:
   val: 7

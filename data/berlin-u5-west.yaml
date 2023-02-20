@@ -14,8 +14,8 @@ length_double_track:
 length_tunnel:
   val: 2.2
   src: https://web.archive.org/web/20221006104447/https://projekt-u5.de/de/der-tunnel/
-ratio_single_track_tube:
-  val: 1.6/2.2
+length_tunnel_tube:
+  val: 1.6+2.2
   src: https://web.archive.org/web/20221006104447/https://projekt-u5.de/de/der-tunnel/
 tunnel_diameter:
   val: 6.7

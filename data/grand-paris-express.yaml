@@ -12,11 +12,11 @@ length_double_track:
   val: 200
   src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
 length_tunnel:
-  val: 180
+  val: 200*0.9
   src: https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
-ratio_single_track_tube:
-  val: 0.1
-  src: estimate (most of it is double track) cf. https://web.archive.org/web/20220120210307/http://www.enquetepubliquelignerouge15sud.fr/assets/files/DEP21.pdf
+length_tunnel_tube:
+  val: 200
+  src: estimate (most of it is double track) cf. https://web.archive.org/web/20220120210307/http://www.enquetepubliquelignerouge15sud.fr/assets/files/DEP21.pdf, https://web.archive.org/web/20221214183941/https://www.societedugrandparis.fr/info/grand-paris-express-largest-transport-project-europe-1061
 tunnel_diameter:
   val: 10
   src: double-track, https://www.leparisien.fr/info-paris-ile-de-france-oise/transports/grand-paris-express-vingt-tunneliers-pour-le-chantier-du-siecle-20-01-2019-7992483.php

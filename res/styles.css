@@ -34,50 +34,63 @@ body {
     background-color: rgba(227, 242, 253, 1);
 }
 
+a {
+    color: rgb(1, 87, 155);
+}
+
 h1 {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 50px;
     max-width: 400px;
 }
 
+#plot {
+    margin-top: -400px;
+}
+
 #container {
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 0;
     width: 100%;
     pointer-events: none;
 }
 #container > div {
-    width: 800px;
-    height: 800px;
+    width: 100vw;
+    height: 87.5vw;
+    max-width: 800px;
+    max-height: 700px;
     margin: 0 auto;
     display: block;
     position: relative;
 }
 
+
 .axis-select {
     position: absolute;
+
 }
 
 .select {
-    min-width: 250px;
+    width: 250px;
+    max-width: 45vw;
     pointer-events: all;
 }
 
 #tl {
-    top: 0;
-    left: 0;
+    bottom: 101.5%;
+    left: 1%;
 }
 
 #tr {
-    top: 0;
-    right: 0;
+    bottom: 101.5%;
+    right: 1%;
 }
 
 #br {
-    bottom: -10px;
-    right: 0;
+    top: 103.5%;
+    right: 1%;
 }
 
 rect.station {
@@ -128,14 +141,21 @@ circle {
     stroke: none;
 }
 
+.hscroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
 #datatable {
     border-collapse: collapse;
+    margin: 0 10px;
 }
 
 #datatable .val {
     text-align: right;
     font-family: monospace;
     padding: 5px 10px 5px 20px;
+    white-space: nowrap;
 }
 
 #datatable th {
@@ -159,8 +179,26 @@ circle {
     color: #757575;
 }
 
-@media only screen and (max-width : 1900px) {
+@media only screen and (max-width : 1600px) {
     h1 {
-        position: static;
+        top: 0px;
+        left: 3vw;
+        max-width: none;
+    }
+    #plot {
+        margin-top: -320px;
+    }
+    #container {
+        top: 180px;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    #container-plot {
+        margin-top: 180px;
+    }
+    
+    #plot {
+        margin-top: -62.5vw;
     }
 }

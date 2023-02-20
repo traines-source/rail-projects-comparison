@@ -2,9 +2,9 @@ var width = 700;
 var height = 700;
 var svg = d3.select("#plot");
 svg
-        .attr("width", "100%")
-        .attr("height", height+200)
-        .attr("viewBox", (-50)+" "+(-100)+" "+(width+100)+" "+(height+200)+"")
+    .attr("width", "100%")
+    .attr("height", height+900)
+    .attr("viewBox", (-50)+" "+(-500)+" "+(width+100)+" "+(height+900)+"")
 
 TNA.Config.default.mapProjectionScale = 100;
 TNA.Config.default.animSpeed = 10000;
@@ -20,7 +20,7 @@ var langs = {
 var lang = 'en';
 d3.formatDefaultLocale({
     "decimal": langs[lang].decimal,
-    "thousands": " ",
+    "thousands": " ",
     "grouping": [3],
     "currency": ["€", ""]
 });
@@ -164,9 +164,7 @@ function updatePlot(x, y, z, animDuration) {
     .transition()
     .duration(animDuration)
     .attr("transform", function (d, i) { return "translate(" + xScale(x.col[i].val) + "," + yScale(y.col[i].val) + ")" })
-    .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i].val)) + ")" })
-
-   
+    .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i].val)) + ")" });
    
     var linkMemory = {};
     d3.select('#datatable').selectAll("th")
@@ -188,7 +186,6 @@ function updatePlot(x, y, z, animDuration) {
 
 function getSelectedDimension(id) {
     var node = d3.select('#'+id).node();
-    console.log(node.options, node.selectedIndex);
     if (node.value == -1 || node.selectedIndex == -1)
         return null;
     return {
@@ -239,7 +236,6 @@ function getColumn(id) {
 function getSelectedColumnWithUnit(axis) {
     var main = getSelectedDimension('select-'+axis);
     var per = getSelectedDimension('select-'+axis+'-per');
-    console.log(main, per);
     var mainCol = getColumn(main.id);
     if (per) {
         var calculatedCol = divideColumns(mainCol, getColumn(per.id));

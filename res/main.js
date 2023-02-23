@@ -3,8 +3,8 @@ var height = 700;
 var svg = d3.select("#plot");
 svg
     .attr("width", "100%")
-    .attr("height", height+900)
-    .attr("viewBox", (-50)+" "+(-500)+" "+(width+100)+" "+(height+900)+"")
+    .attr("height", height+1100)
+    .attr("viewBox", (-50)+" "+(-500)+" "+(width+100)+" "+(height+1100)+"")
 
 TNA.Config.default.mapProjectionScale = 100;
 TNA.Config.default.animSpeed = 10000;
@@ -107,11 +107,20 @@ function gradient(from, to, ratio) {
     return [r, g, b];
 }
 
-function tableHeader(axisInfo) {
-    var lbl = axisInfo.main.lbl;
+function metrics(axisInfo, field) {
+    var ids = [axisInfo.main[field]];
     if (axisInfo.per.lbl) {
-        lbl += ' ' + axisInfo.per.lbl;
+        ids.push(axisInfo.per[field]);
     }
+    return ids;
+}
+
+function allMetricsIds(x, y, z) {
+    return [].concat(metrics(x, 'id'), metrics(y, 'id'), metrics(z, 'id'));
+}
+
+function tableHeader(axisInfo) {
+    var lbl = metrics(axisInfo, 'lbl').join(' ');
     lbl += ' ['+axisInfo.unit+']';
     return lbl;
 }
@@ -172,6 +181,9 @@ function updatePlot(x, y, z, animDuration) {
     .attr("transform", function (d, i) { return "translate(" + xScale(x.col[i].val) + "," + yScale(y.col[i].val) + ")" })
     .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i].val)) + ")" });
    
+    var metricsIds = allMetricsIds(x, y, z);
+    d3.select('#metrics').selectAll("div").each(function(d, i) { this.style.display = metricsIds.indexOf(this.id) != -1 ?  'block' : ''; });
+
     var linkMemory = {};
     d3.select('#datatable').selectAll("th")
     .data(['', tableHeader(x), tableHeader(y), tableHeader(z)])
@@ -201,11 +213,15 @@ function getSelectedDimension(id) {
     };
 }
 
+function nullable(str) {
+    return str ? str : '–';
+}
+
 function divideColumns(mainCol, perCol) {
     var calculatedCol = [];
     for (var i=0; i<mainCol.length; i++) {
         var v = mainCol[i].val/perCol[i].val;
-        calculatedCol.push({val: v, src: mainCol[i].src + '; ' + perCol[i].src});
+        calculatedCol.push({val: v, src: nullable(mainCol[i].src) + '; ' + nullable(perCol[i].src)});
     }
     return calculatedCol;
 }
@@ -222,7 +238,7 @@ function fractionParts(a, b) {
 }
 
 function fractionPartToStr(a, b, prefix, emptyStr) {
-    var str = arrayDiff(a, b).join('*');
+    var str = arrayDiff(a, b).join(prefix ? prefix : '*');
     if (str.length == 0) return emptyStr;
     return prefix+str;
 }

@@ -42,21 +42,21 @@ h1 {
     position: absolute;
     top: 20px;
     left: 50px;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 #plot {
     margin-top: -400px;
 }
 
-#container {
+#overlay {
     position: absolute;
     top: 100px;
     left: 0;
     width: 100%;
     pointer-events: none;
 }
-#container > div {
+#overlay > div {
     width: 100vw;
     height: 87.5vw;
     max-width: 800px;
@@ -124,6 +124,7 @@ path.line {
     transform: translate(15px, 0px);
     opacity: 0;
     transition: opacity 200ms;
+    user-select: none;
 }
 
 .project:hover .label {
@@ -144,15 +145,16 @@ circle {
 .hscroll {
     width: 100%;
     overflow-x: auto;
+    margin: 50px 0;
 }
 
 #datatable {
     border-collapse: collapse;
-    margin: 0 10px;
+    margin: 0 auto;
 }
 
 #datatable td {
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 #datatable .val {
@@ -175,9 +177,32 @@ circle {
     background-color: white;
 }
 
+#meta {
+    margin: -500px 0 0 0;
+}
+
+#introduction {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    max-width: 350px;
+}
+
+#metrics {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    max-width: 350px;
+    text-align: right;
+}
+
+#metrics div {
+    display: none;
+}
+
 #footer {
     text-align: center;
-    margin: 20px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 #footer, #footer a {
     color: #757575;
@@ -192,8 +217,17 @@ circle {
     #plot {
         margin-top: -320px;
     }
-    #container {
+    #overlay {
         top: 180px;
+    }
+    #introduction, #metrics {
+        position: static;
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 800px;
+    }
+    #metrics {
+        text-align: left;   
     }
 }
 
@@ -204,5 +238,19 @@ circle {
     
     #plot {
         margin-top: -62.5vw;
+    }
+    #meta {
+        margin: unset;
+        position: absolute;
+        top: 1300px;
+        left: 0;
+        right: 0;
+    }
+    #meta > div {
+        position: relative;
+        top: 100vw;
+    }
+    #introduction {
+        margin-top: -1100px;
     }
 }

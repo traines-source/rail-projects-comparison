@@ -65,7 +65,6 @@ modal_shift_high:
 paths:
   <path data-from="1 0" data-line="BerlinU5" data-stops="BrandenburgerTor UnterDenLinden Alexanderplatz" />
   
-  <path data-from="16 34 keepzoom" data-line="U5" data-stops="BrandenburgerTor UnterDenLinden Alexanderplatz" />
   <rect data-station="Alexanderplatz" data-lon-lat="13.411944 52.521389" />
   <rect data-station="UnterDenLinden" data-lon-lat="13.388895 52.516967" />
   <rect data-station="BrandenburgerTor" data-dir="nw" data-lon-lat="13.380833 52.516389" />

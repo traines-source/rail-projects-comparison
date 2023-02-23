@@ -132,18 +132,24 @@ function updatePlot(x, y, z, animDuration) {
     svg.select('#bgmap').transition()
     .duration(animDuration).style("opacity", "0");
     if (x.unit == y.unit) {
-        if (x.unit == 'degree') {
+        if (x.main.id == 'longitude' && y.main.id == 'latitude') {
             svg.select('#bgmap').transition()
             .duration(animDuration).style("opacity", "1");
         } else {
-            xDomain = yDomain = [Math.min(xDomain[0], yDomain[0]), Math.max(xDomain[1], yDomain[1])];
+            var bbox = [Math.min(xDomain[0], yDomain[0]), Math.max(xDomain[1], yDomain[1])];
+            var bboxA = [Math.max(xDomain[0], yDomain[0]), Math.min(xDomain[1], yDomain[1])];
+            var lengthR = Math.abs((bbox[1]-bbox[0])/(bboxA[1]-bboxA[0]));
+            var posR = Math.abs((bboxA[0]-bbox[0])/(bbox[1]-bbox[0]));
+            console.log(lengthR, posR);
+            if (lengthR < 3 && posR < 1/3)
+                xDomain = yDomain = bbox;
         }
     }
     xScale.domain(xDomain);
     yScale.domain(yDomain);
     var zMinMax = minMax(z.col);
     zScale.domain(zMinMax);
-    format = zScale.tickFormat();
+    format = [xScale.tickFormat(), yScale.tickFormat(), zScale.tickFormat()];
 
     svg.select("#x-axis")
     .transition()
@@ -157,8 +163,8 @@ function updatePlot(x, y, z, animDuration) {
 
     svg.select("#x-unit").text(x.unit);
     svg.select("#y-unit").text(y.unit);
-    svg.select("#z-unit-min").text(format(zMinMax[0]));
-    svg.select("#z-unit-max").text(format(zMinMax[1])+' '+z.unit);
+    svg.select("#z-unit-min").text(format[2](zMinMax[0]));
+    svg.select("#z-unit-max").text(format[2](zMinMax[1])+' '+z.unit);
 
     svg.selectAll(".project")
     .transition()
@@ -181,7 +187,7 @@ function updatePlot(x, y, z, animDuration) {
             z.col[i].val, tableSource(z.col[i].src, linkMemory)
         ];
     })
-    .html(function (d, i) {return i%2 == 0 ? d : format(d);});
+    .html(function (d, i) {return i%2 == 0 ? d : format[Math.floor(i/2)](d);});
 }
 
 function getSelectedDimension(id) {
@@ -298,6 +304,17 @@ function preset(presets, idx, fallback) {
     return presets.length == 6 ? presets[idx] : fallback
 }
 
+function presetSelects(presets_str) {
+    var presets = presets_str.split('-');
+    presetSelect('select-x', false, preset(presets, 0, 'longitude'));
+    presetSelect('select-x-per', true, preset(presets, 1, null));
+    presetSelect('select-y', false, preset(presets, 2, 'latitude'));
+    presetSelect('select-y-per', true, preset(presets, 3, null));
+    presetSelect('select-z', false, preset(presets, 4, 'length_double_track'));
+    presetSelect('select-z-per', true, preset(presets, 5, null));
+    triggerUpdatePlot();
+}
+
 function initialize() {
     loadBgMap();
     const projectElements = svg.select("#projects").selectAll("g")
@@ -321,15 +338,7 @@ function initialize() {
     .attr("class", "label")
     .html(function (d, i) { return d.name.lbl });
 
-    var presets = location.hash.replace('#', '').split('-');
-    presetSelect('select-x', false, preset(presets, 0, 'longitude'));
-    presetSelect('select-x-per', true, preset(presets, 1, null));
-    presetSelect('select-y', false, preset(presets, 2, 'latitude'));
-    presetSelect('select-y-per', true, preset(presets, 3, null));
-    presetSelect('select-z', false, preset(presets, 4, 'length_double_track'));
-    presetSelect('select-z-per', true, preset(presets, 5, null));
-
-    triggerUpdatePlot();
+    presetSelects(location.hash.replace('#', ''));
     document.dispatchEvent(new Event('startTransportNetworkAnimator'));
 }
 

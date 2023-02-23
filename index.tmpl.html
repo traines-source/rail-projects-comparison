@@ -49,7 +49,17 @@
         {% endfor %}
     </div></div>
     
-    <div id="introduction">{{ gettext('introduction') }}</div>
+    <div id="introduction">
+        {{ gettext('introduction') }}
+        <ul>
+            <li><a href="javascript:void(0)" onclick="presetSelects('trains_per_hour_direction-undefined-passengers_per_day-undefined-number_stations-undefined')">{{ gettext('example_number_trains_passenger') }}</a></li>
+            <li><a href="javascript:void(0)" onclick="presetSelects('estimated_construction_cost-undefined-construction_duration-undefined-estimated_construction_cost-construction_duration')">{{ gettext('example_construction_cost_duration') }}</a></li>
+            <li><a href="javascript:void(0)" onclick="presetSelects('estimated_construction_cost-passengers_per_day-estimated_construction_cost-pkm_per_day-estimated_construction_cost-undefined')">{{ gettext('example_cost_per_passenger') }}</a></li>
+            <li><a href="javascript:void(0)" onclick="presetSelects('length_tunnel_tube-length_tunnel-tunnel_diameter-undefined-maximum_speed-undefined')">{{ gettext('example_double_single_track') }}</a></li>
+            <li><a href="javascript:void(0)" onclick="presetSelects('emissions_construction_high-emissions_savings_per_year_low-emissions_construction_low-emissions_savings_per_year_high-emissions_construction_reference-emissions_savings_per_year_reference')">{{ gettext('example_co2_best_worst_case') }}</a></li>
+            <li><a href="javascript:void(0)" onclick="presetSelects('length_double_track-number_stations-commercial_speed-undefined-trains_per_hour_direction-undefined')">{{ gettext('example_station_spacing_commercial_speed') }}</a></li>
+        </ul>
+    </div>
     <div class="hscroll">
         <table id="datatable">
             <tr>

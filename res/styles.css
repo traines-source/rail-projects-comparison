@@ -151,6 +151,10 @@ circle {
     margin: 0 10px;
 }
 
+#datatable td {
+    padding: 5px;
+}
+
 #datatable .val {
     text-align: right;
     font-family: monospace;

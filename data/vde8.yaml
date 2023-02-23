@@ -16,7 +16,7 @@ length_tunnel:
   src: https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
 length_tunnel_tube:
   val: 6.970+6.466+2.082+63.810
-  src: only VDE 8.2 tunnels seem to be single track https://www.vde8.de/de/baufortschritt/vde-82-neubau/tunnel, https://www.vde8.de/de/baufortschritt/vde-81-neubau/tunnel (3756+1331+931+824+1113+1072+1043+2975+745+1317+8314+1163+602+1051+1490+7391+1493+688+500+1320+463+1404+(6970+6466+2082)*2)
+  src: only VDE 8.2 tunnels seem to be single track https://www.vde8.de/de/baufortschritt/vde-82-neubau/tunnel, https://www.vde8.de/de/baufortschritt/vde-81-neubau/tunnel
 tunnel_diameter:
   val: 13
   src: double-track, based on 130m2 profile https://www.vde8.de/Tunnel-Blessberg------_site.site..ls_dir._siteid.132_function.set__lang_lang.de_likecms.html
@@ -24,8 +24,8 @@ length_bridge:
   val: 50
   src: estimate based on https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
 number_stations:
-  val: 3
-  src: (major upgrades) https://de.wikipedia.org/wiki/Verkehrsprojekt_Deutsche_Einheit_Nr._8
+  val: 6
+  src: https://www.vde8.de/assets/images/projekt/03-zukuenftiges-Liniennetz.jpg, (major upgrades only ~3) https://de.wikipedia.org/wiki/Verkehrsprojekt_Deutsche_Einheit_Nr._8
 passengers_per_day:
   val: 4400000/365*2
   src: estimate - half of passengers do complete journey Berlin-Munich https://www.vde8.de/---_site.news..ls_dir._type.press_cat.2_id.961_likecms.html

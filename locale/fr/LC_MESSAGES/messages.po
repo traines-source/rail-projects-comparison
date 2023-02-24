@@ -33,13 +33,30 @@ msgstr "Mentions légales/Protection des données"
 msgid "name"
 msgstr ""
 
+#, fuzzy
+msgid "name_unit"
+msgstr "Comparail"
+
+msgid "name_description"
+msgstr ""
+
 msgid "type"
+msgstr ""
+
+#, fuzzy
+msgid "type_unit"
+msgstr "Comparail"
+
+msgid "type_description"
 msgstr ""
 
 msgid "longitude"
 msgstr ""
 
 msgid "longitude_unit"
+msgstr ""
+
+msgid "longitude_description"
 msgstr ""
 
 #, fuzzy
@@ -50,10 +67,17 @@ msgstr "Comparail"
 msgid "latitude_unit"
 msgstr "Comparail"
 
+#, fuzzy
+msgid "latitude_description"
+msgstr "Comparail"
+
 msgid "length_double_track"
 msgstr ""
 
 msgid "length_double_track_unit"
+msgstr ""
+
+msgid "length_double_track_description"
 msgstr ""
 
 msgid "length_tunnel"
@@ -62,10 +86,16 @@ msgstr ""
 msgid "length_tunnel_unit"
 msgstr ""
 
+msgid "length_tunnel_description"
+msgstr ""
+
 msgid "length_tunnel_tube"
 msgstr ""
 
 msgid "length_tunnel_tube_unit"
+msgstr ""
+
+msgid "length_tunnel_tube_description"
 msgstr ""
 
 msgid "tunnel_diameter"
@@ -74,10 +104,16 @@ msgstr ""
 msgid "tunnel_diameter_unit"
 msgstr ""
 
+msgid "tunnel_diameter_description"
+msgstr ""
+
 msgid "length_bridge"
 msgstr ""
 
 msgid "length_bridge_unit"
+msgstr ""
+
+msgid "length_bridge_description"
 msgstr ""
 
 msgid "number_stations"
@@ -86,10 +122,16 @@ msgstr ""
 msgid "number_stations_unit"
 msgstr ""
 
+msgid "number_stations_description"
+msgstr ""
+
 msgid "passengers_per_day"
 msgstr ""
 
 msgid "passengers_per_day_unit"
+msgstr ""
+
+msgid "passengers_per_day_description"
 msgstr ""
 
 msgid "pkm_per_day"
@@ -98,10 +140,16 @@ msgstr ""
 msgid "pkm_per_day_unit"
 msgstr ""
 
+msgid "pkm_per_day_description"
+msgstr ""
+
 msgid "trains_per_hour_direction"
 msgstr ""
 
 msgid "trains_per_hour_direction_unit"
+msgstr ""
+
+msgid "trains_per_hour_direction_description"
 msgstr ""
 
 msgid "average_passengers_per_train"
@@ -110,10 +158,16 @@ msgstr ""
 msgid "average_passengers_per_train_unit"
 msgstr ""
 
+msgid "average_passengers_per_train_description"
+msgstr ""
+
 msgid "estimated_construction_cost"
 msgstr ""
 
 msgid "estimated_construction_cost_unit"
+msgstr ""
+
+msgid "estimated_construction_cost_description"
 msgstr ""
 
 msgid "construction_duration"
@@ -122,10 +176,16 @@ msgstr ""
 msgid "construction_duration_unit"
 msgstr ""
 
+msgid "construction_duration_description"
+msgstr ""
+
 msgid "maximum_speed"
 msgstr ""
 
 msgid "maximum_speed_unit"
+msgstr ""
+
+msgid "maximum_speed_description"
 msgstr ""
 
 msgid "commercial_speed"
@@ -134,10 +194,16 @@ msgstr ""
 msgid "commercial_speed_unit"
 msgstr ""
 
+msgid "commercial_speed_description"
+msgstr ""
+
 msgid "emissions_construction_reference"
 msgstr ""
 
 msgid "emissions_construction_reference_unit"
+msgstr ""
+
+msgid "emissions_construction_reference_description"
 msgstr ""
 
 msgid "emissions_construction_low"
@@ -146,10 +212,16 @@ msgstr ""
 msgid "emissions_construction_low_unit"
 msgstr ""
 
+msgid "emissions_construction_low_description"
+msgstr ""
+
 msgid "emissions_construction_high"
 msgstr ""
 
 msgid "emissions_construction_high_unit"
+msgstr ""
+
+msgid "emissions_construction_high_description"
 msgstr ""
 
 msgid "emissions_savings_per_year_reference"
@@ -158,10 +230,16 @@ msgstr ""
 msgid "emissions_savings_per_year_reference_unit"
 msgstr ""
 
+msgid "emissions_savings_per_year_reference_description"
+msgstr ""
+
 msgid "emissions_savings_per_year_low"
 msgstr ""
 
 msgid "emissions_savings_per_year_low_unit"
+msgstr ""
+
+msgid "emissions_savings_per_year_low_description"
 msgstr ""
 
 msgid "emissions_savings_per_year_high"
@@ -170,10 +248,16 @@ msgstr ""
 msgid "emissions_savings_per_year_high_unit"
 msgstr ""
 
+msgid "emissions_savings_per_year_high_description"
+msgstr ""
+
 msgid "modal_shift_low"
 msgstr ""
 
 msgid "modal_shift_low_unit"
+msgstr ""
+
+msgid "modal_shift_low_description"
 msgstr ""
 
 msgid "modal_shift_high"
@@ -182,7 +266,34 @@ msgstr ""
 msgid "modal_shift_high_unit"
 msgstr ""
 
+msgid "modal_shift_high_description"
+msgstr ""
+
 msgid "introduction"
+msgstr ""
+
+msgid "examples"
+msgstr ""
+
+msgid "example_number_trains_passenger"
+msgstr ""
+
+msgid "example_construction_cost_duration"
+msgstr ""
+
+msgid "example_cost_per_passenger"
+msgstr ""
+
+msgid "example_double_single_track"
+msgstr ""
+
+msgid "example_co2_best_worst_case"
+msgstr ""
+
+msgid "example_station_spacing_commercial_speed"
+msgstr ""
+
+msgid "disclaimer"
 msgstr ""
 
 msgid "csv_download"

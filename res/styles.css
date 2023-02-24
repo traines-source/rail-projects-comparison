@@ -192,6 +192,7 @@ circle {
     top: 200px;
     left: 50px;
     max-width: 350px;
+    line-height: 1.3em;
 }
 
 #metrics {
@@ -200,10 +201,21 @@ circle {
     right: 50px;
     max-width: 350px;
     text-align: right;
+    font-size: 14px;
 }
 
 #metrics div {
     display: none;
+}
+
+#metrics h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+#metrics p {
+    margin-top: 0;
 }
 
 #footer {

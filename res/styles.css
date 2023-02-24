@@ -177,6 +177,12 @@ circle {
     background-color: white;
 }
 
+#csv {
+    display: block;
+    text-align: center;
+    margin: 30px 10px;
+}
+
 #meta {
     margin: -500px 0 0 0;
 }

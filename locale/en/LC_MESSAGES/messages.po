@@ -188,6 +188,9 @@ msgstr ""
 "coloring (top right). For each dimension, you can also choose a ratio of "
 "two metrics, e.g. \"Tunnel length per Length double track\""
 
+msgid "csv_download"
+msgstr ""
+
 #~ msgid "ratio_single_track_tube"
 #~ msgstr "Portion of twin-tube tunnel"
 

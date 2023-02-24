@@ -46,7 +46,7 @@ construction_duration:
   src: https://de.wikipedia.org/wiki/Brennerbasistunnel
 maximum_speed:
   val: 250
-  src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X
+  src: https://de.wikipedia.org/wiki/Brennerbasistunnel
 commercial_speed:
   val: 180
   src: 25m for 70km Innsbruck-Franzensfeste

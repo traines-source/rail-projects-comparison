@@ -36,7 +36,7 @@ trains_per_hour_direction:
   val: 400/24
   src: including freight trains https://magazin.ihk-muenchen.de/artikel/brenner-basistunnel-gueterverkehr-wie-viel-laesst-sich-auf-die-schiene-verlagern
 average_passengers_per_train:
-  val: 600
+  val: 500
   src: estimate
 estimated_construction_cost:
   val: 9500000000

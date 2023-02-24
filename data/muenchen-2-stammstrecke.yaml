@@ -36,7 +36,7 @@ trains_per_hour_direction:
   val: 20
   src: https://www.merkur.de/lokales/muenchen/zentrum/zweite-stammstrecke-in-muenchen-startkonzept-steht-fest-6911346.html
 average_passengers_per_train:
-  val: 600
+  val: 500
   src: estimate 
 estimated_construction_cost:
   val: 7000000000

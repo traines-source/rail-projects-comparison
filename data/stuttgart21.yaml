@@ -61,7 +61,7 @@ modal_shift_low:
   src: https://www.ingenieure22.de/cms/images/publikat/flyer/Treibhausgasemissionen_Stuttgart21.pdf
 modal_shift_high:
   val: 20
-  src: estimate to get to alleged 70000 tCO2/a savings from https://www.bvmw.de/fileadmin/pdf-archiv/090120_Projekt_21_Gute_Gruende.pdf
+  src: 70000 tCO2/a savings according to https://www.bvmw.de/fileadmin/pdf-archiv/090120_Projekt_21_Gute_Gruende.pdf would require a higher modal shift with the given passenger numbers
 paths: |
   <path data-from="1 0" data-line="S1" data-stops="Wendlingen StuttgartFlughafen StuttgartHbf h_BadCannstatt Feuerbach" />
   <path data-from="1 0" data-line="S1" data-stops="Untertürkheim h_Untertürkheim StuttgartHbf h_BadCannstatt h2_BadCannstatt BadCannstatt" />

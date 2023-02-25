@@ -31,283 +31,266 @@ msgid "imprint"
 msgstr "Mentions légales/Protection des données"
 
 msgid "name"
-msgstr ""
+msgstr "Nom du projet"
 
-#, fuzzy
 msgid "name_unit"
-msgstr "Comparail"
+msgstr ""
 
 msgid "name_description"
 msgstr ""
 
 msgid "type"
-msgstr ""
+msgstr "Type"
 
-#, fuzzy
 msgid "type_unit"
-msgstr "Comparail"
+msgstr ""
 
 msgid "type_description"
 msgstr ""
 
 msgid "longitude"
-msgstr ""
+msgstr "Longitude"
 
 msgid "longitude_unit"
-msgstr ""
+msgstr "degré"
 
 msgid "longitude_description"
-msgstr ""
+msgstr "Longitude (axe des x). Probablement à visualiser uniquement ensemble avec la latitude."
 
-#, fuzzy
 msgid "latitude"
-msgstr "Comparail"
+msgstr "Latitude"
 
-#, fuzzy
 msgid "latitude_unit"
-msgstr "Comparail"
+msgstr "degré"
 
-#, fuzzy
 msgid "latitude_description"
-msgstr "Comparail"
+msgstr "Latitude (axe des y). Probablement à visualiser uniquement ensemble avec la longitude."
 
 msgid "length_double_track"
-msgstr ""
+msgstr "Longueur (double voie)"
 
 msgid "length_double_track_unit"
-msgstr ""
+msgstr "km"
 
 msgid "length_double_track_description"
-msgstr ""
+msgstr "La longueur du chemin de fer (double voie comptée qu'une fois)."
 
 msgid "length_tunnel"
-msgstr ""
+msgstr "Longueur tunnel"
 
 msgid "length_tunnel_unit"
-msgstr ""
+msgstr "km"
 
 msgid "length_tunnel_description"
-msgstr ""
+msgstr "La longueur des tunnels; tunnels bitubes avec voie unique sont comptés qu'une fois."
 
 msgid "length_tunnel_tube"
-msgstr ""
+msgstr "Longueur tunnel (tubes)"
 
 msgid "length_tunnel_tube_unit"
-msgstr ""
+msgstr "km"
 
 msgid "length_tunnel_tube_description"
-msgstr ""
+msgstr "La longueur des tubes de tunnel; tunnels bitubes avec voie unique sont comptés comme deux tubes séparées. Diviser \"Longueur tunnel (tubes)\" par \"Longueur tunnel\" donne la proportion de tunnels bitubes par rapport aux tunnels totals."
 
 msgid "tunnel_diameter"
-msgstr ""
+msgstr "Diamètre extérieur des tunnels"
 
 msgid "tunnel_diameter_unit"
-msgstr ""
+msgstr "m"
 
 msgid "tunnel_diameter_description"
-msgstr ""
+msgstr "Le diamètre extérieur du tunnel comme il est creusé, par exemple par un tunnelier."
 
 msgid "length_bridge"
-msgstr ""
+msgstr "Longueur des ponts"
 
 msgid "length_bridge_unit"
-msgstr ""
+msgstr "km"
 
 msgid "length_bridge_description"
-msgstr ""
+msgstr "Longueur totale des ponts."
 
 msgid "number_stations"
-msgstr ""
+msgstr "Nombre de stations"
 
 msgid "number_stations_unit"
-msgstr ""
+msgstr "station"
 
 msgid "number_stations_description"
-msgstr ""
+msgstr "Nombre de gares/stations du projet."
 
 msgid "passengers_per_day"
-msgstr ""
+msgstr "Passagers/jour"
 
 msgid "passengers_per_day_unit"
-msgstr ""
+msgstr "passager"
 
 msgid "passengers_per_day_description"
-msgstr ""
+msgstr "Nombre de passagers attendus."
 
 msgid "pkm_per_day"
-msgstr ""
+msgstr "Passager-km/jour"
 
 msgid "pkm_per_day_unit"
-msgstr ""
+msgstr "Pkm/jour"
 
 msgid "pkm_per_day_description"
-msgstr ""
+msgstr "La distance totale parcourue par tous les passagers du projet, c'est-à-dire le nombre de passagers multiplié par le nombre moyen de kilomètres parcourus par un passager (éventuellement au-delà du projet)"
 
 msgid "trains_per_hour_direction"
-msgstr ""
+msgstr "Trains par heure et direction"
 
 msgid "trains_per_hour_direction_unit"
-msgstr ""
+msgstr "train"
 
 msgid "trains_per_hour_direction_description"
-msgstr ""
+msgstr "Combien de trains circulent dans chaque direction à l'heure de pointe."
 
 msgid "average_passengers_per_train"
-msgstr ""
+msgstr "Moyenne de passagers/train"
 
 msgid "average_passengers_per_train_unit"
-msgstr ""
+msgstr "passager"
 
 msgid "average_passengers_per_train_description"
-msgstr ""
+msgstr "Le nombre moyen de passagers par train."
 
 msgid "estimated_construction_cost"
-msgstr ""
+msgstr "Coût de construction"
 
 msgid "estimated_construction_cost_unit"
-msgstr ""
+msgstr "€"
 
 msgid "estimated_construction_cost_description"
-msgstr ""
+msgstr "Une estimation approximative des coûts de construction."
 
 msgid "construction_duration"
-msgstr ""
+msgstr "Durée des travaux"
 
 msgid "construction_duration_unit"
-msgstr ""
+msgstr "an"
 
 msgid "construction_duration_description"
-msgstr ""
+msgstr "Combien d'années ont duré/dureront les traveaux."
 
 msgid "maximum_speed"
-msgstr ""
+msgstr "Vitesse maximale"
 
 msgid "maximum_speed_unit"
-msgstr ""
+msgstr "km/h"
 
 msgid "maximum_speed_description"
-msgstr ""
+msgstr "Vitesse maximale autorisée sur la ligne."
 
 msgid "commercial_speed"
-msgstr ""
+msgstr "Vitesse commerciale"
 
 msgid "commercial_speed_unit"
-msgstr ""
+msgstr "km/h"
 
 msgid "commercial_speed_description"
-msgstr ""
+msgstr "Vitesse moyenne, y compris les arrêts aux stations."
 
 msgid "emissions_construction_reference"
-msgstr ""
+msgstr "Émissions de construction (référence)"
 
 msgid "emissions_construction_reference_unit"
-msgstr ""
+msgstr "tCO2"
 
 msgid "emissions_construction_reference_description"
-msgstr ""
+msgstr "Tonnes de CO2 émises pendant les travaux selon les calculs officiels du projet ou, s'il n'y en a pas, basé sur des estimations spécifiques pour le projet. Les méthodes de calcul varient considérablement d'un projet à l'autre."
 
 msgid "emissions_construction_low"
-msgstr ""
+msgstr "Émissions de construction (estimation basse)"
 
 msgid "emissions_construction_low_unit"
-msgstr ""
+msgstr "tCO2"
 
 msgid "emissions_construction_low_description"
-msgstr ""
+msgstr "Une estimation de la limite inférieure des tonnes de CO2 émises pendant les travaux. Calculée à l'aide d'une formule simple basée sur les paramètres clés du projet, afin de permettre une meilleure comparaison entre les projets."
 
 msgid "emissions_construction_high"
-msgstr ""
+msgstr "Émissions de construction (estimation haute)"
 
 msgid "emissions_construction_high_unit"
-msgstr ""
+msgstr "tCO2"
 
 msgid "emissions_construction_high_description"
-msgstr ""
+msgstr "Une estimation de la limite supérieure des tonnes de CO2 émises pendant les travaux. Calculée à l'aide d'une formule simple basée sur les paramètres clés du projet, afin de permettre une meilleure comparaison entre les projets."
 
 msgid "emissions_savings_per_year_reference"
-msgstr ""
+msgstr "Économies d'émissions/an (référence)"
 
 msgid "emissions_savings_per_year_reference_unit"
-msgstr ""
+msgstr "tCO2/an"
 
 msgid "emissions_savings_per_year_reference_description"
-msgstr ""
+msgstr "Réduction des émissions totales de CO2 par an après la mise en service, principalement due au report modal (personnes n'utilisant plus leur voiture, etc.). Basé sur les calculs officiels du projet, ou, s'il n'y en a pas, sur des estimations spécifiques au projet. Les méthodes de calcul varient considérablement d'un projet à l'autre."
 
 msgid "emissions_savings_per_year_low"
-msgstr ""
+msgstr "Économies d'émissions/an (estimation basse)"
 
 msgid "emissions_savings_per_year_low_unit"
-msgstr ""
+msgstr "tCO2/an"
 
 msgid "emissions_savings_per_year_low_description"
-msgstr ""
+msgstr "Une estimation de la limite inférieure des tonnes de CO2 économisées par an après la mise en service. Calculée à l'aide d'une formule simple basée sur les paramètres clés du projet, afin de permettre une meilleure comparaison entre les projets."
 
 msgid "emissions_savings_per_year_high"
-msgstr ""
+msgstr "Économies d'émissions/an (estimation haute)"
 
 msgid "emissions_savings_per_year_high_unit"
-msgstr ""
+msgstr "tCO2/jour"
 
 msgid "emissions_savings_per_year_high_description"
-msgstr ""
+msgstr "Une estimation de la limite supérieure des tonnes de CO2 économisées par an après la mise en service. Calculée à l'aide d'une formule simple basée sur les paramètres clés du projet, afin de permettre une meilleure comparaison entre les projets."
 
 msgid "modal_shift_low"
-msgstr ""
+msgstr "Report modal (bas)"
 
 msgid "modal_shift_low_unit"
-msgstr ""
+msgstr "pourcent"
 
 msgid "modal_shift_low_description"
 msgstr ""
 
 msgid "modal_shift_high"
-msgstr ""
+msgstr "Report modal (haut)"
 
 msgid "modal_shift_high_unit"
-msgstr ""
+msgstr "pourcent"
 
 msgid "modal_shift_high_description"
 msgstr ""
 
 msgid "introduction"
-msgstr ""
+msgstr "Voilà un diagramme de certains projets ferroviaires récents en Europe. Vous pouvez visualiser trois métriques en même temps en les sélectionnant dans les menus déroulants : Sur l'axe des x (en bas à droite), sur l'axe des y (en haut à gauche) et par coloration (en haut à droite). Pour chaque dimension, vous pouvez également choisir un ratio de deux métriques, par exemple : \"Longueur tunnel\" par \"Longueur (double voie)\"."
 
 msgid "examples"
-msgstr ""
+msgstr "Voici quelques exemples :"
 
 msgid "example_number_trains_passenger"
-msgstr ""
+msgstr "Relation entre le nombre de trains en circulation et le nombre de passagers"
 
 msgid "example_construction_cost_duration"
-msgstr ""
+msgstr "Durée et coût des travaux"
 
 msgid "example_cost_per_passenger"
-msgstr ""
+msgstr "Coût par passager quotidien comparé au coût par passager-km quotidien"
 
 msgid "example_double_single_track"
-msgstr ""
+msgstr "Comparaison de tunnels bitubes et monotubes"
 
 msgid "example_co2_best_worst_case"
-msgstr ""
+msgstr "Amortissement des émissions CO2 dans le meilleur et le pire des cas, c'est-à-dire après combien d'années un projet a economisé plus de CO2 qu'il a émis ?"
 
 msgid "example_station_spacing_commercial_speed"
-msgstr ""
+msgstr "Relation entre l'espacement des stations et la vitesse commerciale"
 
 msgid "disclaimer"
-msgstr ""
+msgstr "Veuillez noter que les données à propos les projets ne sont pas nécessairement fiables et sont susceptibles de changements. Les paramètres qui n'ont pas été disponibles auprès des sources ont été estimés le mieux que possible. Voir le tableau ci-dessous pour les sources."
 
 msgid "csv_download"
-msgstr ""
-
-#~ msgid "name_unit"
-#~ msgstr ""
-
-#~ msgid "type_unit"
-#~ msgstr ""
-
-#~ msgid "ratio_single_track_tube"
-#~ msgstr ""
-
-#~ msgid "ratio_single_track_tube_unit"
-#~ msgstr ""
+msgstr "Télécharger l'ensemble des données en CSV"
 

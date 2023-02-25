@@ -30,6 +30,9 @@ msgstr "Video walkthrough"
 msgid "imprint"
 msgstr "Imprint/Privacy"
 
+msgid "per"
+msgstr "per"
+
 msgid "name"
 msgstr "Project Name"
 
@@ -289,7 +292,7 @@ msgid "example_station_spacing_commercial_speed"
 msgstr "Relationship between station spacing and commercial speed"
 
 msgid "disclaimer"
-msgstr "Please note that the data about the projects is not necessarily reliable and subject to change. Metrics that were not available from other sources have been estimated on a best-effort basis. See the table below for the sources."
+msgstr "Please note that the selection of projects is arbitrary and that the data about the projects is not necessarily reliable and subject to change. Metrics that were not available from other sources have been estimated on a best-effort basis. See the table below for the sources."
 
 msgid "csv_download"
 msgstr "Download entire dataset as CSV"

@@ -29,6 +29,9 @@ msgstr ""
 msgid "imprint"
 msgstr ""
 
+msgid "per"
+msgstr ""
+
 msgid "name"
 msgstr ""
 

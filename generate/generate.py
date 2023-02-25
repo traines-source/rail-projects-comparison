@@ -43,7 +43,7 @@ def get_project_row(project, dimensions):
     return row
 
 def write_csv(data, dimensions, dimensions_translations):
-    with open('./dist/railway-project-comparison.csv', 'w', newline='') as csvfile:
+    with open('./dist/rail-projects-comparison.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
 
         writer.writerow(['Licensed under', 'CC0', 'https://creativecommons.org/publicdomain/zero/1.0/'])

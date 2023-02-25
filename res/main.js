@@ -13,11 +13,16 @@ var data = [];
 var padding = 0.1;
 
 var langs = {
-    'en': {id: 0, per: 'per', decimal: '.'},
-    'de': {id: 1, per: 'pro', decimal: ','},
-    'fr': {id: 2, per: 'par', decimal: ','}
+    'en': {id: 0, decimal: '.'},
+    'de': {id: 1, decimal: ','},
+    'fr': {id: 2, decimal: ','}
 };
 var lang = 'en';
+var m = window.location.href.match(/^.*?\/([a-z]+)\/[^\/]*$/);
+console.log(m);
+if (m && m[1] && langs[m[1]])
+    lang = m[1];
+
 d3.formatDefaultLocale({
     "decimal": langs[lang].decimal,
     "thousands": " ",

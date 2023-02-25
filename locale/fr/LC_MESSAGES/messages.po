@@ -30,6 +30,9 @@ msgstr "Présentation en video"
 msgid "imprint"
 msgstr "Mentions légales/Protection des données"
 
+msgid "per"
+msgstr "par"
+
 msgid "name"
 msgstr "Nom du projet"
 
@@ -289,7 +292,7 @@ msgid "example_station_spacing_commercial_speed"
 msgstr "Relation entre l'espacement des stations et la vitesse commerciale"
 
 msgid "disclaimer"
-msgstr "Veuillez noter que les données à propos les projets ne sont pas nécessairement fiables et sont susceptibles de changements. Les paramètres qui n'ont pas été disponibles auprès des sources ont été estimés le mieux que possible. Voir le tableau ci-dessous pour les sources."
+msgstr "Veuillez noter que les projets ont été choisis arbitrairement et que les données à propos les projets ne sont pas nécessairement fiables et sont susceptibles de changements. Les paramètres qui n'ont pas été disponibles auprès des sources ont été estimés le mieux que possible. Voir le tableau ci-dessous pour les sources."
 
 msgid "csv_download"
 msgstr "Télécharger l'ensemble des données en CSV"

@@ -11,9 +11,9 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=3,user-scalable=yes">
 
     <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/res/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/res/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/res/icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
    
     <link rel="stylesheet" href="/res/styles.css" />
     <script src="/vendor/d3.v7.min.js"></script>
@@ -29,7 +29,8 @@
             </linearGradient>
         </defs>
         <g id="bgmap"></g>
-        <g id="projects"></g>      
+        <g id="projects"></g>
+        <g id="elements"></g>
     </svg></div>
     <div id="overlay"><div>
         {% for select in [{'pos':'br', 'axis': 'x'}, {'pos':'tl', 'axis': 'y'}, {'pos':'tr', 'axis': 'z'}] %}
@@ -88,7 +89,7 @@
         </div>
     </div></div>
    
-    <script src="/res/network-animator.js"></script>
+    <script src="/vendor/network-animator.min.js"></script>
     <script src="/res/main.js"></script>
 </body>
 </html>

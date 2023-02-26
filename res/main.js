@@ -18,10 +18,9 @@ var langs = {
     'fr': {id: 2, decimal: ','}
 };
 var lang = 'en';
-var m = window.location.href.match(/^.*?\/([a-z]+)\/[^\/]*$/);
-console.log(m);
-if (m && m[1] && langs[m[1]])
-    lang = m[1];
+
+if (document.documentElement.lang && langs[document.documentElement.lang])
+    lang = document.documentElement.lang;
 
 d3.formatDefaultLocale({
     "decimal": langs[lang].decimal,

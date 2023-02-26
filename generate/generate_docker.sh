@@ -1,1 +1,1 @@
-docker run --rm -it -u $(id -u):$(id -g) -v $(pwd):/app --workdir /app $(docker build -q ./generate/) /bin/sh ./generate/generate.sh
+docker run --rm -it -u $(id -u):$(id -g) -v $(pwd):/app --workdir /app $(docker build -q --target buildenv .) /bin/sh ./generate/generate.sh

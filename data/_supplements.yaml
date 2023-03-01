@@ -1,11 +1,11 @@
 construction_emission_per_km_double_track:
   low: 1000
   high: 4000
-  src: S. 102, http://www.enquetepubliquelignerouge15sud.fr/assets/files/DEP21.pdf, https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+  src: S. 102, http://www.enquetepubliquelignerouge15sud.fr/assets/files/DEP21.pdf, https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf, https://klimabilanz-ubahn-tram.de/download/klimabilanz-ubahn-tram-2023-01.pdf
 construction_emission_per_km_tunnel_tube:
   low: 12000
   high: 45000
-  src: https://github.com/traines-source/traines-videos/tree/master/008-u-bahn-klimabilanz/research, http://media-mediatheque.societedugrandparis.fr/permalinks/domain1/2019/10/29/1360-Methodologie_Carboptimum_-_version_francaise_-_resume.pdf, media-mediatheque.societedugrandparis.fr/permalinks/domain1/2019/10/29/1360-Methodologie_Carboptimum_-_version_francaise_-_resume.pdf, https://www.krbe.gmbh/.cm4all/uproc.php/0/Holistic-Assessment-Transportation-Systems.pdf?cdp=a&_=17f9d4c8ce2, https://www.umstieg-21.de/assets/files/thg-endbericht_s21_251017.pdf, p. 75 ff https://mediatum.ub.tum.de/doc/1295092/document.pdf, https://www.hochbahn.de/resource/blob/33768/067e583a2d2751ec94412caaf785b070/u5-d-klima-summary-data.pdf
+  src: https://github.com/traines-source/traines-videos/tree/master/008-u-bahn-klimabilanz/research, http://media-mediatheque.societedugrandparis.fr/permalinks/domain1/2019/10/29/1360-Methodologie_Carboptimum_-_version_francaise_-_resume.pdf, https://www.krbe.gmbh/.cm4all/uproc.php/0/Holistic-Assessment-Transportation-Systems.pdf?cdp=a&_=17f9d4c8ce2, https://www.umstieg-21.de/assets/files/thg-endbericht_s21_251017.pdf, p. 75 ff https://mediatum.ub.tum.de/doc/1295092/document.pdf, https://www.hochbahn.de/resource/blob/33768/067e583a2d2751ec94412caaf785b070/u5-d-klima-summary-data.pdf
 construction_emission_per_km_bridge:
   low: 20000
   high: 25000

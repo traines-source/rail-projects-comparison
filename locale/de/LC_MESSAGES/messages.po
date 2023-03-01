@@ -289,11 +289,14 @@ msgid "example_co2_best_worst_case"
 msgstr "CO2-Amortisation im Best Case und im Worst Case, d.h. nach wie vielen Jahren hat sich das Projekt hinsichtlich der CO2-Einsparung gelohnt"
 
 msgid "example_station_spacing_commercial_speed"
-msgstr "Zusammenhang zwischen Stationsabstand und kommerzieller Geschwindgkeit"
+msgstr "Zusammenhang zwischen Stationsabstand und kommerzieller Geschwindigkeit"
 
 msgid "disclaimer"
 msgstr "Bitte beachten Sie, dass die Projekte willkürlich ausgewählt wurden und dass die Daten zu den Projekten nicht unbedingt zuverlässig sind und sich auch ändern können. Metriken, die nicht aus anderen Quellen verfügbar waren, wurden nach Möglichkeit geschätzt. Siehe die Tabelle unten für die Quellen."
 
 msgid "csv_download"
 msgstr "Gesamten Datensatz als CSV herunterladen"
+
+msgid "contribute"
+msgstr "Daten für ein weiteres Projekt hinzufügen oder Fehler melden"
 

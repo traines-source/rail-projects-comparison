@@ -231,7 +231,7 @@ function divideColumns(mainCol, perCol) {
 }
 
 function arrayDiff(a, b) {
-    return a.filter(e => !b.includes(e));
+    return a.filter(function (e) { return !b.includes(e); });
 }
 
 function fractionParts(a, b) {
@@ -256,7 +256,7 @@ function divideUnits(mainUnit, perUnit) {
 }
 
 function getColumn(id) {
-    return data.projects.map(p => p[id]);
+    return data.projects.map(function(p) { return p[id]; });
 }
 
 function getSelectedColumnWithUnit(axis) {
@@ -307,10 +307,13 @@ function loadBgMap() {
             .selectAll("path")
             .data(data.features)
             .enter().append("path")
-            .attr("d", d => {
-                d.geometry.coordinates = d.geometry.coordinates.map(cs => cs.map(c => Array.isArray(c[0]) ? c.map(xyScale) : xyScale(c)));
+            .attr("d", function(d) {
+                d.geometry.coordinates = d.geometry.coordinates.map(function(cs) { 
+                    return cs.map(function(c) { return Array.isArray(c[0]) ? c.map(xyScale) : xyScale(c); });
+                });
+                
                 return d3.geoPath().projection(null)(d);
-            })
+            });
     });
 }
 
@@ -337,7 +340,7 @@ function presetSelects(presets_str) {
 
 function initialize() {
     loadBgMap();
-    const projectElements = svg.select("#projects").selectAll("g")
+    var projectElements = svg.select("#projects").selectAll("g")
     .data(data.projects)
     .enter()
     .append("g")

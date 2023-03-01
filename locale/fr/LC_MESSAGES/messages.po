@@ -244,7 +244,7 @@ msgid "emissions_savings_per_year_high"
 msgstr "Économies d'émissions/an (estimation haute)"
 
 msgid "emissions_savings_per_year_high_unit"
-msgstr "tCO2/jour"
+msgstr "tCO2/an"
 
 msgid "emissions_savings_per_year_high_description"
 msgstr "Une estimation de la limite supérieure des tonnes de CO2 économisées par an après la mise en service. Calculée à l'aide d'une formule simple basée sur les paramètres clés du projet, afin de permettre une meilleure comparaison entre les projets."
@@ -296,4 +296,7 @@ msgstr "Veuillez noter que les projets ont été choisis arbitrairement et que l
 
 msgid "csv_download"
 msgstr "Télécharger l'ensemble des données en CSV"
+
+msgid "contribute"
+msgstr "Contribuer des données pour un autre projet ferroviaire ou signaler une erreur"
 

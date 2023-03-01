@@ -6,7 +6,7 @@
     <link rel="alternate" href="https://comparail.traines.eu/de/" hreflang="de" />
     <link rel="alternate" href="https://comparail.traines.eu/fr/" hreflang="fr" />
 
-    <title>{{ gettext('title') }}</title>
+    <title>{{ gettext('title_long') }}</title>
 
     <meta name="viewport" content="initial-scale=1,maximum-scale=3,user-scalable=yes">
 
@@ -83,7 +83,7 @@
                 {%- endfor %}
             </table>
         </div>
-        <div id="csv"><a href="/dist/rail-projects-comparison.csv">{{ gettext('csv_download') }}</a></div>
+        <div id="csv"><a href="/dist/rail-projects-comparison.csv">{{ gettext('csv_download') }}</a> | <a href="https://github.com/traines-source/rail-projects-comparison#contribute">{{ gettext('contribute') }}</a></div>
         <div id="footer">
             <a href="/en/" hreflang="en">EN</a> | <a href="/de/" hreflang="de">DE</a> | <a href="/fr/" hreflang="fr">FR</a> | <a href="https://traines.eu/impressum.html">{{ gettext('imprint') }}</a>
         </div>

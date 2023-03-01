@@ -297,3 +297,6 @@ msgstr "Please note that the selection of projects is arbitrary and that the dat
 msgid "csv_download"
 msgstr "Download entire dataset as CSV"
 
+msgid "contribute"
+msgstr "Contribute data for another rail project or report an error"
+

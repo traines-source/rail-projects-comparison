@@ -250,6 +250,9 @@ circle {
 }
 
 @media only screen and (max-width : 800px) {
+    h1 {
+        font-size: 1.7em;
+    }
     #container-plot {
         margin-top: 180px;
     }

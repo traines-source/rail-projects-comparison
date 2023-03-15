@@ -27,11 +27,11 @@ number_stations:
   val: 6
   src: https://www.vde8.de/assets/images/projekt/03-zukuenftiges-Liniennetz.jpg, (major upgrades only ~3) https://de.wikipedia.org/wiki/Verkehrsprojekt_Deutsche_Einheit_Nr._8
 passengers_per_day:
-  val: 4400000/365*2
-  src: estimate - half of passengers do complete journey Berlin-Munich https://www.vde8.de/---_site.news..ls_dir._type.press_cat.2_id.961_likecms.html
+  val: 4900000/365*2
+  src: estimate - half of passengers do complete journey Berlin-Munich https://www.sueddeutsche.de/wirtschaft/deutsche-bahn-schnelltrasse-berlin-muenchen-gueterverkehr-1.4328369
 pkm_per_day:
-  val: 4400000/365*2*600
-  src: estimate - half of passengers do complete journey Berlin-Munich https://www.vde8.de/---_site.news..ls_dir._type.press_cat.2_id.961_likecms.html
+  val: 4900000/365*2*600
+  src: estimate - half of passengers do complete journey Berlin-Munich https://www.sueddeutsche.de/wirtschaft/deutsche-bahn-schnelltrasse-berlin-muenchen-gueterverkehr-1.4328369
 trains_per_hour_direction:
   val: 2
   src: https://www.vde8.de/assets/images/projekt/03-zukuenftiges-Liniennetz.jpg

@@ -153,7 +153,6 @@ function updatePlot(x, y, z, animDuration) {
             var bboxA = [Math.max(xDomain[0], yDomain[0]), Math.min(xDomain[1], yDomain[1])];
             var lengthR = Math.abs((bbox[1]-bbox[0])/(bboxA[1]-bboxA[0]));
             var posR = Math.abs((bboxA[0]-bbox[0])/(bbox[1]-bbox[0]));
-            console.log(lengthR, posR);
             if (lengthR < 3 && posR < 1/3)
                 xDomain = yDomain = bbox;
         }
@@ -197,7 +196,8 @@ function updatePlot(x, y, z, animDuration) {
     .data(data.projects)
     .selectAll('td')
     .data(function (d, i) {
-        return [d.name.lbl,
+        return [
+            '<a href="https://wikidata.org/wiki/'+d.wikidata.lbl+'" target="_blank">'+d.name.lbl+'</a>',
             x.col[i].val, tableSource(x.col[i].src, linkMemory),
             y.col[i].val, tableSource(y.col[i].src, linkMemory),
             z.col[i].val, tableSource(z.col[i].src, linkMemory)

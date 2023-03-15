@@ -78,7 +78,7 @@
                 </tr>
                 {% for project in projects %}
                     <tr class="row">
-                        <td>{{ project.name.lbl }}</td><td class="val"></td><td class="src"></td><td class="val"></td><td class="src"></td><td class="val"></td><td class="src"></td>
+                        <td><a href="https://wikidata.org/wiki/{{ project.wikidata.lbl }}" target="_blank">{{ project.name.lbl }}</a></td><td class="val"></td><td class="src"></td><td class="val"></td><td class="src"></td><td class="val"></td><td class="src"></td>
                     </tr>
                 {%- endfor %}
             </table>

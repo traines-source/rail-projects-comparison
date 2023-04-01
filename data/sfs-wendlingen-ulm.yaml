@@ -31,7 +31,7 @@ passengers_per_day:
   src: estimate based on https://assets.ctfassets.net/scbs508bajse/6nSeSiD5udWlqbBnaFZCte/46e3beea7f7bbd32fd1f9f4fb40f7df9/Deutschlandtakt_Gutachterbericht_zur_Verdoppelung_der_Nachfrage_im_SPV.PDF, https://www.swr.de/-/id=13925186/property=download/nid=1622/585o2/index.pdf
 pkm_per_day:
   val: 10000000/365*250
-  src: estimate based daily passengers (most people travel beyond the NBS)
+  src: estimate based on daily passengers (most people travel beyond the SFS)
 trains_per_hour_direction:
   val: 4.5
   src: https://assets.ctfassets.net/scbs508bajse/1ssn0EHt8g8050FF5VbO27/2eae782f035704938a49617b82294726/Netzgrafik_3._Entwurf_Baden-Wu__rttemberg.pdf

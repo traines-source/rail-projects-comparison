@@ -211,7 +211,7 @@ msgid "emissions_construction_low_unit"
 msgstr "tCO2"
 
 msgid "emissions_construction_low_description"
-msgstr "An estimation how many tonnes of CO2 at least are emitted during construction. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
+msgstr "An estimate how many tonnes of CO2 at least are emitted during construction. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
 
 msgid "emissions_construction_high"
 msgstr "Construction emissions (high estimate)"
@@ -220,7 +220,7 @@ msgid "emissions_construction_high_unit"
 msgstr "tCO2"
 
 msgid "emissions_construction_high_description"
-msgstr "An estimation how many tonnes of CO2 at most are emitted during construction. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
+msgstr "An estimate how many tonnes of CO2 at most are emitted during construction. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
 
 msgid "emissions_savings_per_year_reference"
 msgstr "Emission savings/year (reference)"
@@ -238,7 +238,7 @@ msgid "emissions_savings_per_year_low_unit"
 msgstr "tCO2/year"
 
 msgid "emissions_savings_per_year_low_description"
-msgstr "An estimation how many tonnes of CO2 per year are saved at least, when operational. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
+msgstr "An estimate how many tonnes of CO2 per year are saved at least, when operational. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
 
 msgid "emissions_savings_per_year_high"
 msgstr "Emission savings/year (high estimate)"
@@ -247,7 +247,7 @@ msgid "emissions_savings_per_year_high_unit"
 msgstr "tCO2/year"
 
 msgid "emissions_savings_per_year_high_description"
-msgstr "An estimation how many tonnes of CO2 per year are saved at most, when operational. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
+msgstr "An estimate how many tonnes of CO2 per year are saved at most, when operational. Calculated with a simple formula based on key metrics of the project, in order to enable better comparison between projects."
 
 msgid "modal_shift_low"
 msgstr "Modal shift (low)"

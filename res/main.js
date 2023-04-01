@@ -1,10 +1,15 @@
-var width = 700;
-var height = 700;
 var svg = d3.select("#plot");
+
+var width = parseInt(svg.node().dataset.width);
+var height = parseInt(svg.node().dataset.height);
+console.log(width, height);
 svg
     .attr("width", "100%")
     .attr("height", height+1100)
     .attr("viewBox", (-50)+" "+(-500)+" "+(width+100)+" "+(height+1100)+"")
+d3.select("#overlay > div")
+    .style("max-width", (width+100)+'px')
+    .style("max-height", height+'px');
 
 TNA.Config.default.mapProjectionScale = 100;
 TNA.Config.default.animSpeed = 10000;
@@ -139,6 +144,19 @@ function tableSource(src, linkMemory) {
     });
 }
 
+function padLonLat(primaryDomain, secondaryDomain, isLat) {
+    var primaryPerSecondary = isLat ? 1/1.5 : 1.5;
+    var targetRatio = isLat ? height/width : width/height;
+    var primarySize = Math.abs(primaryDomain[1]-primaryDomain[0]);
+    var secondarySize = Math.abs(secondaryDomain[1]-secondaryDomain[0]);
+    if (primarySize/secondarySize < targetRatio) {
+        var newSize = secondarySize*targetRatio*primaryPerSecondary;
+        var addedMargin = (newSize-primarySize)/2;
+        primaryDomain = [primaryDomain[0]-addedMargin, primaryDomain[1]+addedMargin];
+    }
+    return primaryDomain;
+}
+
 function updatePlot(x, y, z, animDuration) {
     var xDomain = pad(minMax(x.col));
     var yDomain = pad(minMax(y.col));
@@ -146,9 +164,11 @@ function updatePlot(x, y, z, animDuration) {
     .duration(animDuration).style("opacity", "0");
     if (x.unit == y.unit) {
         if (x.main.id == 'longitude' && y.main.id == 'latitude') {
+            xDomain = padLonLat(xDomain, yDomain, false);
+            yDomain = padLonLat(yDomain, xDomain, true);
             svg.select('#bgmap').transition()
             .duration(animDuration).style("opacity", "1");
-        } else {
+        } else if (width == height) {
             var bbox = [Math.min(xDomain[0], yDomain[0]), Math.max(xDomain[1], yDomain[1])];
             var bboxA = [Math.max(xDomain[0], yDomain[0]), Math.min(xDomain[1], yDomain[1])];
             var lengthR = Math.abs((bbox[1]-bbox[0])/(bboxA[1]-bboxA[0]));
@@ -287,11 +307,13 @@ function loadJson(json) {
 }
 
 function loadBgMap() {
+    var lonDomain = pad(minMax(getColumn('longitude')));
+    var latDomain = pad(minMax(getColumn('latitude')));
     var lonScale = d3.scaleLinear()
-        .domain(pad(minMax(getColumn('longitude'))))
+        .domain(padLonLat(lonDomain, latDomain, false))
         .range([0, width]);
     var latScale = d3.scaleLinear()
-        .domain(pad(minMax(getColumn('latitude'))))
+        .domain(padLonLat(latDomain, lonDomain, true))
         .range([height, 0]);
     var xyScale = function(c) {        
         return [lonScale(c[0]), latScale(c[1])];

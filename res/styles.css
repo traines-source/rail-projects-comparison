@@ -96,8 +96,8 @@ h1 {
 rect.station {
     stroke: #263238;
     fill: white;
-    rx: 5;
-    stroke-width: 2;
+    rx: 100;
+    stroke-width: 40;
 }
 
 rect.station, rect.helper, path.line.helper {

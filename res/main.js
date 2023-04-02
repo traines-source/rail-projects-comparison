@@ -2,7 +2,7 @@ var svg = d3.select("#plot");
 
 var width = parseInt(svg.node().dataset.width);
 var height = parseInt(svg.node().dataset.height);
-console.log(width, height);
+
 svg
     .attr("width", "100%")
     .attr("height", height+1100)
@@ -13,6 +13,7 @@ d3.select("#overlay > div")
 
 TNA.Config.default.mapProjectionScale = 100;
 TNA.Config.default.animSpeed = 10000;
+TNA.Config.default.defaultStationDimen=200;
 
 var data = [];
 var padding = 0.1;
@@ -44,15 +45,15 @@ var zScale = d3.scaleLinear()
     .domain([0, 0])
     .range([0, 1]);
 
-
-svg.append("g")
+var el = svg.select("#elements");
+el.append("g")
     .attr("id", "x-axis") 
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(xScale));
-svg.append("g")
+el.append("g")
     .attr("id", "y-axis") 
     .call(d3.axisLeft(yScale));
-svg.append("rect")
+el.append("rect")
     .attr("id", "z-axis")
     .attr("class", "color-axis")
     .attr("x", width-95)
@@ -61,27 +62,27 @@ svg.append("rect")
     .attr("height", 5)
     .attr("fill", "url(#gradient)");
 
-svg.append("text")
+el.append("text")
     .attr("id", "x-unit")
     .attr("class", "unit")
     .attr("text-anchor", "end")
     .attr("x", width)
     .attr("y", height - 10);
 
-svg.append("text")
+el.append("text")
     .attr("id", "y-unit")
     .attr("class", "unit")
     .attr("text-anchor", "start")
     .attr("x", 6)
     .attr("y", 6);
 
-svg.append("text")
+el.append("text")
     .attr("id", "z-unit-min")
     .attr("class", "unit")
     .attr("text-anchor", "end")
     .attr("x", width-100)
     .attr("y", 6);
-svg.append("text")
+el.append("text")
     .attr("id", "z-unit-max")
     .attr("class", "unit")
     .attr("text-anchor", "start")
@@ -367,7 +368,7 @@ function presetSelects(presets_str) {
     presetSelect('select-x-per', true, preset(presets, 1, null));
     presetSelect('select-y', false, preset(presets, 2, 'latitude'));
     presetSelect('select-y-per', true, preset(presets, 3, null));
-    presetSelect('select-z', false, preset(presets, 4, 'length_double_track'));
+    presetSelect('select-z', false, preset(presets, 4, 'trains_per_hour_direction'));
     presetSelect('select-z-per', true, preset(presets, 5, null));
     triggerUpdatePlot();
 }
@@ -381,6 +382,7 @@ function initialize() {
     .attr("class", "project");
 
     projectElements
+    .attr("transform", function (d, i) { return "translate(" + xScale(0) + "," + yScale(0) + ")" })
     .append("circle", ":first-child")
     .attr("r", 10);
     projectElements    

@@ -63,19 +63,19 @@ modal_shift_high:
   val: 20
   src: estimate
 paths: |
-  <path data-from="1 0" data-line="WU5" data-stops="Hernals Elterleinplatz Michelbeuern ArneKarlssonPark Frankhplatz WienRathaus" />
-  <path data-from="1 0" data-line="WU2" data-stops="WienRathaus Neubaugasse Pilgramgasse ReinprechtsdorferStraße MatzleinsdorferPlatz Gussriegelstr Wienerberg" />
+  <path data-from="1 0 nozoom" data-line="WU5" data-stops="Hernals Elterleinplatz Michelbeuern ArneKarlssonPark Frankhplatz WienRathaus" />
+  <path data-from="1 0 nozoom" data-line="WU2" data-stops="WienRathaus Neubaugasse Pilgramgasse ReinprechtsdorferStraße MatzleinsdorferPlatz Gussriegelstr Wienerberg" />
 
   <rect data-station="WienRathaus" data-dir="ne" data-lon-lat="16.355278 48.210278" />            
-  <rect data-station="Neubaugasse" data-lon-lat="16.350833 48.198611" />            
-  <rect data-station="Pilgramgasse" data-dir="ne" data-lon-lat="16.354497 48.192608" />            
-  <rect data-station="ReinprechtsdorferStraße" data-lon-lat="16.355444 48.187855" />            
-  <rect data-station="MatzleinsdorferPlatz" data-dir="ne" data-lon-lat="16.358722 48.180203" />            
-  <rect data-station="Gussriegelstr" data-dir="ne" data-lon-lat="16.357306 48.171739" />            
+  <rect data-station="Neubaugasse" data-lon-lat="16.350833 48.198611" class="helper" />            
+  <rect data-station="Pilgramgasse" data-dir="ne" data-lon-lat="16.354497 48.192608" class="helper" />            
+  <rect data-station="ReinprechtsdorferStraße" data-lon-lat="16.355444 48.187855" class="helper" />            
+  <rect data-station="MatzleinsdorferPlatz" data-dir="ne" data-lon-lat="16.358722 48.180203" class="helper" />            
+  <rect data-station="Gussriegelstr" data-dir="ne" data-lon-lat="16.357306 48.171739" class="helper" />            
   <rect data-station="Wienerberg" data-dir="ne" data-lon-lat="16.345339 48.168061" />            
   <rect data-station="Hernals" data-lon-lat="16.314889 48.223211" />            
-  <rect data-station="Elterleinplatz" data-dir="ne" data-lon-lat="16.331288 48.218308" />
-  <rect data-station="Michelbeuern" data-lon-lat="16.343944 48.220944" />
-  <rect data-station="ArneKarlssonPark" data-dir="ne" data-lon-lat="16.353666 48.221425" />
-  <rect data-station="Frankhplatz" data-lon-lat="16.356314 48.214622" />
+  <rect data-station="Elterleinplatz" data-dir="ne" data-lon-lat="16.331288 48.218308" class="helper" />
+  <rect data-station="Michelbeuern" data-lon-lat="16.343944 48.220944" class="helper" />
+  <rect data-station="ArneKarlssonPark" data-dir="ne" data-lon-lat="16.353666 48.221425" class="helper" />
+  <rect data-station="Frankhplatz" data-lon-lat="16.356314 48.214622" class="helper" />
 

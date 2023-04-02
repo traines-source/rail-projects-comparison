@@ -62,25 +62,24 @@ modal_shift_low:
 modal_shift_high:
   val: 20
   src: estimate
-paths:
-  <path data-from="1 0" data-line="H1" class="helper" data-stops="NiendorfNord HagenbecksTierpark Schlump Jungfernstieg HauptbahnhofNord LübeckerStraße WandsbekerChaussee" />
-  <path data-from="1 0" data-line="H5" data-stops="ArenenVolkspark HagenbecksTierpark Universitätsklinikum Hoheluftbrücke Stephansplatz Jungfernstieg HauptbahnhofNord h_HauptbahnhofNord_LübeckerStraße Uhlenhorst Borgweg CityNord Sengelmannstraße Bramfeld" />
+paths: |
+  <path data-from="1 0 nozoom" data-line="H1" class="helper" data-stops="NiendorfNord HagenbecksTierpark Schlump Jungfernstieg HauptbahnhofNord LübeckerStraße WandsbekerChaussee" />
+  <path data-from="1 0 nozoom" data-line="H5" data-stops="ArenenVolkspark HagenbecksTierpark Universitätsklinikum Hoheluftbrücke Stephansplatz Jungfernstieg HauptbahnhofNord h_HauptbahnhofNord_LübeckerStraße Uhlenhorst Borgweg CityNord Sengelmannstraße Bramfeld" />
   
-  <rect data-station="Schlump" data-dir="n" data-lon-lat="9.9700757 53.5675879" />            
-  <rect data-station="WandsbekerChaussee" data-dir="nw" data-lon-lat="10.0576225 53.56982" />
-  <rect data-station="HagenbecksTierpark" data-dir="nw" data-label-dir="s" data-lon-lat="9.9440359 53.5925874" />
-  <rect data-station="NiendorfNord" data-lon-lat="9.9501122 53.6408535" />
-  <rect data-station="LübeckerStraße" data-lon-lat="10.0286959 53.5598267" />
-  <rect data-station="Hoheluftbrücke" data-lon-lat="9.976099 53.5774925" />
-  <rect data-station="Jungfernstieg" data-label-dir="s" data-lon-lat="9.9940377 53.5534288" />
+  <rect data-station="Schlump" data-dir="n" data-lon-lat="9.9700757 53.5675879" class="helper" />            
+  <rect data-station="WandsbekerChaussee" data-dir="nw" data-lon-lat="10.0576225 53.56982" class="helper" />
+  <rect data-station="HagenbecksTierpark" data-dir="nw" data-label-dir="s" data-lon-lat="9.9440359 53.5925874" class="helper" />
+  <rect data-station="NiendorfNord" data-lon-lat="9.9501122 53.6408535" class="helper" />
+  <rect data-station="LübeckerStraße" data-lon-lat="10.0286959 53.5598267" class="helper" />
+  <rect data-station="Hoheluftbrücke" data-lon-lat="9.976099 53.5774925" class="helper" />
+  <rect data-station="Jungfernstieg" data-label-dir="s" data-lon-lat="9.9940377 53.5534288" class="helper" />
   <rect data-station="HauptbahnhofNord" data-lon-lat="10.008 53.5534288" />
-  <rect data-station="Borgweg" data-lon-lat="10.0147719 53.5907696" />
-  <rect data-station="Stephansplatz" data-lon-lat="9.9893053 53.5587463" />
-  <rect data-station="Sengelmannstraße" data-dir="nw" data-lon-lat="10.0220004 53.6093953" />
-  <rect data-station="HagenbecksTierpark" data-dir="nw" data-label-dir="s" data-lon-lat="9.9440359 53.5925874" />
+  <rect data-station="Borgweg" data-lon-lat="10.0147719 53.5907696" class="helper" />
+  <rect data-station="Stephansplatz" data-lon-lat="9.9893053 53.5587463" class="helper" />
+  <rect data-station="Sengelmannstraße" data-dir="nw" data-lon-lat="10.0220004 53.6093953" class="helper" />
   <rect data-station="ArenenVolkspark" data-lon-lat="9.89775 53.59296" />
-  <rect data-station="Universitätsklinikum" data-lon-lat="9.97376 53.59293" />
-  <rect data-station="Uhlenhorst" data-dir="n" data-label-dir="w" data-lon-lat="10.02124 53.56653" />
+  <rect data-station="Universitätsklinikum" data-lon-lat="9.97376 53.59293" class="helper" />
+  <rect data-station="Uhlenhorst" data-dir="n" data-label-dir="w" data-lon-lat="10.02124 53.56653" class="helper" />
   <rect data-station="Bramfeld" data-lon-lat="10.0776 53.6137" />
   <rect data-station="CityNord" data-dir="n" data-lon-lat="10.0173 53.6015" />
   

@@ -63,11 +63,11 @@ modal_shift_high:
   val: 20
   src: estimate
 paths: |
-  <path data-from="1 0" data-line="Bruxelles" data-stops="Albert GareduMidi Bourse GareduNord Bordet" />
+  <path data-from="1 0 nozoom" data-line="Bruxelles" data-stops="Albert GareduMidi Bourse GareduNord Bordet" />
 
   <rect data-station="Albert" data-dir="ne" data-lon-lat="4.34194 50.82139" />            
-  <rect data-station="GareduMidi" data-lon-lat="4.337228 50.836747" />            
-  <rect data-station="Bourse" data-dir="ne" data-lon-lat="4.3494166 50.8480338" />            
+  <rect data-station="GareduMidi" data-lon-lat="4.337228 50.836747" class="helper" />            
+  <rect data-station="Bourse" data-dir="ne" data-lon-lat="4.3494166 50.8480338" class="helper" />            
   <rect data-station="GareduNord" data-lon-lat="4.360278 50.860278" />            
   <rect data-station="Bordet" data-dir="ne" data-lon-lat="4.409835 50.878683" />
 

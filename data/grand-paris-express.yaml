@@ -63,11 +63,11 @@ modal_shift_high:
   val: 25
   src: estimate
 paths: |
-  <path data-from="1 0" data-line="P14" data-stops="StDenisPleyel StLazare GaredeLyon Olympiades Villejuif Orly" />
-  <path data-from="1 0" data-line="P15" data-stops="NoisyChamps Champigny Villejuif IssyRER LaDefense BoisColombes StDenisPleyel RosnyBoisPerrier Champigny" />
-  <path data-from="1 0" data-line="P16" data-stops="- StDenisPleyel LeBourget ClichyMontfermeil NoisyChamps" />
-  <path data-from="1 0" data-line="P17" data-stops="- StDenisPleyel LeBourget LeMesnilAmelot" />
-  <path data-from="1 0" data-line="P18" data-stops="Orly Saclay VersaillesChantiers" />
+  <path data-from="1 0 nozoom" data-line="P14" data-stops="StDenisPleyel StLazare GaredeLyon Olympiades Villejuif Orly" />
+  <path data-from="1 0 nozoom" data-line="P15" data-stops="NoisyChamps Champigny Villejuif IssyRER LaDefense BoisColombes StDenisPleyel RosnyBoisPerrier Champigny" />
+  <path data-from="1 0 nozoom" data-line="P16" data-stops="- StDenisPleyel LeBourget ClichyMontfermeil NoisyChamps" />
+  <path data-from="1 0 nozoom" data-line="P17" data-stops="- StDenisPleyel LeBourget LeMesnilAmelot" />
+  <path data-from="1 0 nozoom" data-line="P18" data-stops="Orly Saclay VersaillesChantiers" />
   
   <rect data-station="Villejuif" data-lon-lat="2.34936 48.79304" />            
   <rect data-station="Orly" data-lon-lat="2.36243 48.72976" />            
@@ -76,14 +76,13 @@ paths: |
   <rect data-station="LaDefense" data-lon-lat="2.23745 48.88950" />            
   <rect data-station="StDenisPleyel" data-lon-lat="2.3461 48.9176" />            
   <rect data-station="LeBourget" data-lon-lat="2.42567 48.93111" />            
-  <rect data-station="CDG" data-lon-lat="2.5708 49.0040" />            
   <rect data-station="LeMesnilAmelot" data-lon-lat="2.5899 49.0239" />            
   <rect data-station="NoisyChamps" data-lon-lat="2.58098 48.84296" />            
   <rect data-station="Champigny" data-lon-lat="2.49404 48.81806" />    
   <rect data-station="ClichyMontfermeil" data-dir="nw" data-lon-lat="2.56328 48.89805" />    
   <rect data-station="Olympiades" data-dir="ne" data-lon-lat="2.3664 48.8270" />    
-  <rect data-station="GaredeLyon" data-dir="nw" data-lon-lat="2.3743 48.8435" />    
+  <rect data-station="GaredeLyon" data-dir="nw" data-lon-lat="2.3743 48.8435" class="helper"/>    
   <rect data-station="StLazare" data-dir="ne" data-lon-lat="2.32480 48.87641" />    
   <rect data-station="IssyRER" data-dir="nw" data-lon-lat="2.26097 48.82105" />    
-  <rect data-station="BoisColombes" data-dir="ne" data-lon-lat="2.2705 48.9139" />    
+  <rect data-station="BoisColombes" data-dir="ne" data-lon-lat="2.2705 48.9139" class="helper" />    
   <rect data-station="RosnyBoisPerrier" data-dir="nw" data-lon-lat="2.4814 48.8818" />    

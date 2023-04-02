@@ -48,8 +48,8 @@ maximum_speed:
   val: 300
   src: https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
 commercial_speed:
-  val: 150
-  src: based on 600km distance Berlin-Munich in 4h https://www.vde8.de/---_site.project..ls_dir._likecms.html
+  val: 162.5
+  src: based on 650km distance Berlin-Munich in 4h https://www.vde8.de/---_site.project..ls_dir._likecms.html
 emissions_construction_reference:
   val: 4000000*0.5*2
   src: based on 4mt concrete https://www.vde8.de/---_site.project..ls_dir._likecms.html and the assumption that 1m3=0.5tCO2 but concrete is about 50% of total construction emissions, cf. https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf 
@@ -63,8 +63,8 @@ modal_shift_high:
   val: 25
   src: estimate, https://www.vde8.de/---_site.news..ls_dir._type.press_cat.2_id.961_likecms.html
 paths: |
-  <path data-from="1 0" data-line="VDE8" data-stops="Nürnberg Erfurt Halle Wittenberg Berlin" />
-  <path data-from="1 0" data-line="VDE8" data-stops="Erfurt Leipzig Wittenberg" />
+  <path data-from="1 0 nozoom" data-line="VDE8" data-stops="Nürnberg Erfurt Halle Wittenberg Berlin" />
+  <path data-from="1 0 nozoom" data-line="VDE8" data-stops="Erfurt Leipzig Wittenberg" />
   <rect data-station="Nürnberg" data-lon-lat="10.9779 49.4716" />
   <rect data-station="Erfurt" data-dir="nw" data-lon-lat="11.0376 50.9720" />
   <rect data-station="Leipzig" data-dir="nw" data-lon-lat="12.3814 51.3449" />

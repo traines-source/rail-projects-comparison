@@ -63,14 +63,14 @@ modal_shift_high:
   val: 20
   src: estimate
 paths: |
-  <path data-from="1 0" data-line="HS2" data-stops="Euston BirminghamInterchange Crewe North" />
-  <path data-from="1 0" data-line="HS2" data-stops="BirminghamInterchange Birmingham" />
-  <path data-from="1 0" data-line="HS2" data-stops="Crewe Manchester" />
-  <path data-from="1 0" data-line="HS2" data-stops="BirminghamInterchange EastMidlands" />
+  <path data-from="1 0 nozoom" data-line="HS2" data-stops="Euston BirminghamInterchange Crewe North" />
+  <path data-from="1 0 nozoom" data-line="HS2" data-stops="BirminghamInterchange Birmingham" />
+  <path data-from="1 0 nozoom" data-line="HS2" data-stops="Crewe Manchester" />
+  <path data-from="1 0 nozoom" data-line="HS2" data-stops="BirminghamInterchange EastMidlands" />
   <rect data-station="Euston" data-lon-lat="-0.134722 51.528889" />            
-  <rect data-station="BirminghamInterchange" data-dir="nw" data-lon-lat="-1.7070035127805767 52.46125171446682" />            
+  <rect data-station="BirminghamInterchange" data-dir="nw" data-lon-lat="-1.7070035127805767 52.46125171446682" class="helper" />            
   <rect data-station="Birmingham" data-lon-lat="-1.8838086010610813 52.48152575162555" />            
   <rect data-station="Manchester" data-dir="nw" data-lon-lat="-2.23 53.476944" />            
-  <rect data-station="EastMidlands" data-lon-lat="-1.2630541199254108 52.862608092032104" />            
-  <rect data-station="Crewe" data-lon-lat="-2.432882180782153 53.08849481313845" />
-  <rect data-station="North" data-lon-lat="-2.597879264886238 53.49314745721405" />
+  <rect data-station="EastMidlands" data-lon-lat="-1.2630541199254108 52.862608092032104" class="helper" />            
+  <rect data-station="Crewe" data-lon-lat="-2.432882180782153 53.08849481313845" class="helper"/>
+  <rect data-station="North" data-lon-lat="-2.597879264886238 53.49314745721405" class="helper" />

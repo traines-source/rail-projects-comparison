@@ -63,14 +63,14 @@ modal_shift_high:
   val: 20
   src: estimate
 paths: |
-  <path data-from="1 0" data-line="Toulouse" data-stops="ColomiersGare Blagnac LaVache MarengoMatabiau François-Verdier MontaudranGare INPT LabègeLaCadène" />
+  <path data-from="1 0 nozoom" data-line="Toulouse" data-stops="ColomiersGare Blagnac LaVache MarengoMatabiau François-Verdier MontaudranGare INPT LabègeLaCadène" />
 
   <rect data-station="ColomiersGare" data-dir="ne" data-lon-lat="1.33540833 43.6044111" />            
-  <rect data-station="Blagnac" data-lon-lat="1.39593889 43.6215028" />            
-  <rect data-station="LaVache" data-dir="ne" data-lon-lat="1.435608333 43.63363333" />            
+  <rect data-station="Blagnac" data-lon-lat="1.39593889 43.6215028" class="helper" />            
+  <rect data-station="LaVache" data-dir="ne" data-lon-lat="1.435608333 43.63363333" class="helper" />            
   <rect data-station="MarengoMatabiau" data-lon-lat="1.45505 43.610925" />            
-  <rect data-station="François-Verdier" data-dir="ne" data-lon-lat="1.452013889 43.60059167" />            
+  <rect data-station="François-Verdier" data-dir="ne" data-lon-lat="1.452013889 43.60059167" class="helper" />            
   <rect data-station="MontaudranGare" data-dir="ne" data-lon-lat="1.479953 43.57314" />            
-  <rect data-station="INPT" data-dir="ne" data-lon-lat="1.504065 43.551039" />            
+  <rect data-station="INPT" data-dir="ne" data-lon-lat="1.504065 43.551039" class="helper" />            
   <rect data-station="LabègeLaCadène" data-lon-lat="1.52038889 43.5387111" />
 

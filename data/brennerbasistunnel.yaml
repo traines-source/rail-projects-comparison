@@ -63,11 +63,11 @@ modal_shift_high:
   val: 50
   src: high estimate to account for freight trains
 paths: |
-  <path data-from="1 0" data-line="WU5" data-stops="BrennerSüdportal BrennerAbzweig BrennerInnsbruck" />
-  <path data-from="1 0" data-line="WU2" data-stops="BrennerAbzweig InnsbruckOstportal" />
+  <path data-from="1 0 nozoom" data-line="WU5" data-stops="BrennerSüdportal BrennerAbzweig BrennerInnsbruck" />
+  <path data-from="1 0 nozoom" data-line="WU2" data-stops="BrennerAbzweig InnsbruckOstportal" />
   
-  <rect data-station="InnsbruckOstportal" data-dir="ne" data-lon-lat="11.5420 47.2827" />
-  <rect data-station="BrennerAbzweig" data-lon-lat="11.4289 47.2193" />
-  <rect data-station="BrennerInnsbruck" data-dir="ne" data-lon-lat="11.4024 47.2516" />
-  <rect data-station="BrennerSüdportal" data-lon-lat="11.6065 46.7914" />
+  <rect data-station="InnsbruckOstportal" class="helper" data-dir="ne" data-lon-lat="11.5420 47.2827" />
+  <rect data-station="BrennerAbzweig" class="helper" data-lon-lat="11.4289 47.2193" />
+  <rect data-station="BrennerInnsbruck" class="helper" data-dir="ne" data-lon-lat="11.4024 47.2516" />
+  <rect data-station="BrennerSüdportal" class="helper" data-lon-lat="11.6065 46.7914" />
 

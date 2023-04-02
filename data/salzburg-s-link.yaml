@@ -63,7 +63,7 @@ modal_shift_high:
   val: 25
   src: estimate
 paths: |
-  <path data-from="1 0" data-line="Sb1" data-stops="SalzburgHbf Akademiestraße SalzburgSüd Hallein" />
+  <path data-from="1 0 nozoom" data-line="Sb1" data-stops="SalzburgHbf Akademiestraße SalzburgSüd Hallein" />
   <rect data-station="SalzburgHbf" data-dir="n"  data-lon-lat="13.0456 47.8124" />            
   <rect data-station="Akademiestraße" data-dir="nw"  data-lon-lat="13.05919 47.79401" />            
   <rect data-station="SalzburgSüd" data-dir="n"  data-lon-lat="13.0692 47.7746" />            

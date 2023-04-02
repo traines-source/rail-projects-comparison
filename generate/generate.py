@@ -17,27 +17,61 @@ def load_yaml(file):
     with open(file, 'r') as stream:
         try:
             properties = yaml.safe_load(stream)
-            for p in properties:
-                if properties[p] and 'val' in properties[p] and type(properties[p]['val']) == str:
-                    properties[p]['val'] = eval(properties[p]['val'])
             return properties
         except yaml.YAMLError as exc:
             print(exc)
+
+def eval_calcs(properties):
+    for p in properties:
+        if properties[p] and 'val' in properties[p] and type(properties[p]['val']) == str:
+            properties[p]['val'] = eval(properties[p]['val'])
+    return properties
 
 def write_json(data):
     with open('./dist/data.json', 'w') as outfile:
         json.dump(data, outfile)
 
+def get_unit_translation(tr, key, sg_or_pl):
+    return tr.gettext('unit_'+key+'_'+sg_or_pl) if key is not None else ''
+
+def chkey(dict, key):
+    return key in dict and dict[key] is not None
+
 def get_dimension_translations(tr, dimensions):
     row = [locale]
-    for key in dimensions.keys():
+    for dim in dimensions:
+        key = dim['id']
         row.append(tr.gettext(key))
-        row.append(tr.gettext(key+'_unit'))
+        unit_str = ''
+        if chkey(dim, 'unit'):
+            unit_str = get_unit_translation(tr, dim['unit']['numerator'], 'pl')
+            if chkey(dim['unit'], 'denominator'):
+                unit_str += '/'+get_unit_translation(tr, dim['unit']['denominator'], 'sg')
+        row.append(unit_str)
     return row
+
+def make_unit_dataset(dim):
+    return ('data-unit-numerator="'+dim['unit']['numerator']+'"' if chkey(dim['unit'], 'numerator') else '') + (' data-unit-denominator="'+dim['unit']['denominator']+'"' if chkey(dim['unit'], 'denominator') else '')
+
+    
+def get_unit_translations(tr, dim):
+    units = {}
+    for dim in dimensions:
+        if chkey(dim, 'unit'):
+            if chkey(dim['unit'], 'numerator'):
+                units[dim['unit']['numerator']] = {}
+                units[dim['unit']['numerator']]['sg'] = get_unit_translation(tr, dim['unit']['numerator'], 'sg')
+                units[dim['unit']['numerator']]['pl'] = get_unit_translation(tr, dim['unit']['numerator'], 'pl')
+            if chkey(dim['unit'], 'denominator'):
+                units[dim['unit']['denominator']] = {}
+                units[dim['unit']['denominator']]['sg'] = get_unit_translation(tr, dim['unit']['denominator'], 'sg')
+                units[dim['unit']['denominator']]['pl'] = get_unit_translation(tr, dim['unit']['denominator'], 'pl')
+    return units
 
 def get_project_row(project, dimensions):
     row = ['']
-    for key in dimensions.keys():
+    for dim in dimensions:
+        key = dim['id']
         row.append(project[key]['val'] if 'val' in project[key] else project[key]['lbl'])
         row.append(project[key]['src'] if 'src' in project[key] else '')
     return row
@@ -66,7 +100,6 @@ def estimate_emissions_savings(low_or_high, data):
 
 
 data = {'license:': 'https://creativecommons.org/publicdomain/zero/1.0/', 'projects':[]}
-display_dimensions_ids = []
 supplements = load_yaml('./data/_supplements.yaml')
 dimensions = load_yaml('./data/_dimensions.yaml')
 datafiles = os.scandir('./data/')
@@ -77,7 +110,7 @@ for file in datafiles:
         if file.name[0] == '_':
             continue
         else:
-            project = load_yaml(file)
+            project = eval_calcs(load_yaml(file))
             project['id'] = {'lbl': id}
             project['emissions_construction_low'] = estimate_emissions_construction('low', project)
             project['emissions_construction_high'] = estimate_emissions_construction('high', project)
@@ -86,12 +119,6 @@ for file in datafiles:
             data['projects'].append(project)
 
 data['projects'].sort(key=lambda d: d['id']['lbl'])
-
-for key, value in dimensions.items():
-    if value and 'hidden' in value and value['hidden']:
-        continue
-    display_dimensions_ids.append(key)
-print(display_dimensions_ids)
 
 dimensions_translations = []
 
@@ -102,9 +129,10 @@ for locale in locales:
     env.install_gettext_translations(tr, newstyle=True)
 
     dimensions_translations.append(get_dimension_translations(tr, dimensions))
+    unit_translations = json.dumps(get_unit_translations(tr, dimensions))
 
     tm = env.get_template('index.tmpl.html')
-    html = tm.render(dimensions=display_dimensions_ids, projects=data['projects'], locale=locale)
+    html = tm.render(dimensions=dimensions, projects=data['projects'], locale=locale, make_unit_dataset=make_unit_dataset, unit_translations=unit_translations)
    
     Path("dist/www/"+locale).mkdir(parents=True, exist_ok=True)
     with open("dist/www/"+locale+"/index.html", "w") as outf:

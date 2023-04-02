@@ -36,14 +36,18 @@
         {% for select in [{'pos':'br', 'axis': 'x'}, {'pos':'tl', 'axis': 'y'}, {'pos':'tr', 'axis': 'z'}] %}
             <div class="axis-select" id="{{ select.pos }}">
                 <select class="select" id="select-{{ select.axis }}">
-                    {% for id in dimensions %}
-                        <option value="{{ id }}" data-unit="{{ gettext(id+'_unit') }}">{{ gettext(id) }}</option>
+                    {% for dim in dimensions %}
+                        {%- if not dim.hidden %}
+                        <option value="{{ dim.id }}" {{ make_unit_dataset(dim) }}>{{ gettext(dim.id) }}</option>
+                        {%- endif %}
                     {%- endfor %}
                 </select><br />
                 <select class="select" id="select-{{ select.axis }}-per">
                     <option value="-1"></option>
-                    {% for id in dimensions %}
-                        <option value="{{ id }}" data-unit="{{ gettext(id+'_unit') }}">{{ gettext('per') }} {{ gettext(id) }}</option>
+                    {% for dim in dimensions %}
+                        {%- if not dim.hidden %}
+                        <option value="{{ dim.id }}" {{ make_unit_dataset(dim) }}>{{ gettext('per') }} {{ gettext(dim.id) }}</option>
+                        {%- endif %}
                     {%- endfor %}
                 </select>
             </div>
@@ -64,10 +68,10 @@
             <p>{{ gettext('disclaimer') }}</p>
         </div>
         <div id="metrics">
-            {% for id in dimensions %}
+            {% for dim in dimensions %}
                 <div id="{{ id }}">
-                    <h3>{{ gettext(id) }}</h3>
-                    <p>{{ gettext(id+'_description') }}</p>
+                    <h3>{{ gettext(dim.id) }}</h3>
+                    <p>{{ gettext(dim.id+'_description') }}</p>
                 </div>
             {%- endfor %}
         </div>         
@@ -89,6 +93,7 @@
         </div>
     </div></div>
    
+    <script>var unitTranslations = {{ unit_translations }};</script>
     <script src="/vendor/network-animator.min.js"></script>
     <script src="/res/main.js"></script>
 </body>

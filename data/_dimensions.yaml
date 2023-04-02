@@ -1,33 +1,90 @@
-name:
+- id: name
   hidden: true
-type:
+  unit:
+- id: type
   hidden: true
-longitude:
-latitude:
-length_double_track:
-length_tunnel:
-length_tunnel_tube:
-tunnel_diameter:
-length_bridge:
-number_stations:
-passengers_per_day:
-pkm_per_day:
-trains_per_hour_direction:
-average_passengers_per_train:
-estimated_construction_cost:
-construction_duration:
-maximum_speed:
-commercial_speed:
-emissions_construction_reference:
-emissions_construction_low:
-emissions_construction_high:
-emissions_savings_per_year_reference:
-emissions_savings_per_year_low:
-emissions_savings_per_year_high:
-modal_shift_low:
+  unit:
+- id: longitude
+  unit:
+    numerator: degree
+- id: latitude
+  unit:
+    numerator: degree
+- id: length_double_track
+  unit:
+    numerator: km
+- id: length_tunnel
+  unit:
+    numerator: km
+- id: length_tunnel_tube
+  unit:
+    numerator: km
+- id: tunnel_diameter
+  unit:
+    numerator: m
+- id: length_bridge
+  unit:
+    numerator: km
+- id: number_stations
+  unit:
+    numerator: station
+- id: passengers_per_day
+  unit:
+    numerator: passenger
+    denominator: day
+- id: pkm_per_day
+  unit:
+    numerator: pkm
+    denominator: day
+- id: trains_per_hour_direction
+  unit:
+    numerator: train
+- id: average_passengers_per_train
+  unit:
+    numerator: passenger
+- id: estimated_construction_cost
+  unit:
+    numerator: euro
+- id: construction_duration
+  unit:
+    numerator: year
+- id: maximum_speed
+  unit:
+    numerator: km
+    denominator: h
+- id: commercial_speed
+  unit:
+    numerator: km
+    denominator: h
+- id: emissions_construction_reference
+  unit:
+    numerator: tco2
+- id: emissions_construction_low
+  unit:
+    numerator: tco2
+- id: emissions_construction_high
+  unit:
+    numerator: tco2
+- id: emissions_savings_per_year_reference
+  unit:
+    numerator: tco2
+    denominator: year
+- id: emissions_savings_per_year_low
+  unit:
+    numerator: tco2
+    denominator: year
+- id: emissions_savings_per_year_high
+  unit:
+    numerator: tco2
+    denominator: year
+- id: modal_shift_low
   comment: This is the percentage of passengers_per_day that shifted from private transport (cars etc.). It influences emissions_savings_per_year_low. Tweak it so that the emissions_savings_per_year_reference value is lower bounded, unless you do not deem the reference value realistic at all. When in doubt, use value 5
   hidden: true
-modal_shift_high:
+  unit:
+    numerator: percent
+- id: modal_shift_high
   comment: This is the percentage of passengers_per_day that shifted from private transport (cars etc.). It influences emissions_savings_per_year_high. Tweak it so that the emissions_savings_per_year_reference value is upper bounded, unless you do not deem the reference value realistic at all. When in doubt, use value 20
   hidden: true
+  unit:
+    numerator: percent
   

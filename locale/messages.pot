@@ -32,10 +32,85 @@ msgstr ""
 msgid "per"
 msgstr ""
 
-msgid "name"
+msgid "unit_degree_sg"
 msgstr ""
 
-msgid "name_unit"
+msgid "unit_degree_pl"
+msgstr ""
+
+msgid "unit_km_sg"
+msgstr ""
+
+msgid "unit_km_pl"
+msgstr ""
+
+msgid "unit_m_sg"
+msgstr ""
+
+msgid "unit_m_pl"
+msgstr ""
+
+msgid "unit_station_sg"
+msgstr ""
+
+msgid "unit_station_pl"
+msgstr ""
+
+msgid "unit_passenger_sg"
+msgstr ""
+
+msgid "unit_passenger_pl"
+msgstr ""
+
+msgid "unit_pkm_sg"
+msgstr ""
+
+msgid "unit_pkm_pl"
+msgstr ""
+
+msgid "unit_day_sg"
+msgstr ""
+
+msgid "unit_day_pl"
+msgstr ""
+
+msgid "unit_train_sg"
+msgstr ""
+
+msgid "unit_train_pl"
+msgstr ""
+
+msgid "unit_euro_sg"
+msgstr ""
+
+msgid "unit_euro_pl"
+msgstr ""
+
+msgid "unit_h_sg"
+msgstr ""
+
+msgid "unit_h_pl"
+msgstr ""
+
+msgid "unit_tco2_sg"
+msgstr ""
+
+msgid "unit_tco2_pl"
+msgstr ""
+
+msgid "unit_year_sg"
+msgstr ""
+
+msgid "unit_year_pl"
+msgstr ""
+
+msgid "unit_percent_sg"
+msgstr ""
+
+msgid "unit_percent_pl"
+msgstr ""
+
+msgid "name"
 msgstr ""
 
 msgid "name_description"
@@ -44,16 +119,10 @@ msgstr ""
 msgid "type"
 msgstr ""
 
-msgid "type_unit"
-msgstr ""
-
 msgid "type_description"
 msgstr ""
 
 msgid "longitude"
-msgstr ""
-
-msgid "longitude_unit"
 msgstr ""
 
 msgid "longitude_description"
@@ -62,16 +131,10 @@ msgstr ""
 msgid "latitude"
 msgstr ""
 
-msgid "latitude_unit"
-msgstr ""
-
 msgid "latitude_description"
 msgstr ""
 
 msgid "length_double_track"
-msgstr ""
-
-msgid "length_double_track_unit"
 msgstr ""
 
 msgid "length_double_track_description"
@@ -80,16 +143,10 @@ msgstr ""
 msgid "length_tunnel"
 msgstr ""
 
-msgid "length_tunnel_unit"
-msgstr ""
-
 msgid "length_tunnel_description"
 msgstr ""
 
 msgid "length_tunnel_tube"
-msgstr ""
-
-msgid "length_tunnel_tube_unit"
 msgstr ""
 
 msgid "length_tunnel_tube_description"
@@ -98,16 +155,10 @@ msgstr ""
 msgid "tunnel_diameter"
 msgstr ""
 
-msgid "tunnel_diameter_unit"
-msgstr ""
-
 msgid "tunnel_diameter_description"
 msgstr ""
 
 msgid "length_bridge"
-msgstr ""
-
-msgid "length_bridge_unit"
 msgstr ""
 
 msgid "length_bridge_description"
@@ -116,16 +167,10 @@ msgstr ""
 msgid "number_stations"
 msgstr ""
 
-msgid "number_stations_unit"
-msgstr ""
-
 msgid "number_stations_description"
 msgstr ""
 
 msgid "passengers_per_day"
-msgstr ""
-
-msgid "passengers_per_day_unit"
 msgstr ""
 
 msgid "passengers_per_day_description"
@@ -134,16 +179,10 @@ msgstr ""
 msgid "pkm_per_day"
 msgstr ""
 
-msgid "pkm_per_day_unit"
-msgstr ""
-
 msgid "pkm_per_day_description"
 msgstr ""
 
 msgid "trains_per_hour_direction"
-msgstr ""
-
-msgid "trains_per_hour_direction_unit"
 msgstr ""
 
 msgid "trains_per_hour_direction_description"
@@ -152,16 +191,10 @@ msgstr ""
 msgid "average_passengers_per_train"
 msgstr ""
 
-msgid "average_passengers_per_train_unit"
-msgstr ""
-
 msgid "average_passengers_per_train_description"
 msgstr ""
 
 msgid "estimated_construction_cost"
-msgstr ""
-
-msgid "estimated_construction_cost_unit"
 msgstr ""
 
 msgid "estimated_construction_cost_description"
@@ -170,16 +203,10 @@ msgstr ""
 msgid "construction_duration"
 msgstr ""
 
-msgid "construction_duration_unit"
-msgstr ""
-
 msgid "construction_duration_description"
 msgstr ""
 
 msgid "maximum_speed"
-msgstr ""
-
-msgid "maximum_speed_unit"
 msgstr ""
 
 msgid "maximum_speed_description"
@@ -188,16 +215,10 @@ msgstr ""
 msgid "commercial_speed"
 msgstr ""
 
-msgid "commercial_speed_unit"
-msgstr ""
-
 msgid "commercial_speed_description"
 msgstr ""
 
 msgid "emissions_construction_reference"
-msgstr ""
-
-msgid "emissions_construction_reference_unit"
 msgstr ""
 
 msgid "emissions_construction_reference_description"
@@ -206,16 +227,10 @@ msgstr ""
 msgid "emissions_construction_low"
 msgstr ""
 
-msgid "emissions_construction_low_unit"
-msgstr ""
-
 msgid "emissions_construction_low_description"
 msgstr ""
 
 msgid "emissions_construction_high"
-msgstr ""
-
-msgid "emissions_construction_high_unit"
 msgstr ""
 
 msgid "emissions_construction_high_description"
@@ -224,16 +239,10 @@ msgstr ""
 msgid "emissions_savings_per_year_reference"
 msgstr ""
 
-msgid "emissions_savings_per_year_reference_unit"
-msgstr ""
-
 msgid "emissions_savings_per_year_reference_description"
 msgstr ""
 
 msgid "emissions_savings_per_year_low"
-msgstr ""
-
-msgid "emissions_savings_per_year_low_unit"
 msgstr ""
 
 msgid "emissions_savings_per_year_low_description"
@@ -242,25 +251,16 @@ msgstr ""
 msgid "emissions_savings_per_year_high"
 msgstr ""
 
-msgid "emissions_savings_per_year_high_unit"
-msgstr ""
-
 msgid "emissions_savings_per_year_high_description"
 msgstr ""
 
 msgid "modal_shift_low"
 msgstr ""
 
-msgid "modal_shift_low_unit"
-msgstr ""
-
 msgid "modal_shift_low_description"
 msgstr ""
 
 msgid "modal_shift_high"
-msgstr ""
-
-msgid "modal_shift_high_unit"
 msgstr ""
 
 msgid "modal_shift_high_description"

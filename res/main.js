@@ -230,9 +230,13 @@ function getSelectedDimension(id) {
     var node = d3.select('#'+id).node();
     if (node.value == -1 || node.selectedIndex == -1)
         return null;
+    var d = node.options[node.selectedIndex].dataset;
     return {
         id: node.value,
-        unit: node.options[node.selectedIndex].dataset.unit,
+        unit: {
+            numerator: d.unitNumerator ? [d.unitNumerator] : [],
+            denominator: d.unitDenominator ? [d.unitDenominator] : []
+        },
         lbl: node.options[node.selectedIndex].innerHTML
     };
 }
@@ -254,25 +258,33 @@ function arrayDiff(a, b) {
     return a.filter(function (e) { return !b.includes(e); });
 }
 
-function fractionParts(a, b) {
-    var part = [];
-    part.push(a[0]);
-    if (b.length > 1) part.push(b[1]);
-    return part;
+function getUnitTranslation(id, pl) {
+    return unitTranslations[id][pl ? 'pl' : 'sg'];
 }
 
-function fractionPartToStr(a, b, prefix, emptyStr) {
-    var str = arrayDiff(a, b).join(prefix ? prefix : '*');
-    if (str.length == 0) return emptyStr;
-    return prefix+str;
+function fractionPartToStr(a, isNumerator) {
+    var str = a.map(function(u) {
+        return getUnitTranslation(u, isNumerator);
+    }).join(isNumerator ? '*' : '/');
+    if (str.length == 0) return isNumerator ? '1' : '';
+    return isNumerator ? str : '/'+str;
+}
+
+function simplify(a, b) {
+    return arrayDiff(a, b);
 }
 
 function divideUnits(mainUnit, perUnit) {
-    var mainParts = mainUnit.split('/');
-    var perParts = perUnit.split('/');
-    var numerator = fractionParts(mainParts, perParts);
-    var denominator = fractionParts(perParts, mainParts);
-    return fractionPartToStr(numerator, denominator, '', '1') + fractionPartToStr(denominator, numerator, '/', '');
+    var numerator = mainUnit.numerator.concat(perUnit.denominator);
+    var denominator = mainUnit.denominator.concat(perUnit.numerator);
+    return {
+        numerator: simplify(numerator, denominator),
+        denominator: simplify(denominator, numerator)
+    }
+}
+
+function unitString(unit) {
+    return fractionPartToStr(unit.numerator, true) + fractionPartToStr(unit.denominator, false);   
 }
 
 function getColumn(id) {
@@ -287,10 +299,10 @@ function getSelectedColumnWithUnit(axis) {
         var calculatedCol = divideColumns(mainCol, getColumn(per.id));
         var calculatedUnit = divideUnits(main.unit, per.unit);
 
-        return {col: calculatedCol, main: main, per: per, unit: calculatedUnit};
+        return {col: calculatedCol, main: main, per: per, unit: unitString(calculatedUnit)};
     }
 
-    return {col: mainCol, main: main, per: {}, unit: main.unit};
+    return {col: mainCol, main: main, per: {}, unit: unitString(main.unit)};
 }
 
 function triggerUpdatePlot(e) {

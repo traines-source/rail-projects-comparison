@@ -10,6 +10,16 @@ See the source data files in the [data/](https://github.com/traines-source/rail-
 
 If you think a project (also from other parts of Europe!) is missing, you find an error or you want to propose additional metrics, please open an issue or a pull request. It's always good to have more data!
 
+In order to add metadata for a project, you can basically just add a new YAML file to the [data/](https://github.com/traines-source/rail-projects-comparison/tree/master/data/) directory and use the existing YAML project files as a guide. Please always give sources. For the individual metrics/dimensions, explanations can be found on the generated [website](https://comparail.traines.eu/) (and of course also in the [source translation files](https://github.com/traines-source/rail-projects-comparison/blob/master/locale/en/LC_MESSAGES/messages.po)). Some further hints are also given in the [_dimensions.yaml](https://github.com/traines-source/rail-projects-comparison/tree/master/data/_dimensions.yaml) file. The `paths` definition is used for rendering the small line diagram of the project, using [transport-network-animator](https://github.com/traines-source/transport-network-animator) syntax.
+
+If you have any issues creating the YAML file, you can always make a draft pull request and we can work on it together, or, even easier, just create a GitHub issue containing the data you have researched, without worrying about YAML files.
+
+If you want to preview your changes (you don't have to), you can build the website in one of the following three ways:
+
+* build and run the Docker image using the `Dockerfile`, however you do that on your platform (easiest)
+* run `bash generate/generate_docker.sh` (Docker required, shell script can probably be adapted to Windows) and then serve the root directory of the repository with a webserver of your choice 
+* run `bash generate/generate.sh` (no Docker, but all the dependencies required, probably Linux only) and then serve the root directory of the repository with a webserver of your choice
+
 ## CO2 Emissions Estimation
 
 For all projects, reference construction emissions and emission savings per year when operational are given based on official sources or project-specific best-effort estimates. The calculation methods vary significantly between projects. Furthermore, in order to enable better comparison between the projects, high and low estimates are provided that are calculated using a simple formula based on key metrics of the project. The formulas were conceived to provide an upper and lower bound for most of the reference estimates.

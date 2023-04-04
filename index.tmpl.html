@@ -69,7 +69,7 @@
         </div>
         <div id="metrics">
             {% for dim in dimensions %}
-                <div id="{{ id }}">
+                <div id="{{ dim.id }}">
                     <h3>{{ gettext(dim.id) }}</h3>
                     <p>{{ gettext(dim.id+'_description') }}</p>
                 </div>

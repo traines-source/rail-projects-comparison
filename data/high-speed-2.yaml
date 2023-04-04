@@ -34,7 +34,7 @@ pkm_per_day:
   src: estimate based on https://www.hs2.org.uk/why/capacity/ and https://www.hs2.org.uk/what-is-hs2/
 trains_per_hour_direction:
   val: 18
-  src: https://de.wikipedia.org/wiki/U-Bahn-Linie_5_(Hamburg)
+  src: https://en.wikipedia.org/wiki/High_Speed_2
 average_passengers_per_train:
   val: 500
   src: estimate based on 60% average load factor https://en.wikipedia.org/wiki/HS2_rolling_stock

@@ -6,7 +6,7 @@ var height = parseInt(svg.node().dataset.height);
 svg
     .attr("width", "100%")
     .attr("height", height+1100)
-    .attr("viewBox", (-50)+" "+(-500)+" "+(width+100)+" "+(height+1100)+"")
+    .attr("viewBox", (-50)+" "+(-500)+" "+(width+100)+" "+(height+1100)+"");
 d3.select("#overlay > div")
     .style("max-width", (width+100)+'px')
     .style("max-height", height+'px');
@@ -90,7 +90,7 @@ el.append("text")
     .attr("y", 6);
 
 
-var urlRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi;
+var urlRegex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/gi;
 
 function minMax(values) {
     var min = values[0].val;
@@ -137,7 +137,7 @@ function tableHeader(axisInfo) {
 
 function tableSource(src, linkMemory) {
     if (!src) return "";
-    return src.replaceAll(urlRegex, function(match) {
+    return src.replace(urlRegex, function(match) {
         if (!linkMemory[match]) {
             linkMemory[match] = Object.keys(linkMemory).length+1;
         }
@@ -182,7 +182,7 @@ function updatePlot(x, y, z, animDuration) {
     yScale.domain(yDomain);
     var zMinMax = minMax(z.col);
     zScale.domain(zMinMax);
-    format = [xScale.tickFormat(), yScale.tickFormat(), zScale.tickFormat()];
+    var format = [xScale.tickFormat(), yScale.tickFormat(), zScale.tickFormat()];
 
     svg.select("#x-axis")
     .transition()
@@ -202,8 +202,8 @@ function updatePlot(x, y, z, animDuration) {
     svg.selectAll(".project")
     .transition()
     .duration(animDuration)
-    .attr("transform", function (d, i) { return "translate(" + xScale(x.col[i].val) + "," + yScale(y.col[i].val) + ")" })
-    .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i].val)) + ")" });
+    .attr("transform", function (d, i) { return "translate(" + xScale(x.col[i].val) + "," + yScale(y.col[i].val) + ")"; })
+    .attr("stroke", function (d, i) { return "rgb(" + gradient([1, 87, 155], [183, 28, 28], zScale(z.col[i].val)) + ")"; });
    
     var metricsIds = allMetricsIds(x, y, z);
     d3.select('#metrics').selectAll("div").each(function(d, i) { this.style.display = metricsIds.indexOf(this.id) != -1 ?  'block' : ''; });
@@ -281,7 +281,7 @@ function divideUnits(mainUnit, perUnit) {
     return {
         numerator: simplify(numerator, denominator),
         denominator: simplify(denominator, numerator)
-    }
+    };
 }
 
 function unitString(unit) {
@@ -330,10 +330,10 @@ function loadBgMap() {
         .range([height, 0]);
     var xyScale = function(c) {        
         return [lonScale(c[0]), latScale(c[1])];
-    }
+    };
     
     TNA.Projection.projections['custom'] = function(c) {
-        return new TNA.Vector(lonScale(c.x), latScale(c.y))
+        return new TNA.Vector(lonScale(c.x), latScale(c.y));
     };
     TNA.Config.default.mapProjection = 'custom';
 
@@ -359,7 +359,7 @@ function presetSelect(id, per, preselected) {
 }
 
 function preset(presets, idx, fallback) {
-    return presets.length == 6 ? presets[idx] : fallback
+    return presets.length == 6 ? presets[idx] : fallback;
 }
 
 function presetSelects(presets_str) {
@@ -382,7 +382,7 @@ function initialize() {
     .attr("class", "project");
 
     projectElements
-    .attr("transform", function (d, i) { return "translate(" + xScale(0) + "," + yScale(0) + ")" })
+    .attr("transform", function (d, i) { return "translate(" + xScale(0) + "," + yScale(0) + ")"; })
     .append("circle", ":first-child")
     .attr("r", 10);
     projectElements    
@@ -391,14 +391,14 @@ function initialize() {
         var c = TNA.Projection.default.project(new TNA.Vector(d.longitude.val, d.latitude.val));
         return "scale("+(1/100)+") translate(" + -c.x + "," + -c.y + ")";
     })
-    .html(function (d, i) { return d.paths });   
+    .html(function (d, i) { return d.paths; });   
     projectElements
     .append("text")
     .attr("class", "label")
-    .html(function (d, i) { return d.name.lbl });
+    .html(function (d, i) { return d.name.lbl; });
 
     presetSelects(location.hash.replace('#', ''));
-    document.dispatchEvent(new Event('startTransportNetworkAnimator'));
+    document.dispatchEvent(new Event('startTransportNetworkAnimator'))
 }
 
 d3.json("/dist/data.json").then(loadJson);

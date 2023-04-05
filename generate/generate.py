@@ -90,13 +90,19 @@ def write_csv(data, dimensions, dimensions_translations):
             writer.writerow(get_project_row(project, dimensions))
 
 def estimate_emissions_construction(low_or_high, data):
-    return {'val': data['length_double_track']['val']*supplements['construction_emission_per_km_double_track'][low_or_high]*(data['maximum_speed']['val']/160)**2
+    return {
+        'val': data['length_double_track']['val']*supplements['construction_emission_per_km_double_track'][low_or_high]*(data['maximum_speed']['val']/160)**2
     + data['length_tunnel_tube']['val']*supplements['construction_emission_per_km_tunnel_tube'][low_or_high]
     + data['length_bridge']['val']*supplements['construction_emission_per_km_bridge'][low_or_high]
-    + data['number_stations']['val']*supplements['construction_emission_per_station'][low_or_high]}
+    + data['number_stations']['val']*supplements['construction_emission_per_station'][low_or_high],
+        'src': 'https://github.com/traines-source/rail-projects-comparison#co2-emissions-estimation'
+    }
  
 def estimate_emissions_savings(low_or_high, data):
-    return {'val': data['pkm_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100/supplements['avg_people_per_car'][low_or_high]*supplements['car_emission_per_km'][low_or_high]}
+    return {
+        'val': data['pkm_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100/supplements['avg_people_per_car'][low_or_high]*supplements['car_emission_per_km'][low_or_high],
+        'src': data['modal_shift_'+low_or_high]['src'] + ', https://github.com/traines-source/rail-projects-comparison#co2-emissions-estimation'
+    }
 
 
 data = {'license:': 'https://creativecommons.org/publicdomain/zero/1.0/', 'projects':[]}

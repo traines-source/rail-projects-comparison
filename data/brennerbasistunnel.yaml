@@ -52,16 +52,16 @@ commercial_speed:
   src: 25m for 70km Innsbruck-Franzensfeste
 emissions_construction_reference:
   val: 3167000
-  src: https://www.bbtinfo.eu/co2-haushalt-des-brenner-basistunnels/
+  src: https://www.bbtinfo.eu/co2-haushalt-des-brenner-basistunnels/, cf. also https://mediatum.ub.tum.de/doc/1295092/1295092.pdf
 emissions_savings_per_year_reference:
   val: 3000000/20
   src: https://www.bbtinfo.eu/co2-haushalt-des-brenner-basistunnels/
 modal_shift_low:
   val: 10
-  src: high estimate to account for freight trains
+  src: high modal shift estimate to account for freight trains
 modal_shift_high:
   val: 50
-  src: high estimate to account for freight trains
+  src: high modal shift estimate to account for freight trains
 paths: |
   <path data-from="1 0 nozoom" data-line="WU5" data-stops="BrennerSüdportal BrennerAbzweig BrennerInnsbruck" />
   <path data-from="1 0 nozoom" data-line="WU2" data-stops="BrennerAbzweig InnsbruckOstportal" />

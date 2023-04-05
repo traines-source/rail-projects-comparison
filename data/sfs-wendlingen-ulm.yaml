@@ -51,7 +51,7 @@ commercial_speed:
   val: 230
   src: based on non-stop journey
 emissions_construction_reference:
-  val: 212900/8.7*30+60*4000
+  val: 212900/8.7*30+60*5000
   src: estimate based on Boßlertunnel (8.7km) https://mediatum.ub.tum.de/doc/1295092/document.pdf
 emissions_savings_per_year_reference:
   val: 90000

@@ -1,0 +1,69 @@
+name:
+  lbl: Gotthard-Basistunnel
+type:
+  lbl: long-distance
+wikidata:
+  lbl: Q193002
+longitude:
+  val: 8.765
+latitude:
+  val: 46.6
+length_double_track:
+  val: 57.1
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+length_tunnel:
+  val: 57
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+length_tunnel_tube:
+  val: 57*2
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+tunnel_diameter:
+  val: 9.58
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+length_bridge:
+  val: 0
+  src:
+number_stations:
+  val: 2
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+passengers_per_day:
+  val: 2400/28*128
+  src: https://www.infras.ch/de/projekte/monitoring-gotthard-achse-auswirkungen-des-gotthard-basistunnels-auf-verkehr-und-raum/
+pkm_per_day:
+  val: 2400/28*128*300
+  src: estimate based on passengers traveling about 300km https://www.infras.ch/de/projekte/monitoring-gotthard-achse-auswirkungen-des-gotthard-basistunnels-auf-verkehr-und-raum/
+trains_per_hour_direction:
+  val: 9846/365/10
+  src: (2019) https://sbb.opendatasoft.com/explore/dataset/zugzahlen/map/?sort=jahr&location=10,46.69467,8.80486&basemap=00c4d6
+average_passengers_per_train:
+  val: 0.6*457
+  src: assumption - long-distance load factor higher than avg https://reporting.sbb.ch/verkehr
+estimated_construction_cost:
+  val: 12000000000*0.7
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+construction_duration:
+  val: 17
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+maximum_speed:
+  val: 250
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+commercial_speed:
+  val: 230
+  src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
+emissions_construction_reference:
+  val: 4000000
+  src: https://www.nau.ch/news/wirtschaft/studie-behauptet-flugzeug-belastet-umwelt-so-stark-wie-zug-65735092
+emissions_savings_per_year_reference:
+  val: 890*365
+  src: freight, assumption together with Ceneri https://www.verkehrsrundschau.de/nachrichten/transport-logistik/schweiz-ceneri-basistunnel-ist-eroeffnet-2972049
+modal_shift_low:
+  val: 10
+  src: high modal shift estimate to account for freight trains
+modal_shift_high:
+  val: 50
+  src: high modal shift estimate to account for freight trains
+paths: |
+  <path data-from="1 0 nozoom" data-line="Gotthard" data-stops="GotthardNordportal GotthardSüdportal" />
+  
+  <rect data-station="GotthardNordportal" class="helper" data-dir="ne" data-lon-lat="8.649278 46.830917" />
+  <rect data-station="GotthardSüdportal" class="helper" data-dir="ne" data-lon-lat="8.927667 46.372389" />

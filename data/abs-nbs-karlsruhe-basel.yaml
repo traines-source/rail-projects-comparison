@@ -1,0 +1,73 @@
+name:
+  lbl: ABS/NBS Karlsruhe-Basel
+type:
+  lbl: long-distance
+wikidata:
+  lbl: Q777803
+longitude:
+  val: 7.94662
+latitude:
+  val: 48.47650
+length_double_track:
+  val: 186
+  src: https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel
+length_tunnel:
+  val: (4270+11000+2222+9385)/1000
+  src: https://www.karlsruhe-basel.de/projektbeschreibung.html?file=files/pdf/1_Projektdownloads/1_Gesamtprojekt/20211223_Daten_Fakten_KaBa.pdf&cid=5053
+length_tunnel_tube:
+  val: (4270+11000+2222+9385)/1000*2
+  src: https://www.karlsruhe-basel.de/projektbeschreibung.html?file=files/pdf/1_Projektdownloads/1_Gesamtprojekt/20211223_Daten_Fakten_KaBa.pdf&cid=5053, https://de.wikipedia.org/wiki/Tunnel_Offenburg, https://de.wikipedia.org/wiki/Tunnel_Rastatt
+tunnel_diameter:
+  val: 10.97
+  src: https://web.archive.org/web/20170815182330/https://www.karlsruhe-basel.de/pressemitteilungen.html?file=files/page/02_aktuelles/02_pressemitteilungen/2014/141205-641-PI-TVMs-fuer-Rastatter-Tunnel-bauftragt.pdf
+length_bridge:
+  val: 340*0.05
+  src: assumption - mainly very short bridges https://www.karlsruhe-basel.de/projektbeschreibung.html?file=files/pdf/1_Projektdownloads/1_Gesamtprojekt/20211223_Daten_Fakten_KaBa.pdf&cid=5053
+number_stations:
+  val: 10
+  src: estimate, new, depending on criteria https://www.karlsruhe-basel.de/projektbeschreibung.html?file=files/pdf/1_Projektdownloads/1_Gesamtprojekt/20211223_Daten_Fakten_KaBa.pdf&cid=5053, https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel
+passengers_per_day:
+  val: 300*500
+  src: estimate based on 300 daily trains https://www.karlsruhe-basel.de/projektbeschreibung.html 
+pkm_per_day:
+  val: 300*500*150
+  src: estimate based on passengers traveling about 150km https://www.karlsruhe-basel.de/projektbeschreibung.html 
+trains_per_hour_direction:
+  val: 300/2/10
+  src: existing line, https://www.karlsruhe-basel.de/projektbeschreibung.html
+average_passengers_per_train:
+  val: 500
+  src: estimate
+estimated_construction_cost:
+  val: 14200000000
+  src: https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel
+construction_duration:
+  val: 2042-1987
+  src: https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel
+maximum_speed:
+  val: 250
+  src: https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel
+commercial_speed:
+  val: 180/82*60
+  src: 82 min for Karlsruhe-Basel https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel
+emissions_construction_reference:
+  val: 268400/9385*(4270+11000+2222+9385)+186*5000
+  src: estimate based on Katzenbergtunnel (9385m) https://mediatum.ub.tum.de/doc/1295092/document.pdf
+emissions_savings_per_year_reference:
+  val: 100000
+  src: rough estimate
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+paths: |
+  <path data-from="1 0 nozoom" data-line="KarlsruheBasel" data-stops="Basel Freiburg Offenburg BadenBaden Karlsruhe" />
+  
+  <rect data-station="Basel" data-dir="ne" data-lon-lat="7.6073 47.5675" />
+  <rect data-station="Freiburg" data-lon-lat="7.8413 47.9977" />
+  <rect data-station="Offenburg" data-dir="ne" data-lon-lat="7.94662 48.47650" />
+  <rect data-station="BadenBaden" data-lon-lat="8.2003 48.7934" />
+  <rect data-station="Karlsruhe" data-dir="ne" data-lon-lat="8.4021 48.9936" />
+

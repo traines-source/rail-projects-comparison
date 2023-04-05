@@ -1,0 +1,69 @@
+name:
+  lbl: SFS Mattstetten-Rothrist
+type:
+  lbl: long-distance
+wikidata:
+  lbl: Q138669
+longitude:
+  val: 7.6918
+latitude:
+  val: 47.1970
+length_double_track:
+  val: 45
+  src: https://de.wikipedia.org/wiki/Neubaustrecke_Mattstetten%E2%80%93Rothrist
+length_tunnel:
+  val: (60+400+1633+60+1000+3173+855+80+889+1107+657+4745)/1000
+  src: https://de.wikipedia.org/wiki/Neubaustrecke_Mattstetten%E2%80%93Rothrist
+length_tunnel_tube:
+  val: (60+400+1633+60+1000+3173+855+80+889+1107+657+4745)/1000
+  src: https://de.wikipedia.org/wiki/Neubaustrecke_Mattstetten%E2%80%93Rothrist, https://de.wikipedia.org/wiki/Murgenthaltunnel
+tunnel_diameter:
+  val: 11.98
+  src: https://de.wikipedia.org/wiki/Murgenthaltunnel
+length_bridge:
+  val: 0.223
+  src: https://de.wikipedia.org/wiki/Neubaustrecke_Mattstetten%E2%80%93Rothrist
+number_stations:
+  val: 1
+  src: actually none
+passengers_per_day:
+  val: 72000/180*220
+  src: https://reporting.sbb.ch/_file/876/t01ad-sbb-passagierfrequenzenimschienenverkehr-2022.pdf
+pkm_per_day:
+  val: 72000/180*220*120
+  src: estimate based on passengers per day https://reporting.sbb.ch/_file/876/t01ad-sbb-passagierfrequenzenimschienenverkehr-2022.pdf and 120 km Bern-Zurich
+trains_per_hour_direction:
+  val: 48230/365/10
+  src: (2019) https://sbb.opendatasoft.com/explore/dataset/zugzahlen/map/?sort=jahr&location=12,47.25073,7.70433&basemap=00c4d6
+average_passengers_per_train:
+  val: 0.6*457
+  src: assumption - long-distance load factor higher than avg https://reporting.sbb.ch/verkehr
+estimated_construction_cost:
+  val: 1679000000*0.7
+  src: https://de.wikipedia.org/wiki/Bahn_2000#Projekte_der_ersten_Etappe
+construction_duration:
+  val: 8
+  src: https://de.wikipedia.org/wiki/Neubaustrecke_Mattstetten%E2%80%93Rothrist
+maximum_speed:
+  val: 200
+  src: https://de.wikipedia.org/wiki/Neubaustrecke_Mattstetten%E2%80%93Rothrist
+commercial_speed:
+  val: 140
+  src: based on 60 km distance Bern-Olten in 26min https://commons.wikimedia.org/wiki/File:Knotensystem_Schweiz_mit_LBT_2007.png
+emissions_construction_reference:
+  val: 15*30000+45*5000
+  src: assumption - similar to LGV Rhin-Rhône https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf, SFS Wendlingen-Ulm https://mediatum.ub.tum.de/doc/1295092/document.pdf
+emissions_savings_per_year_reference:
+  val: 100000
+  src: assumption - similar to LGV Rhin-Rhône https://www.banquedesterritoires.fr/sites/default/files/ra/Le%20bilan%20carbone%20de%20la%20LGV%20Rhin-Rh%C3%B4ne.pdf
+modal_shift_low:
+  val: 5
+  src: estimate
+modal_shift_high:
+  val: 20
+  src: estimate
+paths: |
+  <path data-from="1 0 nozoom" data-line="Bahn2000" data-stops="Mattstetten Wanzwil Rothrist" />
+  <rect data-station="Mattstetten" data-lon-lat="7.52401 47.02931" class="helper" />            
+  <rect data-station="Wanzwil" data-dir="nw" data-lon-lat="7.6918 47.1970" class="helper" />            
+  <rect data-station="Rothrist" data-lon-lat="7.8795 47.3064" class="helper" />

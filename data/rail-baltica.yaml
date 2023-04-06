@@ -1,0 +1,76 @@
+name:
+  lbl: Rail Baltica
+type:
+  lbl: long-distance
+wikidata:
+  lbl: Q581518
+longitude:
+  val: 24.123
+latitude:
+  val: 56.946
+length_double_track:
+  val: 870
+  src: https://www.railbaltica.org/about-rail-baltica/
+length_tunnel:
+  val: 0
+  src: 
+length_tunnel_tube:
+  val: 0
+  src: 
+tunnel_diameter:
+  val: 0
+  src: 
+length_bridge:
+  val: 50
+  src: estimate, cf. https://www.railbaltica.org/the-longest-railway-bridge-in-the-baltic-states-will-be-built-over-neris-by-an-italian-company/, https://info.railbaltica.org/en/interactive-map
+number_stations:
+  val: 7
+  src: https://www.railbaltica.org/about-rail-baltica/
+passengers_per_day:
+  val: 10000
+  src: estimate based on p. 143 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf, https://www.researchgate.net/publication/334606728_Energy_Consumption_of_Rail_Baltica_Project_Regional_Aspects_of_Environmental_Impact
+pkm_per_day:
+  val: 728000000/365
+  src: p. 143 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
+trains_per_hour_direction:
+  val: 0.5
+  src: p. 138 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf, https://info.railbaltica.org/en/in-brief
+average_passengers_per_train:
+  val: 400*0.6
+  src: p. 143 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
+freight_transported_per_day:
+  val: 12900000/365
+  src: p. 148 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
+estimated_construction_cost:
+  val: 5800000000
+  src: https://www.railbaltica.org/about-rail-baltica/finances/
+construction_duration:
+  val: 2026-2019
+  src: https://en.wikipedia.org/wiki/Rail_Baltica
+maximum_speed:
+  val: 249
+  src: https://www.railbaltica.org/about-rail-baltica/
+commercial_speed:
+  val: 600/218*60
+  src: 3:38 Tallinn Vilnius
+emissions_construction_reference:
+  val: 20000/(126+77.4)*870*60
+  src: estimate, p. 154, 158 https://www.researchgate.net/publication/334606728_Energy_Consumption_of_Rail_Baltica_Project_Regional_Aspects_of_Environmental_Impact, p. 25 https://uic.org/IMG/pdf/carbon_footprint_of_railway_infrastructure.pdf, https://www.apta.com/wp-content/uploads/High-Speed-Rail-Sustainability-UIC-2011.pdf
+emissions_savings_per_year_reference:
+  val: 59300000/65
+  src: assumed avg 65€/tCO2, p. 200, 262, 266 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
+modal_shift_low:
+  val: 10
+  src: estimated high modal shift
+modal_shift_high:
+  val: 25
+  src: estimated high modal shift
+paths: |
+  <path data-from="1 0 nozoom" data-line="Baltica" data-stops="Tallinn Riga Kaunas Border" />
+  <path data-from="1 0 nozoom" data-line="Baltica" data-stops="Kaunas Vilnius" />
+  
+  <rect data-station="Tallinn" data-dir="ne" data-lon-lat="24.798 59.423" />
+  <rect data-station="Riga" data-dir="ne" data-lon-lat="24.123 56.946" />
+  <rect data-station="Vilnius" data-dir="ne" data-lon-lat="25.289 54.671" />
+  <rect data-station="Kaunas" data-lon-lat="23.9317 54.8860" />
+  <rect data-station="Border" data-dir="ne" data-lon-lat="23.228 54.267" />

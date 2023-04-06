@@ -39,6 +39,7 @@ Emission savings per year:
 
 ```
 pkm_per_day*365*modal_shift/100/avg_people_per_car*car_emission_per_km
+    + freight_transported_per_day*365*modal_shift/100*avg_distance_rail_freight_transport*truck_freight_emission_per_tkm
 ```
 
 (Assumption: Non-car emissions (also emissions for running the project itself) are at least an order of magnitude lower or can be modeled by adjusting the project-specific `modal_shift` values.)

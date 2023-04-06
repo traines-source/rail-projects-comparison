@@ -40,7 +40,7 @@ average_passengers_per_train:
   src: estimate
 freight_transported_per_day:
   val: 50*200
-  src: https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf, light freight trains
+  src: estimate https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf, light freight trains 200t
 estimated_construction_cost:
   val: 10000000000
   src: https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf

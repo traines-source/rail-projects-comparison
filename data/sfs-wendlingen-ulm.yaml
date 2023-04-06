@@ -40,7 +40,7 @@ average_passengers_per_train:
   src: estimate
 freight_transported_per_day:
   val: 11*200
-  src: estimate https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf, light freight trains https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
+  src: estimate https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf, light freight trains 200t https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm
 estimated_construction_cost:
   val: 3990000000
   src: https://de.wikipedia.org/wiki/Schnellfahrstrecke_Wendlingen%E2%80%93Ulm

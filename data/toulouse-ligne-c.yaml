@@ -57,8 +57,8 @@ emissions_construction_reference:
   val: 210000
   src: https://www.metrobordeaux.fr/post/non-le-bilan-carbone-d-un-m%C3%A9tro-n-est-pas-n%C3%A9gatif#viewer-mmov, https://faiseursdeville.org/2022/01/24/contribution-a-lenquete-environnementale-de-la-3eme-ligne/
 emissions_savings_per_year_reference:
-  val: 46300
-  src: https://www.metrobordeaux.fr/post/non-le-bilan-carbone-d-un-m%C3%A9tro-n-est-pas-n%C3%A9gatif#viewer-mmov
+  val: 28700
+  src: https://metropole.toulouse.fr/mon-environnement/projets-damenagement/3e-ligne-metro-ligne-C
 modal_shift_low:
   val: 5
   src: estimate

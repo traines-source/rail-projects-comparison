@@ -42,6 +42,10 @@
 - id: average_passengers_per_train
   unit:
     numerator: passenger
+- id: freight_transported_per_day
+  unit:
+    numerator: t
+    denominator: day
 - id: estimated_construction_cost
   unit:
     numerator: euro

@@ -20,3 +20,11 @@ avg_people_per_car:
 car_emission_per_km:
   low: 0.0002
   high: 0.0002
+avg_distance_rail_freight_transport:
+  low: 500
+  high: 500
+  src: https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Transport-Verkehr/Gueterverkehr/Tabellen/gueterbefoerderung-lr.html, https://www.bvwp-projekte.de/schiene/2-005-V01/2-005-V01.html
+truck_freight_emission_per_tkm:
+  low: 0.00005
+  high: 0.00013
+  src: https://theicct.org/publication/co2-emissions-from-trucks-in-the-eu-an-analysis-of-the-heavy-duty-co2-standards-baseline-data/, p. 266 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf

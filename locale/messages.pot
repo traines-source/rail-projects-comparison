@@ -92,6 +92,12 @@ msgstr ""
 msgid "unit_h_pl"
 msgstr ""
 
+msgid "unit_t_sg"
+msgstr ""
+
+msgid "unit_t_pl"
+msgstr ""
+
 msgid "unit_tco2_sg"
 msgstr ""
 
@@ -192,6 +198,12 @@ msgid "average_passengers_per_train"
 msgstr ""
 
 msgid "average_passengers_per_train_description"
+msgstr ""
+
+msgid "freight_transported_per_day"
+msgstr ""
+
+msgid "freight_transported_per_day_description"
 msgstr ""
 
 msgid "estimated_construction_cost"

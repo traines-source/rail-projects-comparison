@@ -93,6 +93,12 @@ msgstr "h"
 msgid "unit_h_pl"
 msgstr "h"
 
+msgid "unit_t_sg"
+msgstr "t"
+
+msgid "unit_t_pl"
+msgstr "t"
+
 msgid "unit_tco2_sg"
 msgstr "tCO2"
 
@@ -187,13 +193,19 @@ msgid "trains_per_hour_direction"
 msgstr "Trains per hour and direction"
 
 msgid "trains_per_hour_direction_description"
-msgstr "How many trains run on the line in each direction at peak hours."
+msgstr "How many passenger trains run on the line in each direction at peak hours."
 
 msgid "average_passengers_per_train"
 msgstr "Average passengers/train"
 
 msgid "average_passengers_per_train_description"
 msgstr "The average number of passengers per train."
+
+msgid "freight_transported_per_day"
+msgstr "Freight/day"
+
+msgid "freight_transported_per_day_description"
+msgstr "How many tonnes of freight are to be transported every day on the project's infrastructure."
 
 msgid "estimated_construction_cost"
 msgstr "Construction cost"
@@ -299,82 +311,4 @@ msgstr "Download entire dataset as CSV"
 
 msgid "contribute"
 msgstr "Contribute data for another rail project or report an error"
-
-#~ msgid "name_unit"
-#~ msgstr ""
-
-#~ msgid "type_unit"
-#~ msgstr ""
-
-#~ msgid "longitude_unit"
-#~ msgstr ""
-
-#~ msgid "latitude_unit"
-#~ msgstr ""
-
-#~ msgid "length_double_track_unit"
-#~ msgstr ""
-
-#~ msgid "length_tunnel_unit"
-#~ msgstr ""
-
-#~ msgid "length_tunnel_tube_unit"
-#~ msgstr ""
-
-#~ msgid "tunnel_diameter_unit"
-#~ msgstr ""
-
-#~ msgid "length_bridge_unit"
-#~ msgstr ""
-
-#~ msgid "number_stations_unit"
-#~ msgstr ""
-
-#~ msgid "passengers_per_day_unit"
-#~ msgstr ""
-
-#~ msgid "pkm_per_day_unit"
-#~ msgstr ""
-
-#~ msgid "trains_per_hour_direction_unit"
-#~ msgstr ""
-
-#~ msgid "average_passengers_per_train_unit"
-#~ msgstr ""
-
-#~ msgid "estimated_construction_cost_unit"
-#~ msgstr ""
-
-#~ msgid "construction_duration_unit"
-#~ msgstr ""
-
-#~ msgid "maximum_speed_unit"
-#~ msgstr ""
-
-#~ msgid "commercial_speed_unit"
-#~ msgstr ""
-
-#~ msgid "emissions_construction_reference_unit"
-#~ msgstr ""
-
-#~ msgid "emissions_construction_low_unit"
-#~ msgstr ""
-
-#~ msgid "emissions_construction_high_unit"
-#~ msgstr ""
-
-#~ msgid "emissions_savings_per_year_reference_unit"
-#~ msgstr ""
-
-#~ msgid "emissions_savings_per_year_low_unit"
-#~ msgstr ""
-
-#~ msgid "emissions_savings_per_year_high_unit"
-#~ msgstr ""
-
-#~ msgid "modal_shift_low_unit"
-#~ msgstr ""
-
-#~ msgid "modal_shift_high_unit"
-#~ msgstr ""
 

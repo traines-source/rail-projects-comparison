@@ -100,7 +100,8 @@ def estimate_emissions_construction(low_or_high, data):
  
 def estimate_emissions_savings(low_or_high, data):
     return {
-        'val': data['pkm_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100/supplements['avg_people_per_car'][low_or_high]*supplements['car_emission_per_km'][low_or_high],
+        'val': data['pkm_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100/supplements['avg_people_per_car'][low_or_high]*supplements['car_emission_per_km'][low_or_high]
+        + data['freight_transported_per_day']['val']*365*data['modal_shift_'+low_or_high]['val']/100*supplements['avg_distance_rail_freight_transport'][low_or_high]*supplements['truck_freight_emission_per_tkm'][low_or_high],
         'src': data['modal_shift_'+low_or_high]['src'] + ', https://github.com/traines-source/rail-projects-comparison#co2-emissions-estimation'
     }
 

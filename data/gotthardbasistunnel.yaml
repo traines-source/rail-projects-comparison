@@ -34,10 +34,13 @@ pkm_per_day:
   src: estimate based on passengers traveling about 300km https://www.infras.ch/de/projekte/monitoring-gotthard-achse-auswirkungen-des-gotthard-basistunnels-auf-verkehr-und-raum/
 trains_per_hour_direction:
   val: 9846/365/10
-  src: (2019) https://sbb.opendatasoft.com/explore/dataset/zugzahlen/map/?sort=jahr&location=10,46.69467,8.80486&basemap=00c4d6
+  src: (2019) https://sbb.opendatasoft.com/explore/dataset/zugzahlen/map/?sort=jahr
 average_passengers_per_train:
   val: 0.6*457
   src: assumption - long-distance load factor higher than avg https://reporting.sbb.ch/verkehr
+freight_transported_per_day:
+  val: 50e6/365
+  src: https://www.technik-einkauf.de/technik/id-20-fakten-zum-gotthard-basistunnel-102.html
 estimated_construction_cost:
   val: 12000000000*0.7
   src: https://de.wikipedia.org/wiki/Gotthard-Basistunnel
@@ -57,11 +60,11 @@ emissions_savings_per_year_reference:
   val: 890*365
   src: freight, assumption together with Ceneri https://www.verkehrsrundschau.de/nachrichten/transport-logistik/schweiz-ceneri-basistunnel-ist-eroeffnet-2972049
 modal_shift_low:
-  val: 10
-  src: high modal shift estimate to account for freight trains
+  val: 5
+  src: estimate
 modal_shift_high:
-  val: 50
-  src: high modal shift estimate to account for freight trains
+  val: 20
+  src: estimate
 paths: |
   <path data-from="1 0 nozoom" data-line="Gotthard" data-stops="GotthardNordportal GotthardSüdportal" />
   

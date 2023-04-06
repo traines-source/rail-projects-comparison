@@ -33,11 +33,14 @@ pkm_per_day:
   val: 6000000/365*400
   src: estimate based on passengers traveling about 400km 
 trains_per_hour_direction:
-  val: 400/24
-  src: including freight trains https://magazin.ihk-muenchen.de/artikel/brenner-basistunnel-gueterverkehr-wie-viel-laesst-sich-auf-die-schiene-verlagern
+  val: 90/15
+  src: estimate, excluding freight trains p. 162 http://www.z-f-v.de/fileadmin/archiv/hefte---2006_1_2_3/2006-2/ZfV_2006_Heft_2_03_Kummer%20Nagl%20Schlaak%20-%20Zur%20Effizienz%20von%20Schieneninfrastrukturbauvorhaben%20am%20Beispiel%20des%20Brenner-Basistunnels.pdf
 average_passengers_per_train:
   val: 500
   src: estimate
+freight_transported_per_day:
+  val: 300*500
+  src: estimate, http://www.z-f-v.de/fileadmin/archiv/hefte---2006_1_2_3/2006-2/ZfV_2006_Heft_2_03_Kummer%20Nagl%20Schlaak%20-%20Zur%20Effizienz%20von%20Schieneninfrastrukturbauvorhaben%20am%20Beispiel%20des%20Brenner-Basistunnels.pdf, 500t per train
 estimated_construction_cost:
   val: 9500000000
   src: https://orf.at/stories/3228915/
@@ -57,11 +60,11 @@ emissions_savings_per_year_reference:
   val: 3000000/20
   src: https://www.bbtinfo.eu/co2-haushalt-des-brenner-basistunnels/
 modal_shift_low:
-  val: 10
-  src: high modal shift estimate to account for freight trains
+  val: 5
+  src: estimate
 modal_shift_high:
-  val: 50
-  src: high modal shift estimate to account for freight trains
+  val: 20
+  src: estimate
 paths: |
   <path data-from="1 0 nozoom" data-line="WU5" data-stops="BrennerSüdportal BrennerAbzweig BrennerInnsbruck" />
   <path data-from="1 0 nozoom" data-line="WU2" data-stops="BrennerAbzweig InnsbruckOstportal" />

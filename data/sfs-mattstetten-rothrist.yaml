@@ -34,10 +34,13 @@ pkm_per_day:
   src: estimate based on passengers per day https://reporting.sbb.ch/_file/876/t01ad-sbb-passagierfrequenzenimschienenverkehr-2022.pdf and 120 km Bern-Zurich
 trains_per_hour_direction:
   val: 48230/365/10
-  src: (2019) https://sbb.opendatasoft.com/explore/dataset/zugzahlen/map/?sort=jahr&location=12,47.25073,7.70433&basemap=00c4d6
+  src: (2019) https://sbb.opendatasoft.com/explore/dataset/zugzahlen/map/?sort=jahr
 average_passengers_per_train:
   val: 0.6*457
   src: assumption - long-distance load factor higher than avg https://reporting.sbb.ch/verkehr
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 1679000000*0.7
   src: https://de.wikipedia.org/wiki/Bahn_2000#Projekte_der_ersten_Etappe

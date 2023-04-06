@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 150
   src: estimate https://de.wikipedia.org/wiki/BVG-Baureihe_H
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 525000000
   src: https://wilo.com/de/de/News-Blog/Rund-um-die-Wilo-Welt/Blog/Gro%C3%9Fprojekt-U5-L%C3%BCckenschluss-Wilo-in-den-Adern-Berlins_17984.html

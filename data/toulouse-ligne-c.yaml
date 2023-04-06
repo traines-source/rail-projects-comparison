@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 100
   src: https://fr.wikipedia.org/wiki/Ligne_C_du_m%C3%A9tro_de_Toulouse
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 3500000000
   src: https://www.lejournaltoulousain.fr/occitanie/haute-garonne/toulouse/35-milliard-euros-cout-3e-ligne-metro-toulouse-grimpe-encore-183002/

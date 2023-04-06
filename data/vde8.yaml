@@ -27,17 +27,20 @@ number_stations:
   val: 6
   src: https://www.vde8.de/assets/images/projekt/03-zukuenftiges-Liniennetz.jpg, (major upgrades only ~3) https://de.wikipedia.org/wiki/Verkehrsprojekt_Deutsche_Einheit_Nr._8
 passengers_per_day:
-  val: 4900000/365*2
-  src: estimate - half of passengers do complete journey Berlin-Munich https://www.sueddeutsche.de/wirtschaft/deutsche-bahn-schnelltrasse-berlin-muenchen-gueterverkehr-1.4328369
+  val: 20e6/365
+  src: estimate https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf, compare passengers complete journey Berlin-Munich https://www.sueddeutsche.de/wirtschaft/deutsche-bahn-schnelltrasse-berlin-muenchen-gueterverkehr-1.4328369
 pkm_per_day:
-  val: 4900000/365*2*600
-  src: estimate - half of passengers do complete journey Berlin-Munich https://www.sueddeutsche.de/wirtschaft/deutsche-bahn-schnelltrasse-berlin-muenchen-gueterverkehr-1.4328369
+  val: 20e6/365*500
+  src: estimate https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf, compare passengers complete journey Berlin-Munich https://www.sueddeutsche.de/wirtschaft/deutsche-bahn-schnelltrasse-berlin-muenchen-gueterverkehr-1.4328369
 trains_per_hour_direction:
   val: 2
   src: https://www.vde8.de/assets/images/projekt/03-zukuenftiges-Liniennetz.jpg
 average_passengers_per_train:
   val: 500
   src: estimate
+freight_transported_per_day:
+  val: 50*200
+  src: https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf, light freight trains
 estimated_construction_cost:
   val: 10000000000
   src: https://www.deutschebahn.com/resource/blob/266110/e3d0dc397bb9fd8e8996083e71c09b71/ZahlenundFakten-VDE8-data.pdf
@@ -60,7 +63,7 @@ modal_shift_low:
   val: 5
   src: estimate, https://www.vde8.de/---_site.news..ls_dir._type.press_cat.2_id.961_likecms.html
 modal_shift_high:
-  val: 25
+  val: 20
   src: estimate, https://www.vde8.de/---_site.news..ls_dir._type.press_cat.2_id.961_likecms.html
 paths: |
   <path data-from="1 0 nozoom" data-line="VDE8" data-stops="Nürnberg Erfurt Halle Wittenberg Berlin" />

@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 200
   src: https://metro3.be/fr/faq
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 2300000000
   src: https://www.lecho.be/economie-politique/belgique/bruxelles/le-cout-de-la-ligne-de-metro-nord-reevalue-a-2-3-milliards-d-euros/10367327.html

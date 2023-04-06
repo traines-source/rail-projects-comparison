@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 500
   src: estimate https://www.leparisien.fr/info-paris-ile-de-france-oise/transports/grand-paris-express-en-2030-des-trains-qui-fileront-a-110-km-h-23-11-2018-7950810.php
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 42000000000
   src: https://transitcosts.com/paris-grand-paris-express/
@@ -58,10 +61,10 @@ emissions_savings_per_year_reference:
   src: http://media-mediatheque.societedugrandparis.fr/permalinks/domain1/2019/10/29/1360-Methodologie_Carboptimum_-_version_francaise_-_resume.pdf
 modal_shift_low:
   val: 10
-  src: estimate
+  src: estimated high modal shift
 modal_shift_high:
   val: 25
-  src: estimate
+  src: estimated high modal shift
 paths: |
   <path data-from="1 0 nozoom" data-line="P14" data-stops="StDenisPleyel StLazare GaredeLyon Olympiades Villejuif Orly" />
   <path data-from="1 0 nozoom" data-line="P15" data-stops="NoisyChamps Champigny Villejuif IssyRER LaDefense BoisColombes StDenisPleyel RosnyBoisPerrier Champigny" />

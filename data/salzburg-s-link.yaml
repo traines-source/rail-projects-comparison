@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 80
   src: https://salzburg.orf.at/stories/3139000, https://www.stadlerrail.com/media/pdf/cttmav0818d[1].pdf
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 2000000000
   src: https://www.salzburg24.at/news/salzburg/s-link-von-salzburg-bis-hallein-kostet-bis-zu-2-8-milliarden-euro-133123243
@@ -58,10 +61,10 @@ emissions_savings_per_year_reference:
   src: apparently supposes 100% modal shift (very unlikely) https://www.s-link.at/wp-content/uploads/2022/12/Executive_Summary_S-Link_Carbon_Footprint_Screening_202212121155.pdf
 modal_shift_low:
   val: 10
-  src: estimate
+  src: estimated high modal shift
 modal_shift_high:
   val: 25
-  src: estimate
+  src: estimated high modal shift
 paths: |
   <path data-from="1 0 nozoom" data-line="Sb1" data-stops="SalzburgHbf Akademiestraße SalzburgSüd Hallein" />
   <rect data-station="SalzburgHbf" data-dir="n"  data-lon-lat="13.0456 47.8124" />            

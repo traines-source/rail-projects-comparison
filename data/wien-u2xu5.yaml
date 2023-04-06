@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 200
   src: https://de.wikipedia.org/wiki/U-Bahn_Wien_X
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 6000000000
   src: https://www.wien.gv.at/verkehr/oeffentlich/grossprojekte/finanzierung-u2-u5-ausbau.html

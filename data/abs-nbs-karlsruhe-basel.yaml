@@ -27,17 +27,20 @@ number_stations:
   val: 10
   src: estimate, new, depending on criteria https://www.karlsruhe-basel.de/projektbeschreibung.html?file=files/pdf/1_Projektdownloads/1_Gesamtprojekt/20211223_Daten_Fakten_KaBa.pdf&cid=5053, https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel
 passengers_per_day:
-  val: 300*500
-  src: estimate based on 300 daily trains https://www.karlsruhe-basel.de/projektbeschreibung.html 
+  val: 100*500*2
+  src: estimate based on 100 daily trains per direction and 10 million long-distance passengers p.a. about 25% https://www.bvwp-projekte.de/schiene/2-005-V01/2-005-V01.html, https://www.karlsruhe-basel.de/projektbeschreibung.html, https://www.umweltbundesamt.de/sites/default/files/medien/461/publikationen/4005.pdf, https://downloads.ctfassets.net/scbs508bajse/4k7eoC8AXcRCCdzngTDYKp/a48ad12ca02b754418b1456f9e2bbf3e/Bewertung_der_Infrastrukturma__nahmen.pdf
 pkm_per_day:
-  val: 300*500*150
-  src: estimate based on passengers traveling about 150km https://www.karlsruhe-basel.de/projektbeschreibung.html 
+  val: 100*500*2*150
+  src: estimate based on 100 daily trains per direction and 10 million long-distance passengers p.a. about 25%, and 150km distance traveled https://www.bvwp-projekte.de/schiene/2-005-V01/2-005-V01.html, https://www.karlsruhe-basel.de/projektbeschreibung.html, https://www.umweltbundesamt.de/sites/default/files/medien/461/publikationen/4005.pdf
 trains_per_hour_direction:
-  val: 300/2/10
-  src: existing line, https://www.karlsruhe-basel.de/projektbeschreibung.html
+  val: 10
+  src: existing line without freight trains, https://www.karlsruhe-basel.de/projektbeschreibung.html, https://www.bvwp-projekte.de/schiene/2-005-V01/2-005-V01.html, https://www.umweltbundesamt.de/sites/default/files/medien/461/publikationen/4005.pdf
 average_passengers_per_train:
   val: 500
   src: estimate
+freight_transported_per_day:
+  val: (7362000+110000)/39*274/365
+  src: ~20% increase = 7362kt/a https://www.bvwp-projekte.de/schiene/2-005-V01/2-005-V01.html, one freight train <1000t?
 estimated_construction_cost:
   val: 14200000000
   src: https://de.wikipedia.org/wiki/Ausbau-_und_Neubaustrecke_Karlsruhe%E2%80%93Basel

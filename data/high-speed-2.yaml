@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 500
   src: estimate based on 60% average load factor https://en.wikipedia.org/wiki/HS2_rolling_stock
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 52668000000
   src: https://www.hs2.org.uk/what-is-hs2/hs2-funding/
@@ -58,7 +61,7 @@ emissions_savings_per_year_reference:
   src: S. 118, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/568547/D25_WEB_C331_Sustainability_Statement_Including_Post_Consultation_Update_Volume_1_Main_Report_WEB_VERSION.pdf
 modal_shift_low:
   val: 5-2
-  src: deduction due to high energy usage, https://www.theguardian.com/uk-news/2020/feb/02/will-hs2-really-help-cut-the-uks-carbon-footprint, p 16 f. https://www.rail-leaders.com/wp-content/uploads/Modal-shift-matters-portrait-version.pdf
+  src: deduction due to high energy usage and low modal shift, https://www.theguardian.com/uk-news/2020/feb/02/will-hs2-really-help-cut-the-uks-carbon-footprint, p 16 f. https://www.rail-leaders.com/wp-content/uploads/Modal-shift-matters-portrait-version.pdf
 modal_shift_high:
   val: 20
   src: estimate

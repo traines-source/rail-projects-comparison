@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 330
   src: p. 16 https://www.sepanso33.org/IMG/pdf/-18.pdf
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 2400000000
   src: https://fr.wikipedia.org/wiki/LGV_Rhin-Rh%C3%B4ne
@@ -60,7 +63,7 @@ modal_shift_low:
   val: 5
   src: estimate
 modal_shift_high:
-  val: 25
+  val: 20
   src: estimate
 paths: |
   <path data-from="1 0 nozoom" data-line="RhinRhone" data-stops="Dijon Besancon BelfortMontbeliard Mulhouse" />

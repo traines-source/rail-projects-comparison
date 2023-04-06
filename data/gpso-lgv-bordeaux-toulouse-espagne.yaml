@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 330
   src: p. 16 https://www.sepanso33.org/IMG/pdf/-18.pdf
+freight_transported_per_day:
+  val: 70*500
+  src: estimate https://www.lgv2030.fr/questions-reponses/y-aura-t-il-moins-de-camions-et-plus-de-fret-ferroviaire/, 500t per train
 estimated_construction_cost:
   val: 14300000000
   src: https://batinfo.com/en/actuality/lgv-bordeaux-toulouse-premiere-reunion-du-conseil-de-surveillance_21524
@@ -60,7 +63,7 @@ modal_shift_low:
   val: 5
   src: estimate
 modal_shift_high:
-  val: 25
+  val: 20
   src: estimate
 paths: |
   <path data-from="1 0 nozoom" data-line="GPSO" data-stops="Bordeaux Triangle Montauban Toulouse" />

@@ -27,17 +27,20 @@ number_stations:
   val: 3
   src: https://de.wikipedia.org/wiki/Stuttgart_21
 passengers_per_day:
-  val: 240000
-  src: https://web.archive.org/web/20100608034633/http://www.deutschebahn.com/site/bahnhoefe/de/sued/stuttgart__hbf/daten__und__fakten/daten__und__fakten__.html
+  val: 150000+150000+250000-150000
+  src: (estimate without S-Bahn) https://regionalverkehr-projekt-stuttgart-ulm.de/download/Regional-Fahrplan-Inbetriebnahme-Stuttgart-21-11-10-2022.pdf
 pkm_per_day:
-  val: 240000*20
-  src: estimate
+  val: (150000+150000+250000-150000)*20
+  src: estimate based on https://regionalverkehr-projekt-stuttgart-ulm.de/download/Regional-Fahrplan-Inbetriebnahme-Stuttgart-21-11-10-2022.pdf
 trains_per_hour_direction:
   val: 36.5/2
   src: https://www.matthias-gastel.de/wp-content/uploads/2021/04/tiefbahnhof-dtakt.png
 average_passengers_per_train:
   val: 500
   src: estimate
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 9000000000
   src: https://de.wikipedia.org/wiki/Stuttgart_21
@@ -58,7 +61,7 @@ emissions_savings_per_year_reference:
   src: https://www.bvmw.de/fileadmin/pdf-archiv/090120_Projekt_21_Gute_Gruende.pdf
 modal_shift_low:
   val: 0
-  src: https://www.ingenieure22.de/cms/images/publikat/flyer/Treibhausgasemissionen_Stuttgart21.pdf
+  src: possibly no modal shift https://www.ingenieure22.de/cms/images/publikat/flyer/Treibhausgasemissionen_Stuttgart21.pdf
 modal_shift_high:
   val: 20
   src: 70000 tCO2/a savings according to https://www.bvmw.de/fileadmin/pdf-archiv/090120_Projekt_21_Gute_Gruende.pdf would require a higher modal shift with the given passenger numbers

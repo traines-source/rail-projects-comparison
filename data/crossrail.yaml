@@ -38,6 +38,9 @@ trains_per_hour_direction:
 average_passengers_per_train:
   val: 500
   src: https://en.wikipedia.org/wiki/British_Rail_Class_345
+freight_transported_per_day:
+  val: 0
+  src:
 estimated_construction_cost:
   val: 18800000000*1.15
   src: https://en.wikipedia.org/wiki/Crossrail
@@ -58,10 +61,10 @@ emissions_savings_per_year_reference:
   src: https://learninglegacy.crossrail.co.uk/learning-legacy-themes/environment/energy-efficiency-and-carbon/
 modal_shift_low:
   val: 10
-  src: estimate
+  src: estimated high modal shift
 modal_shift_high:
   val: 25
-  src: estimate
+  src: estimated high modal shift
 paths: |
   <path data-from="1 0 nozoom" data-line="Crossrail" data-stops="Reading HayesHarlington Paddington BondStreet TottenhamCourtRoad Farringdon LiverpoolStreet Whitechapel Stratford Shenfield" />
   <path data-from="1 0 nozoom" data-line="Crossrail" data-stops="HayesHarlington Heathrow" />

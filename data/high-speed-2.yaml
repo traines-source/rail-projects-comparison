@@ -42,8 +42,8 @@ freight_transported_per_day:
   val: 0
   src:
 estimated_construction_cost:
-  val: 52668000000
-  src: https://www.hs2.org.uk/what-is-hs2/hs2-funding/
+  val: 100e9*1.14
+  src: https://commonslibrary.parliament.uk/research-briefings/cbp-9313/, https://www.reuters.com/world/uk/britain-delays-major-rail-project-hs2-costs-soar-again-2023-03-09/
 construction_duration:
   val: 20
   src: https://en.wikipedia.org/wiki/High_Speed_2

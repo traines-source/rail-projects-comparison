@@ -18,7 +18,7 @@ length_tunnel_tube:
   val: 0
   src: 
 tunnel_diameter:
-  val: 0
+  val: 
   src: 
 length_bridge:
   val: 50
@@ -27,11 +27,11 @@ number_stations:
   val: 7
   src: https://www.railbaltica.org/about-rail-baltica/
 passengers_per_day:
-  val: 10000
-  src: estimate based on p. 143 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf, https://www.researchgate.net/publication/334606728_Energy_Consumption_of_Rail_Baltica_Project_Regional_Aspects_of_Environmental_Impact
+  val: 12000
+  src: estimate based on https://www.globalconstructionreview.com/rail-baltica-set-finish-four-years-late-and-2bn-ov/, p. 143 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf, https://www.researchgate.net/publication/334606728_Energy_Consumption_of_Rail_Baltica_Project_Regional_Aspects_of_Environmental_Impact, https://www.globalrailwayreview.com/article/63412/rail-baltica-making-difference-region/
 pkm_per_day:
   val: 728000000/365
-  src: p. 143 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
+  src: p. 144 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
 trains_per_hour_direction:
   val: 0.5
   src: p. 138 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf, https://info.railbaltica.org/en/in-brief
@@ -42,11 +42,11 @@ freight_transported_per_day:
   val: 12900000/365
   src: p. 148 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
 estimated_construction_cost:
-  val: 5800000000
-  src: https://www.railbaltica.org/about-rail-baltica/finances/
+  val: 7000000000
+  src: https://www.railtech.com/policy/2021/09/29/rail-baltica-is-at-least-three-times-more-expensive-for-estonia-than-hs2-for-the-uk/?gdpr=accept, https://www.railbaltica.org/about-rail-baltica/finances/
 construction_duration:
   val: 2026-2019
-  src: https://en.wikipedia.org/wiki/Rail_Baltica
+  src: https://en.wikipedia.org/wiki/Rail_Baltica, https://www.globalconstructionreview.com/rail-baltica-set-finish-four-years-late-and-2bn-ov/
 maximum_speed:
   val: 249
   src: https://www.railbaltica.org/about-rail-baltica/

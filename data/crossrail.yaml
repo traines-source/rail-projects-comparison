@@ -31,7 +31,7 @@ passengers_per_day:
   src: https://tfl.gov.uk/info-for/media/press-releases/2023/february/the-transformational-elizabeth-line-clocks-more-than-one-hundred-million-passenger-journeys
 pkm_per_day:
   val: 600000*25
-  src: estimate based on passengers
+  src: estimate based on passengers traveling about 25km
 trains_per_hour_direction:
   val: 24
   src: https://en.wikipedia.org/wiki/Crossrail

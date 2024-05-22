@@ -42,8 +42,8 @@ freight_transported_per_day:
   val: 12900000/365
   src: p. 148 https://www.railbaltica.org/wp-content/uploads/2017/05/AECOM_Final_Report_Volume_I.pdf
 estimated_construction_cost:
-  val: 7000000000
-  src: https://www.railtech.com/policy/2021/09/29/rail-baltica-is-at-least-three-times-more-expensive-for-estonia-than-hs2-for-the-uk/?gdpr=accept, https://www.railbaltica.org/about-rail-baltica/finances/
+  val: 8000000000
+  src: https://www.railway-technology.com/news/rail-baltica-faces-rising-costs-and-cancelled-projects/
 construction_duration:
   val: 2026-2019
   src: https://en.wikipedia.org/wiki/Rail_Baltica, https://www.globalconstructionreview.com/rail-baltica-set-finish-four-years-late-and-2bn-ov/

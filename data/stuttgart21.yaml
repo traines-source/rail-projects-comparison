@@ -42,8 +42,8 @@ freight_transported_per_day:
   val: 0
   src:
 estimated_construction_cost:
-  val: 9000000000
-  src: https://de.wikipedia.org/wiki/Stuttgart_21
+  val: 11000000000
+  src: https://www.swr.de/swraktuell/baden-wuerttemberg/stuttgart/stuttgart-21-soll-ueber-11-milliarden-kosten-100.html
 construction_duration:
   val: 15
   src: https://de.wikipedia.org/wiki/Stuttgart_21

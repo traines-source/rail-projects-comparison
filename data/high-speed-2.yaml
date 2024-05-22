@@ -9,14 +9,14 @@ longitude:
 latitude:
   val: 52.45243
 length_double_track:
-  val: 250*1.609
+  val: 140*1.609
   src: https://www.hs2.org.uk/what-is-hs2/
 length_tunnel:
-  val: 103/2+12.5
-  src: https://www.hs2.org.uk/building-hs2/tunnels/, https://en.wikipedia.org/wiki/High_Speed_2_Phase_Two
+  val: 32*1.609
+  src: https://www.hs2.org.uk/what-is-hs2/, https://www.hs2.org.uk/building-hs2/tunnels/
 length_tunnel_tube:
-  val: 103+12.5*2
-  src: https://www.hs2.org.uk/building-hs2/tunnels/, https://en.wikipedia.org/wiki/High_Speed_2_Phase_Two
+  val: ((4.5+8.4+10+1+3.5)*2+32-(4.5+8.4+10+1+3.5))*1.609
+  src: https://www.hs2.org.uk/building-hs2/tunnels/
 tunnel_diameter:
   val: 10.26
   src: single-track https://www.hs2.org.uk/building-hs2/tunnels/meet-our-giant-tunnel-boring-machines/
@@ -24,13 +24,13 @@ length_bridge:
   val: 15
   src: https://www.hs2.org.uk/building-hs2/viaducts-and-bridges/
 number_stations:
-  val: 7
-  src: https://www.hs2.org.uk/the-route/high-speed-network-map/
+  val: 4
+  src: https://www.hs2.org.uk/what-is-hs2/
 passengers_per_day:
-  val: 300000
-  src: https://www.hs2.org.uk/why/capacity/
+  val: 250000-134000
+  src: https://www.railengineer.co.uk/hs2-cutback-update/
 pkm_per_day:
-  val: 300000*220
+  val: (250000-134000)*220
   src: estimate based on https://www.hs2.org.uk/why/capacity/ and https://www.hs2.org.uk/what-is-hs2/
 trains_per_hour_direction:
   val: 18
@@ -42,8 +42,8 @@ freight_transported_per_day:
   val: 0
   src:
 estimated_construction_cost:
-  val: 100e9*1.14
-  src: https://commonslibrary.parliament.uk/research-briefings/cbp-9313/, https://www.reuters.com/world/uk/britain-delays-major-rail-project-hs2-costs-soar-again-2023-03-09/
+  val: 66.6e9*1.14
+  src: https://www.independent.co.uk/news/uk/politics/hs2-independent-train-london-manchester-b2476250.html
 construction_duration:
   val: 20
   src: https://en.wikipedia.org/wiki/High_Speed_2
@@ -52,12 +52,12 @@ maximum_speed:
   src: https://en.wikipedia.org/wiki/High_Speed_2
 commercial_speed:
   val: 270
-  src: based on 350 km distance London-Manchester in 1h11m https://www.hs2.org.uk/why/connectivity/
+  src: based on 200 km distance London-Birmingham in 45m https://www.hs2.org.uk/why/connectivity/
 emissions_construction_reference:
-  val: 11000000
+  val: 5590000
   src: https://assets.hs2.org.uk/wp-content/uploads/2022/01/25357_HS2_NetZeroCarbonPlan_CS1656_Final_InteractiveWeb_Accessible.pdf, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/960807/E27_Carbon_v1.3.pdf, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/400836/hs2ml-carbon_assessment_and_narrative-_25thoct13_wed_tagged_version__-_updated_0.pdf, https://www.transport-network.co.uk/HS2s-contribution-to-net-zero-isup-in-the-air/16484, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/870092/oakervee-review.pdf, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/568547/D25_WEB_C331_Sustainability_Statement_Including_Post_Consultation_Update_Volume_1_Main_Report_WEB_VERSION.pdf
 emissions_savings_per_year_reference:
-  val: (12900000-5960000)/60
+  val: (10210000-2150000)/60
   src: S. 118, https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/568547/D25_WEB_C331_Sustainability_Statement_Including_Post_Consultation_Update_Volume_1_Main_Report_WEB_VERSION.pdf
 modal_shift_low:
   val: 5-2
@@ -66,10 +66,13 @@ modal_shift_high:
   val: 20
   src: estimate
 paths: |
+  <path data-from="1 0 nozoom" data-line="HS2" data-stops="Euston BirminghamInterchange Birmingham" />
+  <!--
   <path data-from="1 0 nozoom" data-line="HS2" data-stops="Euston BirminghamInterchange Crewe North" />
   <path data-from="1 0 nozoom" data-line="HS2" data-stops="BirminghamInterchange Birmingham" />
   <path data-from="1 0 nozoom" data-line="HS2" data-stops="Crewe Manchester" />
   <path data-from="1 0 nozoom" data-line="HS2" data-stops="BirminghamInterchange EastMidlands" />
+  -->
   <rect data-station="Euston" data-lon-lat="-0.134722 51.528889" />            
   <rect data-station="BirminghamInterchange" data-dir="nw" data-lon-lat="-1.7070035127805767 52.46125171446682" class="helper" />            
   <rect data-station="Birmingham" data-lon-lat="-1.8838086010610813 52.48152575162555" />            
